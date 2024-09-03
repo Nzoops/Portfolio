@@ -1,12 +1,33 @@
-  @keyframes typewriter {
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@import url('https://fonts.googleapis.com/css2?family=Courier+New:wght@400;700&display=swap');
+
+.font-typewriter {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: normal; /* Allow wrapping on smaller screens */
+    overflow: hidden;
+    border-right: 0.15em solid rgb(0, 0, 0); /* Customize as needed */
+    animation: typewriter 3s steps(37, end) 1s 1 normal both,
+               blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typewriter {
     from { width: 0; }
     to { width: 100%; }
 }
 
-.animate-typewriter {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 0.15em solid orange; /* Customize as needed */
-    animation: typewriter 4s steps(40, end) 1s 1 normal both;
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgb(112, 106, 94); }
+}
+.tag {
+  @apply px-4 py-2 text-white bg-blue-500 rounded-full text-sm font-medium;
+  /* Optional for hover effects */
+  transition: background-color 0.3s;
+}
+
+.tag:hover {
+  @apply bg-blue-700;
 }
