@@ -14,9 +14,14 @@
 }
 
 @keyframes typewriter {
-    from { width: 0; }
-    to { width: 100%; }
+  0% {
+    width: 0ch; /* Start from 0 characters */
+  }
+  100% {
+    width: 55ch; /* Adjust width to match your text length */
+  }
 }
+
 
 @keyframes blink-caret {
     from, to { border-color: transparent; }
