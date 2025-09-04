@@ -22,13 +22,13 @@
             <div class="container max-w-screen-xl mx-auto px-4">
 
                 <nav class="flex items-center justify-between mb-40">
-                    <img src="assets/icons/Logo.svg" alt="Logo"  alt="Icon Description" width="80" height="80">
+                    <img id ="logo" src="assets/icons/Logo.svg" alt="Logo"  class="w-20 h-20 hover:animate-spin" alt="Icon Description" width="80" height="80">
                 
                     <div class="flex flex-col space-y-2 px-5">
                         <a href="assets/downloads/Enzo-Resume.pdf" target="_blank" download class="px-7 py-3 md:px-9 md:py-4 text-center bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">
                             My CV
                         <a href="assets/downloads/Enzo-NM-Resume.pdf" target="_blank" download class="text-center px-7 py-3 md:px-9 md:py-4 bg-gray-700 font-medium md:font-semibold text-white text-md rounded-md hover:bg-white hover:text-gray-700 transition ease-linear duration-500">
-                           My Dark CV
+                           My Night Mode CV
                         </a>
                     </div>
                 </nav>
@@ -119,7 +119,7 @@
                             <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">01</h1>
                             <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
                             <div>
-                                <h1 id="RevOps" class="font-normal text-gray-700 text-3xl md:text-4xl mb-5 px-5">Vibe.co</h1>
+                                <h1 id="RevOps" class="font-normal text-gray-700 text-3xl md:text-4xl mb-5 px-5">Vibe.co (2024-2025)</h1>
                                 <p class="font-normal text-gray-500 text-sm md:text-base px-5 mb-2">Leading Connected TV advertising solution. Freelance.</p>
                                 <br>
                                 <p class="font-normal text-gray-500 text-sm md:text-base px-5 mb-2">
@@ -148,7 +148,7 @@
                             <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">02</h1>
                             <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
                             <div>
-                                <h1 id="web-dev" class="font-normal text-gray-700 text-3xl md:text-4xl mb-5 px-5">Hotefinder</h1>
+                                <h1 id="web-dev" class="font-normal text-gray-700 text-3xl md:text-4xl mb-5 px-5">Hotefinder (2024)</h1>
                                 <p id="design" class="font-normal text-gray-500 text-sm md:text-base px-5 mb-2">Marketplace to connect people and landlords looking for Airbnb Hosts. Part of the THP bootcamp.</p>
                                 <a href="https://github.com/antoinekc/hotefinder" target="_blank" class="inline-block px-5">
                                     <img src="assets/icons/github.svg" alt="GitHub" class="text-gray-700 hover:text-gray-900 transition ease-linear duration-500 w-12 h-12">
@@ -181,7 +181,7 @@
                             <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
 
                             <div>
-                                <h1 id="pm" class="font-normal text-gray-700 text-3xl md:text-4xl mb-5 px-5">Pi Network KYC Solution
+                                <h1 id="pm" class="font-normal text-gray-700 text-3xl md:text-4xl mb-5 px-5">Pi Network KYC Solution (2022-2024)
                                 </h1>
 
                                 <p class="font-normal text-gray-500 text-sm md:text-base px-5">Proprietary KYC solution for a crypto company using AI. Full time job.</p>
@@ -215,7 +215,7 @@
                             <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
 
                             <div>
-                                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5 px-5">HEROW</h1>
+                                <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5 px-5">HEROW (2019 - 2021)</h1>
 
                                 <p class="font-normal text-gray-500 text-sm md:text-base px-5">Geofencing & location-tracking SDK & platform for mobile apps. Full time job.</p>
                                 <p class="font-normal text-gray-500 text-sm md:text-base px-5 mb-2 mt-2">
@@ -256,7 +256,7 @@
                             <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
 
                             <div>
-                                <h1 id="csm" class="font-normal text-gray-700 text-3xl md:text-4xl mb-5 px-5">Agorize Asia</h1>
+                                <h1 id="csm" class="font-normal text-gray-700 text-3xl md:text-4xl mb-5 px-5">Agorize Asia (2017 - 2019)</h1>
 
                                 <p class="font-normal text-gray-500 text-sm md:text-base px-5">Open innovation SAAS platform. Full time job.</p>
                                 <p class="font-normal text-gray-500 text-sm md:text-base px-5 mb-2 mt-2">
@@ -544,12 +544,28 @@
                     </a>
                 </div>
 
-                   
-
             </div>
 
         </footer>
 
+        <style>
+                        .spin {
+                        transition: transform 0.6s ease-in-out;
+                        transform: rotate(360deg);
+                        }
+                        </style>
+         <script>
+                        const logo = document.getElementById("Logo");
+
+                        logo.addEventListener("mouseenter", () => {
+                        logo.classList.add("spin");
+                        });
+
+                        logo.addEventListener("mouseleave", () => {
+                        // reset spin after animation ends
+                        logo.classList.remove("spin");
+                        });
+        </script>
 
         <script>
             feather.replace()
