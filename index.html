@@ -22,13 +22,13 @@
             <div class="container max-w-screen-xl mx-auto px-4">
 
                 <nav class="flex items-center justify-between mb-40">
-                    <img id ="logo" src="assets/icons/Logo.svg" alt="Logo"  class="w-20 h-20 hover:animate-spin" alt="Icon Description" width="80" height="80">
+                    <img id ="logo" src="assets/icons/Logo.svg" alt="Logo"  class="spin-hover" alt="Icon Description" width="80" height="80">
                 
                     <div class="flex flex-col space-y-2 px-5">
                         <a href="assets/downloads/Enzo-Resume.pdf" target="_blank" download class="px-7 py-3 md:px-9 md:py-4 text-center bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">
-                            My CV
+                            My Resume
                         <a href="assets/downloads/Enzo-NM-Resume.pdf" target="_blank" download class="text-center px-7 py-3 md:px-9 md:py-4 bg-gray-700 font-medium md:font-semibold text-white text-md rounded-md hover:bg-white hover:text-gray-700 transition ease-linear duration-500">
-                           My Night Mode CV
+                           My Night Mode Resume
                         </a>
                     </div>
                 </nav>
@@ -547,25 +547,6 @@
             </div>
 
         </footer>
-
-        <style>
-                        .spin {
-                        transition: transform 0.6s ease-in-out;
-                        transform: rotate(360deg);
-                        }
-                        </style>
-         <script>
-                        const logo = document.getElementById("Logo");
-
-                        logo.addEventListener("mouseenter", () => {
-                        logo.classList.add("spin");
-                        });
-
-                        logo.addEventListener("mouseleave", () => {
-                        // reset spin after animation ends
-                        logo.classList.remove("spin");
-                        });
-        </script>
 
         <script>
             feather.replace()
