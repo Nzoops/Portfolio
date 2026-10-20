@@ -480,7 +480,7 @@ a.list__item:hover { padding-left: 10px; }
 .auto h3 { font-size: var(--s-xl); }
 .auto__intro > p { color: var(--muted); }
 .auto__facts { margin: 0; display: grid; border-top: 1px solid var(--line); }
-.auto__facts > div { display: grid; grid-template-columns: 90px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.auto__facts > div { display: grid; grid-template-columns: 112px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
 .auto__facts dt { color: var(--muted); padding-top: 2px; }
 .auto__facts dd { margin: 0; font-size: var(--s-sm); }
 
@@ -515,6 +515,8 @@ a.list__item:hover { padding-left: 10px; }
 .wf__link::after { content: ""; position: absolute; top: -3px; left: 0; width: 8px; height: 8px; border-radius: 50%; background: var(--term-fg); box-shadow: 0 0 8px var(--term-fg); animation: flow 2.4s linear infinite; }
 .wf__link:nth-of-type(2)::after { animation-delay: .8s; }
 .wf__link:nth-of-type(3)::after { animation-delay: 1.6s; }
+.wf__link:nth-of-type(4)::after { animation-delay: 2.4s; }
+.node--review svg { color: #ffd84d; }
 @keyframes flow { from { transform: translateX(-4px); opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } to { transform: translateX(32px); opacity: 0; } }
 @media (max-width: 640px) {
   .wf__flow { flex-direction: column; align-items: stretch; }
