@@ -1,10 +1,10 @@
 /* Layout: one long scrolling "product spec" — floating pill nav, wide hero, then sections on a 1120px column. */
 :root {
-  --paper: #eef1ee;
+  --paper: #fcfbf8;
   --surface: #ffffff;
   --ink: #121a17;
-  --muted: #56635e;
-  --line: #d3dbd7;
+  --muted: #5d625e;
+  --line: #e2e0d9;
   --accent: #3a3df0;
   --accent-ink: #ffffff;
   --hl: #ffd84d;
@@ -549,3 +549,17 @@ main, .foot { position: relative; z-index: 1; }
   .shape--half { width: 100px; height: 50px; }
 }
 @media (prefers-reduced-motion: reduce) { .shape { transform: none !important; } }
+
+/* Paper grain over the whole page */
+:root { --grain: .13; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --grain: .35; } }
+:root[data-theme="dark"] { --grain: .35; }
+body::after {
+  content: ""; position: fixed; inset: 0; z-index: 25; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 220px 220px;
+  opacity: var(--grain);
+  mix-blend-mode: multiply;
+}
+:root[data-theme="dark"] body::after { mix-blend-mode: soft-light; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) body::after { mix-blend-mode: soft-light; } }
