@@ -459,3 +459,4 @@ a.list__item:hover { padding-left: 10px; }
   .pin--hk, .pin--sg { flex-direction: row-reverse; align-items: center; transform: translate(calc(-100% + 7px), -7px); }
   .pin--hk { transform: translate(calc(-100% + 7px), calc(-100% + 7px)); }
 }
+#reviews { padding-top: clamp(40px, 6vw, 72px); }
