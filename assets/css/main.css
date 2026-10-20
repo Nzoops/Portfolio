@@ -292,9 +292,9 @@ a.list__item:hover { padding-left: 10px; }
 .list__item span { grid-column: 1; color: var(--muted); font-size: var(--s-sm); }
 .list__item .mono { grid-row: 1; grid-column: 2; color: var(--muted); align-self: center; }
 .hobbies { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
-.hobby { aspect-ratio: 1; max-width: 100%; display: grid; align-content: end; gap: 6px; padding: 18px; border-radius: var(--radius); border: 1.5px dashed var(--line); background: var(--surface); transition: transform .5s var(--ease), border-color .3s; }
+.hobby { aspect-ratio: 1; max-width: 100%; display: grid; align-content: end; gap: 6px; padding: 18px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); transition: transform .5s var(--ease), border-color .3s; }
 .hobby:hover { transform: rotate(-1.5deg) scale(1.02); border-color: var(--accent); }
-.hobby__icon { font-size: 1.75rem; line-height: 1; margin-bottom: auto; }
+.hobby__icon { width: 44px; height: 44px; margin-bottom: auto; color: var(--accent); transition: transform .8s var(--ease); }
 .hobby b { font-family: var(--f-display); font-size: var(--s-md); font-weight: 600; }
 .hobby span { color: var(--muted); font-size: var(--s-xs); }
 
@@ -460,3 +460,10 @@ a.list__item:hover { padding-left: 10px; }
   .pin--hk { transform: translate(calc(-100% + 7px), calc(-100% + 7px)); }
 }
 #reviews { padding-top: clamp(40px, 6vw, 72px); }
+.hobby:hover { border-color: var(--accent); }
+.hobby--vinyl:hover .hobby__icon { transform: rotate(360deg); }
+.hobby--surf:hover .hobby__icon { transform: translateX(4px) rotate(-6deg); }
+.hobby--run:hover .hobby__icon { transform: translateX(6px); }
+.hobby--clay:hover .hobby__icon { transform: scaleX(1.08) scaleY(.94); }
+.hobby { grid-template-rows: 1fr auto auto; }
+.hobby__icon { align-self: start; }
