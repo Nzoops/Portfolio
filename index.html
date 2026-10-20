@@ -366,8 +366,46 @@
         <header class="section-head reveal">
           <span class="eyebrow">Personal projects</span>
           <h2>Things I built to learn by doing.</h2>
-          <p>Side projects where I write the code myself, from wireframes to deployment.</p>
+          <p>Side projects where I build things myself, from automations to full-stack apps.</p>
         </header>
+
+        <article id="automation" class="auto reveal">
+          <div class="auto__intro">
+            <span class="eyebrow">Automation project</span>
+            <h3>Crypto morning brief, on autopilot.</h3>
+            <p>A self-hosted n8n workflow that pulls market data every morning, asks ChatGPT for a sentiment and project analysis grounded in fundamental analysis literature, then posts the brief to a Telegram bot.</p>
+            <dl class="auto__facts">
+              <div><dt class="mono">Hosting</dt><dd>Self-hosted n8n instance on Hostinger</dd></div>
+              <div><dt class="mono">Data</dt><dd>CoinGecko and CoinMarketCap APIs, every morning</dd></div>
+              <div><dt class="mono">Analysis</dt><dd>ChatGPT, context augmented with fundamental analysis literature</dd></div>
+              <div><dt class="mono">Delivery</dt><dd>Telegram bot</dd></div>
+            </dl>
+            <div class="chips"><span class="chip">n8n</span><span class="chip">Hostinger</span><span class="chip">CoinGecko API</span><span class="chip">CoinMarketCap API</span><span class="chip">ChatGPT</span><span class="chip">Telegram Bot API</span></div>
+          </div>
+
+          <div class="wf" role="img" aria-label="Workflow: morning schedule triggers CoinGecko and CoinMarketCap API calls, ChatGPT analyses the data with fundamental analysis context, and a Telegram bot sends the brief.">
+            <div class="wf__host mono">n8n · self-hosted on Hostinger</div>
+            <div class="wf__flow">
+              <div class="wf__col">
+                <div class="node node--trigger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><b>Schedule</b><span>Every morning</span></div>
+              </div>
+              <span class="wf__link"></span>
+              <div class="wf__col">
+                <div class="node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17l5-5 4 4 7-8"/><path d="M15 8h5v5"/></svg><b>CoinGecko</b><span>HTTP · API</span></div>
+                <div class="node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18"/><rect x="5" y="11" width="3" height="6"/><rect x="11" y="7" width="3" height="10"/><rect x="17" y="4" width="3" height="13"/></svg><b>CoinMarketCap</b><span>HTTP · API</span></div>
+              </div>
+              <span class="wf__link"></span>
+              <div class="wf__col">
+                <div class="node node--ai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.2 5.3L20 9l-4.3 3.8L17 18.5 12 15.6 7 18.5l1.3-5.7L4 9l5.8-.7z"/></svg><b>ChatGPT</b><span>Sentiment &amp; project analysis</span></div>
+                <div class="node node--doc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/><path d="M9 8h6"/></svg><b>Knowledge</b><span>Fundamental analysis literature</span></div>
+              </div>
+              <span class="wf__link"></span>
+              <div class="wf__col">
+                <div class="node node--out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/><path d="M9 13l12-9"/></svg><b>Telegram bot</b><span>Morning brief sent</span></div>
+              </div>
+            </div>
+          </div>
+        </article>
 
         <div class="projects">
           <a class="project reveal" href="https://github.com/antoinekc/hotefinder" target="_blank" rel="noopener">
