@@ -188,9 +188,9 @@ section { padding-block: clamp(72px, 10vw, 136px); }
 .job h3 { font-size: var(--s-lg); }
 .job__role { font-weight: 600; }
 .job__desc { color: var(--muted); }
-.job ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
-.job li { position: relative; padding-left: 20px; }
-.job li::before { content: ""; position: absolute; left: 0; top: .7em; width: 8px; height: 2px; background: var(--accent); }
+.job__body ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.job__body li { position: relative; padding-left: 20px; }
+.job__body li::before { content: ""; position: absolute; left: 0; top: .7em; width: 8px; height: 2px; background: var(--accent); }
 .job__sub { font-family: var(--f-mono); font-size: var(--s-xs); text-transform: uppercase; letter-spacing: .1em; color: var(--muted); margin-top: 6px; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip { font-family: var(--f-mono); font-size: .75rem; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
@@ -308,3 +308,75 @@ a.list__item:hover { padding-left: 10px; }
   .hero__who > span[aria-hidden] { display: none; }
   .roles { display: grid; margin-top: 4px; }
 }
+
+/* Product visualisations inside experience cards */
+.job__media { display: grid; gap: 14px; min-width: 0; }
+.viz { margin: 0; display: grid; gap: 14px; padding: 18px; border-radius: 10px; border: 1px solid var(--line); background: var(--paper); min-width: 0; }
+.viz__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 12px; }
+.viz__head b { font-family: var(--f-display); font-weight: 600; }
+.viz__head .mono, .viz__foot { color: var(--muted); }
+.viz__foot { display: flex; justify-content: space-between; margin-top: -6px; }
+.viz__src { color: var(--muted); text-decoration: none; justify-self: start; }
+.viz__src:hover { color: var(--accent); }
+
+/* Campus Coach: training load bars */
+.plan { display: flex; align-items: end; gap: 6px; height: 96px; }
+.plan span { flex: 1; height: var(--h); border-radius: 4px 4px 2px 2px; background: color-mix(in srgb, var(--accent) 35%, var(--line)); transform-origin: bottom; }
+.plan .plan__race { background: var(--accent); }
+.job.is-seen .plan span { animation: grow .9s var(--ease) both; }
+.plan span { animation-delay: calc(var(--i, 0) * 60ms); }
+@keyframes grow { from { transform: scaleY(.05); } }
+
+/* Vibe: launch steps */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.steps li { position: relative; display: grid; gap: 8px; font-size: var(--s-xs); color: var(--muted); }
+.steps i { display: block; height: 6px; border-radius: 3px; background: var(--accent); transform-origin: left; }
+.steps__live { color: var(--ink) !important; font-weight: 600; }
+.steps__live i { background: #2fb36d; }
+.job.is-seen .steps i { animation: fillx .7s var(--ease) both; }
+.job.is-seen .steps li:nth-child(2) i { animation-delay: .5s; }
+.job.is-seen .steps li:nth-child(3) i { animation-delay: 1s; }
+.job.is-seen .steps li:nth-child(4) i { animation-delay: 1.5s; }
+@keyframes fillx { from { transform: scaleX(0); } }
+
+/* Pi: KYC */
+.kyc { display: grid; grid-template-columns: 76px 1fr; gap: 16px; align-items: center; }
+.kyc__face { position: relative; width: 76px; height: 76px; border-radius: 50%; border: 2px dashed var(--accent); overflow: hidden; display: grid; place-items: center; }
+.kyc__face svg { width: 52px; fill: none; stroke: var(--ink); stroke-width: 3; stroke-linecap: round; }
+.kyc__scan { position: absolute; inset: 0 0 auto; height: 3px; background: var(--accent); box-shadow: 0 0 12px var(--accent); animation: scan 2.4s ease-in-out infinite alternate; }
+@keyframes scan { to { transform: translateY(73px); } }
+.kyc__list { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; font-size: var(--s-sm); min-width: 0; }
+.kyc__list li { display: flex; gap: 8px; align-items: baseline; }
+.kyc__list li::before { content: "✓"; color: var(--accent); font-weight: 700; }
+.kyc__ok { font-weight: 600; }
+.kyc__ok::before { color: #2fb36d !important; }
+.job.is-seen .kyc__list li { animation: fade .5s var(--ease) both; }
+.job.is-seen .kyc__list li:nth-child(2) { animation-delay: .4s; }
+.job.is-seen .kyc__list li:nth-child(3) { animation-delay: .8s; }
+.job.is-seen .kyc__list li:nth-child(4) { animation-delay: 1.2s; }
+
+/* HEROW: geofences */
+.geo { display: grid; gap: 10px; }
+.geo__map { width: 100%; height: auto; display: block; }
+.geo__road { fill: none; stroke: var(--line); stroke-width: 8; stroke-linecap: round; }
+.geo__zone { fill: color-mix(in srgb, var(--accent) 16%, transparent); stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 4 4; transform-box: fill-box; transform-origin: center; animation: breathe 3s ease-in-out infinite; }
+.geo__zone--b { animation-delay: 1.5s; }
+@keyframes breathe { 50% { transform: scale(1.08); } }
+.geo__map text { font: 600 9px var(--f-mono); fill: var(--muted); letter-spacing: .1em; }
+.geo__dot { fill: var(--ink); stroke: var(--paper); stroke-width: 2; offset-path: path("M0 100 C60 90 80 40 150 50 S250 110 300 70"); offset-distance: 22%; animation: travel 7s ease-in-out infinite alternate; }
+@keyframes travel { from { offset-distance: 20%; } to { offset-distance: 76%; } }
+.geo__log { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+.geo__log li { padding: 4px 10px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); }
+
+/* Agorize: funnel */
+.funnel { display: grid; gap: 6px; }
+.funnel > div { width: var(--w); min-width: 150px; max-width: 100%; display: flex; justify-content: space-between; gap: 10px; padding: 8px 12px; border-radius: 6px; background: color-mix(in srgb, var(--accent) 18%, var(--surface)); font-size: var(--s-sm); transform-origin: left; }
+.funnel > div:last-child { background: var(--accent); color: var(--accent-ink); }
+.funnel b { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.job.is-seen .funnel > div { animation: fillx .7s var(--ease) both; }
+.job.is-seen .funnel > div:nth-child(2) { animation-delay: .15s; }
+.job.is-seen .funnel > div:nth-child(3) { animation-delay: .3s; }
+.job.is-seen .funnel > div:nth-child(4) { animation-delay: .45s; }
+
+.portrait__open { display: inline-flex; align-items: center; gap: 6px; }
+.portrait__tag .status__dot { width: 7px; height: 7px; }
