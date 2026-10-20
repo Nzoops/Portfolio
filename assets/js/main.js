@@ -52,6 +52,26 @@
   addEventListener("resize", () => movePill(links[current]));
   onScroll();
 
+  // Background shapes drift, rotate and breathe as the page scrolls
+  const shapes = $$(".shape");
+  if (shapes.length && !reduce) {
+    let ticking = false;
+    const drift = () => {
+      ticking = false;
+      const y = scrollY, h = innerHeight;
+      shapes.forEach((el, k) => {
+        const amp = +el.dataset.y || 0, rot = +el.dataset.r || 0, sc = +el.dataset.s || 0;
+        const t = y / h;
+        const dy = Math.sin(t * 0.9 + k) * amp;
+        const r = t * rot;
+        const s = 1 + Math.sin(t * 1.3 + k * 2) * sc;
+        el.style.transform = `translate3d(0, ${dy.toFixed(1)}px, 0) rotate(${r.toFixed(1)}deg) scale(${s.toFixed(3)})`;
+      });
+    };
+    addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(drift); } }, { passive: true });
+    drift();
+  }
+
   // Reveal on scroll: only items below the fold get hidden first, so the page is complete at rest
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
