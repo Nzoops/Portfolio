@@ -108,7 +108,9 @@
   // Reviews: pick an author, auto-advance unless hovered
   const reviews = $(".reviews");
   if (reviews) {
-    const data = $$("template[data-review]", reviews).map(t => t.content);
+    const templates = $$("template[data-review]", reviews);
+    const data = templates.map(t => t.content);
+    const pins = $$(".pin", reviews);
     const quote = $(".quote", reviews);
     const buttons = $$(".author", reviews);
     let i = 0, timer;
@@ -119,6 +121,8 @@
       quote.innerHTML = "";
       quote.append(c.cloneNode(true));
       quote.classList.remove("is-swapping"); void quote.offsetWidth; quote.classList.add("is-swapping");
+      const city = templates[n].dataset.city;
+      pins.forEach(p => p.setAttribute("aria-pressed", p.dataset.city === city));
       buttons.forEach((b, j) => {
         b.setAttribute("aria-pressed", j === n);
         const bar = $(".author__bar", b);
@@ -135,6 +139,17 @@
     };
     reviews.style.setProperty("--dur", DUR / 1000 + "s");
     buttons.forEach((b, j) => b.addEventListener("click", () => show(j)));
+    // Map pin: open the city's first review, or cycle through that city's reviews
+    pins.forEach(p => p.addEventListener("click", () => {
+      const idx = templates.map((t, k) => t.dataset.city === p.dataset.city ? k : -1).filter(k => k >= 0);
+      const pos = idx.indexOf(i);
+      show(pos >= 0 ? idx[(pos + 1) % idx.length] : idx[0]);
+    }));
+    // Local time in each city
+    const clock = () => pins.forEach(p => {
+      $(".pin__time", p).textContent = new Intl.DateTimeFormat("en-GB", { hour: "2-digit", minute: "2-digit", timeZone: p.dataset.tz }).format(new Date());
+    });
+    clock(); setInterval(clock, 30000);
     reviews.addEventListener("pointerenter", () => {
       clearTimeout(timer); remaining -= performance.now() - started; reviews.classList.add("is-paused");
     });
