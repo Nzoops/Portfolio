@@ -316,6 +316,11 @@ a.list__item:hover { padding-left: 10px; }
 .contact .btn--solid:hover { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .email { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
 .email code { font: 500 var(--s-lg)/1.3 var(--f-mono); user-select: all; overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  .email { flex-wrap: nowrap; gap: 10px; }
+  .email code { font-size: clamp(.75rem, 3.9vw, 1.125rem); white-space: nowrap; overflow-wrap: normal; min-width: 0; }
+  .copy { flex: none; padding: 5px 10px; }
+}
 .copy { border: 1px solid color-mix(in srgb, var(--paper) 40%, transparent); background: transparent; color: inherit; border-radius: 999px; padding: 6px 12px; font: 500 var(--s-xs)/1 var(--f-mono); cursor: pointer; }
 .copy:hover { background: color-mix(in srgb, var(--paper) 12%, transparent); }
 .socials { display: flex; flex-wrap: wrap; gap: 8px 24px; }
