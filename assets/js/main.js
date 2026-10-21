@@ -52,7 +52,7 @@
   addEventListener("resize", () => movePill(links[current]));
   onScroll();
 
-  // Background shapes drift, rotate and breathe as the page scrolls
+  // Retro decorations drift, rotate and breathe as the page scrolls
   const shapes = $$(".shape");
   if (shapes.length && !reduce) {
     let ticking = false;
@@ -71,6 +71,17 @@
     addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(drift); } }, { passive: true });
     drift();
   }
+
+  // Retro window loads with page progress; counter shows pixels scrolled
+  const load = $(".retro-win__progress b");
+  const digits = $(".retro-counter__digits");
+  const retro = () => {
+    const h = document.documentElement.scrollHeight - innerHeight;
+    if (load) load.style.setProperty("--load", Math.max(6, Math.round((h > 0 ? scrollY / h : 0) * 100)) + "%");
+    if (digits) digits.textContent = String(Math.round(scrollY)).padStart(6, "0");
+  };
+  addEventListener("scroll", retro, { passive: true });
+  retro();
 
   // Reveal on scroll: only items below the fold get hidden first, so the page is complete at rest
   const io = new IntersectionObserver(entries => {
