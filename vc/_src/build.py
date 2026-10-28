@@ -25,6 +25,12 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 SRC = ROOT / "vc" / "_src" / "data"
 OUT = ROOT / "vc"
 
+# Umami analytics (cookieless). data-domains keeps previews and local copies from sending hits.
+# Click events use data-umami-event attributes; company views are tracked from JS below.
+# The hub (vc/index.html) sets umami.disabled, so the owner's browser and the hub's iframe previews are never counted.
+UMAMI = ('<script defer src="https://cloud.umami.is/script.js" '
+         'data-website-id="431addf5-a596-4fca-a997-bb77a5741fce" data-domains="nzoops.github.io"></script>')
+
 DIMS = [
     ("Domain fit", "Domain", "Overlap with what I've shipped: fintech, KYC and fraud, martech and ad tech, edtech, geolocation, crypto and identity."),
     ("Business model", "Model", "B2B or B2C software, SaaS or platform, versus hardware, biotech or physical goods."),
@@ -323,6 +329,7 @@ function animate(to){cancelAnimationFrame(raf);var from=cur.slice(),t0=performan
 function step(now){var k=D?Math.min(1,(now-t0)/D):1;k=1-Math.pow(1-k,3);cur=from.map(function(f,i){return f+(to[i]-f)*k});draw(cur);if(k<1)raf=requestAnimationFrame(step)}raf=requestAnimationFrame(step)}
 function $(s){return panel.querySelector(s)}
 function select(idx,scroll){var c=DATA[idx];
+try{if(window.umami)umami.track("company-view",{company:c.n})}catch(e){}
 panel.className="panel t-"+c.k;
 $(".panel__name").innerHTML="";var nm=document.createTextNode(c.n);
 if(c.u){var a=document.createElement("a");a.href=c.u;a.target="_blank";a.rel="noopener";a.appendChild(nm);a.appendChild(document.createTextNode(" ↗"));$(".panel__name").appendChild(a)}else{$(".panel__name").appendChild(nm)}
@@ -426,14 +433,15 @@ def page(vc, me, built):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>{CSS}</style>
+{UMAMI}
 </head>
 <body>
 <header class="top"><div class="wrap top__in">
-  <a class="top__me" href="{e(me['portfolio'])}">Enzo Garry <span>· {e(me['role'])}</span></a>
-  <a class="link" href="{e(me['portfolio'])}">Portfolio</a>
-  <a class="link" href="{e(me['linkedin'])}" target="_blank" rel="noopener">LinkedIn</a>
+  <a class="top__me" href="{e(me['portfolio'])}" data-umami-event="open-portfolio" data-umami-event-position="header">Enzo Garry <span>· {e(me['role'])}</span></a>
+  <a class="link" href="{e(me['portfolio'])}" data-umami-event="open-portfolio" data-umami-event-position="header">Portfolio</a>
+  <a class="link" href="{e(me['linkedin'])}" target="_blank" rel="noopener" data-umami-event="linkedin" data-umami-event-position="header">LinkedIn</a>
   <button class="theme" type="button" aria-label="Toggle dark mode">{MOON}</button>
-  <a class="btn btn--solid btn--sm" href="{e(me['calendly'])}" target="_blank" rel="noopener">Book a call</a>
+  <a class="btn btn--solid btn--sm" href="{e(me['calendly'])}" target="_blank" rel="noopener" data-umami-event="book-call" data-umami-event-position="header">Book a call</a>
 </div></header>
 
 <main>
@@ -443,8 +451,8 @@ def page(vc, me, built):
     <h1>Enzo Garry <span class="x">×</span> {h1_name}</h1>
     <p class="hero__lede">{e(vc['lede'])}</p>
     <div class="ctas">
-      <a class="btn btn--solid" href="{e(me['calendly'])}" target="_blank" rel="noopener">Book a 30-min call {ARROW}</a>
-      <a class="btn" href="#matches">Explore portfolio matches</a>
+      <a class="btn btn--solid" href="{e(me['calendly'])}" target="_blank" rel="noopener" data-umami-event="book-call" data-umami-event-position="hero">Book a 30-min call {ARROW}</a>
+      <a class="btn" href="#matches" data-umami-event="explore-matches">Explore portfolio matches</a>
     </div>
   </div>
   <aside class="vcscore t-{vkey}" aria-label="Match with {name}">
@@ -507,8 +515,8 @@ def page(vc, me, built):
   <div class="stats">{stats}</div>
   <div class="proof">{proof}</div>
   <div class="ctas" style="margin-top:28px">
-    <a class="btn" href="{e(me['portfolio'])}">Full portfolio</a>
-    <a class="btn" href="{e(me['resume'])}" target="_blank" download>Download resume</a>
+    <a class="btn" href="{e(me['portfolio'])}" data-umami-event="open-portfolio" data-umami-event-position="track-record">Full portfolio</a>
+    <a class="btn" href="{e(me['resume'])}" target="_blank" download data-umami-event="download-resume">Download resume</a>
   </div>
 </div></section>
 
@@ -532,8 +540,8 @@ def page(vc, me, built):
 <section class="cta"><div class="wrap">
   <div class="head"><h2>Got a company in mind?</h2><p>Tell me who needs a hand. I’ll come back with a concrete first-month plan.</p></div>
   <div class="ctas">
-    <a class="btn btn--solid" href="{e(me['calendly'])}" target="_blank" rel="noopener">Book a 30-min call {ARROW}</a>
-    <a class="btn" href="{e(me['linkedin'])}" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn btn--solid" href="{e(me['calendly'])}" target="_blank" rel="noopener" data-umami-event="book-call" data-umami-event-position="footer">Book a 30-min call {ARROW}</a>
+    <a class="btn" href="{e(me['linkedin'])}" target="_blank" rel="noopener" data-umami-event="linkedin" data-umami-event-position="footer">LinkedIn</a>
   </div>
 </div></section>
 </main>
@@ -577,6 +585,7 @@ body{display:flex;flex-direction:column;overflow:hidden}
 
 HUB_JS = r"""
 (function(){
+try{localStorage.setItem("umami.disabled","1")}catch(e){}
 var root=document.documentElement;
 try{var t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}
 var tb=document.querySelector(".theme");
@@ -672,7 +681,7 @@ def artifact_variant(html):
     html = "<title>" + rest
     html = html.replace("</head>\n<body>\n", "").replace("</body>\n</html>\n", "")
     html = html.replace('<link rel="icon" href="../../assets/icons/Favicon.svg" type="image/svg+xml">\n', "")
-    html = html.replace('target="_blank" download>', 'target="_blank" rel="noopener">')
+    html = html.replace('target="_blank" download data-umami-event=', 'target="_blank" rel="noopener" data-umami-event=')
     html = html.replace('href="../../', 'href="' + LIVE)
     meta_robots = '<meta name="robots" content="noindex, nofollow">\n'
     return html.replace(meta_robots, "")

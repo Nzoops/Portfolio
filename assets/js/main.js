@@ -12,14 +12,19 @@
     try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
   });
 
-  // Owner-only link to the VC pages: visit ?me once to turn it on in this browser, ?me=off to turn it off
+  // Owner-only link to the VC pages: visit ?me once to turn it on in this browser, ?me=off to turn it off.
+  // The same flag keeps the owner's own visits out of Umami analytics (umami.disabled is read by the tracker).
   try {
     const me = new URLSearchParams(location.search).get("me");
     if (me !== null) {
-      if (me === "off") localStorage.removeItem("owner"); else localStorage.setItem("owner", "1");
+      if (me === "off") { localStorage.removeItem("owner"); localStorage.removeItem("umami.disabled"); }
+      else localStorage.setItem("owner", "1");
       history.replaceState(null, "", location.pathname + location.hash);
     }
-    if (localStorage.getItem("owner")) $(".nav__owner")?.removeAttribute("hidden");
+    if (localStorage.getItem("owner")) {
+      localStorage.setItem("umami.disabled", "1");
+      $(".nav__owner")?.removeAttribute("hidden");
+    }
   } catch (e) {}
 
   // Nav: active section + sliding pill

@@ -240,6 +240,7 @@ body{display:flex;flex-direction:column;overflow:hidden}
 </main>
 <script>
 (function(){
+try{localStorage.setItem("umami.disabled","1")}catch(e){}
 var root=document.documentElement;
 try{var t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}
 var tb=document.querySelector(".theme");
