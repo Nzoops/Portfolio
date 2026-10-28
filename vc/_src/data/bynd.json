@@ -1,0 +1,87 @@
+{
+  "slug": "bynd",
+  "name": "Bynd Venture Capital",
+  "website": "https://www.bynd.vc/en",
+  "portfolio_url": "https://www.bynd.vc/en/portfolio",
+  "facts": [
+    ["Since", "2010"],
+    ["Focus", "Iberian founders, B2B and B2C"],
+    ["Base", "Iberia"],
+    ["Portfolio", "44 companies listed"],
+    ["Recent bets", "AI agents, fintech, energy software"]
+  ],
+  "position": "Bynd is an Iberian venture-capital firm operating since 2010, backing Portuguese and Spanish founders with world-class ambition. Its recent investments lean heavily into AI-native B2B software, with agents for sales, KYB onboarding, SEO and operations, alongside fintech, vertical SaaS and energy-transition platforms.",
+  "lede": "I'm a Lisbon-based Product & RevOps manager. Your recent investments read like a list of things I've built or bought: AI for inbound B2B sales (Uptail), AI agents for KYB onboarding (Sax), AI search and SEO (Reach) and fraud prevention (Fraudio).",
+  "summary": "Bynd's newest companies are AI-native B2B products that sell to revenue, compliance and operations teams, and those are the teams I've worked in and for. I've shipped LLM features with evaluation sets and guardrails, scaled KYC and bot detection to 14M+ users at Pi Network, and set up pipeline, health-score and onboarding systems for a New York ad platform. Your sales, onboarding and fintech AI companies match that almost exactly, and I can work with them from Lisbon, in Portuguese, English or French.",
+  "reasons": [
+    {
+      "title": "KYC and KYB are my home ground",
+      "body": "I owned KYC at Pi Network, from about 1M to 14M+ users. Sax automates KYB onboarding, Permisso captures financial data and Fraudio fights payment fraud: same problems, same buyers."
+    },
+    {
+      "title": "I've been the buyer of your sales AI",
+      "body": "Uptail, Reach and AdCities sell into growth and revenue teams. I've built those teams' systems: pipeline stages, SLAs, health scores and ad-tech reporting."
+    },
+    {
+      "title": "AI agents, shipped with guardrails",
+      "body": "Kapia, Noxus, Artiso and Assimetria live or die on LLM quality. I've shipped LLM features with evaluation sets and production guardrails."
+    }
+  ],
+  "vc_manual": {"thesis": 5, "stage": 4, "platform": 3},
+  "vc_notes": {
+    "thesis": "AI-native B2B, fintech and vertical SaaS: the core of my track record.",
+    "stage": "Investment stage isn't stated; the portfolio is mostly seed to Series A.",
+    "platform": "A founder-resources hub; no talent or platform role found on the website."
+  },
+  "companies": [
+    {"name": "Uptail", "desc": "AI for inbound B2B sales.", "sector": "Sales tech · AI", "s": [5, 5, 5, 4, 5, 2], "why": "Inbound sales AI is RevOps turned into a product. I've built lead routing, SLAs and pipeline dashboards for GTM teams."},
+    {"name": "Sax", "desc": "AI agents for KYB onboarding.", "sector": "RegTech · AI", "s": [5, 5, 5, 4, 4, 2], "why": "KYB is KYC for companies: I scaled identity, document capture and fraud checks to 14M+ users at Pi Network."},
+    {"name": "Assimetria", "desc": "Self-optimising portfolio of AI-native B2B SaaS products.", "sector": "AI · B2B SaaS", "hq": "Portugal", "s": [3, 5, 5, 4, 4, 5], "why": "Many products, one operating system: repeatable discovery, LLM evals and a shared revenue stack."},
+    {"name": "Noxus", "desc": "AI for workflow automation.", "sector": "AI · Automation", "hq": "Portugal", "s": [3, 5, 5, 4, 4, 5], "why": "I build agentic workflows myself (n8n, Make, Claude); in production they need evals, guardrails and cost monitoring."},
+    {"name": "Reach", "desc": "AI agent for SEO and AI-search optimisation.", "sector": "MarTech · AI", "s": [5, 5, 5, 4, 3, 2], "why": "Martech plus agents: growth-team buyers I know, and LLM output quality I know how to measure."},
+    {"name": "Equall", "desc": "AI for law firms.", "sector": "AI · LegalTech", "hq": "Portugal", "s": [3, 5, 5, 3, 4, 4], "why": "LLM product for professionals: evals, guardrails and the trust work legal buyers demand."},
+    {"name": "Casafari", "url": "https://www.casafari.com", "desc": "Metasearch and data platform for real estate.", "sector": "PropTech · Data", "hq": "Portugal", "s": [3, 5, 4, 3, 4, 5], "why": "Data SaaS for agents with a subscription sales motion: ML data quality plus CS and pipeline tooling."},
+    {"name": "Fraudio", "desc": "Payment-fraud and AML solutions.", "sector": "FinTech · Fraud", "hq": "Netherlands", "s": [5, 5, 5, 3, 4, 1], "why": "Payment fraud and AML is the same family of problems as the KYC and bot detection I owned at Pi Network."},
+    {"name": "DefinedAI", "desc": "Clean, structured data for machine-learning models.", "sector": "AI/ML · Data", "hq": "Portugal, USA", "s": [3, 4, 5, 3, 3, 5], "why": "I've trained and evaluated ML models and run human-review loops in KYC, where label quality decides the product."},
+    {"name": "Artiso", "desc": "Agentic operating system for fashion brands.", "sector": "AI · Fashion", "s": [3, 5, 5, 4, 3, 2], "why": "Agents sold to brand and e-commerce teams: LLM evals and martech-adjacent buyers."},
+    {"name": "Kapia", "desc": "AI agents that automate operations from internal knowledge.", "sector": "AI · Automation", "s": [3, 5, 5, 4, 3, 2], "why": "Knowledge-grounded agents: retrieval quality, evals and guardrails."},
+    {"name": "Permisso (Bankflip)", "desc": "Data capture and processing for financial services.", "sector": "FinTech · Data", "s": [5, 5, 4, 3, 3, 2], "why": "Financial-data capture for onboarding is the KYC pipeline I owned at Pi Network."},
+    {"name": "Wio", "desc": "AI-native wealth-tech platform.", "sector": "FinTech · AI", "s": [4, 5, 5, 3, 3, 2], "why": "Fintech with AI at the core: regulated onboarding and model trust."},
+    {"name": "AdCities", "desc": "Management and measurement of outdoor advertising.", "sector": "AdTech · Location", "s": [5, 5, 3, 3, 4, 2], "why": "Out-of-home ads are ad tech plus location data: Vibe.co plus HEROW."},
+    {"name": "Relive", "desc": "Platform for the next generation of real-estate entrepreneurs.", "sector": "PropTech · B2B SaaS", "hq": "Portugal", "s": [3, 4, 2, 3, 4, 5], "why": "Agent-facing product with commissions and onboarding: marketplace product and CRM work."},
+    {"name": "TTR", "desc": "Transactional data on Latin American and Iberian markets.", "sector": "Data · Finance", "s": [3, 5, 3, 3, 4, 3], "why": "Subscription data product for finance professionals: renewals and CS health."},
+    {"name": "Tenoro", "desc": "Modular warehouse and transport management.", "sector": "Logistics SaaS", "s": [3, 5, 3, 3, 4, 2], "why": "Operations SaaS with location data and B2B onboarding."},
+    {"name": "Dealcar", "desc": "SaaS and fintech for car dealerships.", "sector": "Vertical SaaS · FinTech", "s": [4, 5, 2, 3, 4, 2], "why": "Vertical SaaS with embedded finance and an SMB sales motion."},
+    {"name": "Mogu", "desc": "SaaS and payments for travel agencies.", "sector": "Vertical SaaS · Payments", "s": [4, 5, 2, 3, 4, 2], "why": "Payments plus travel: fintech flows and my HoteFinder side project."},
+    {"name": "Reveni", "desc": "Reverse-logistics platform for e-commerce returns.", "sector": "E-commerce SaaS", "s": [3, 5, 3, 3, 4, 2], "why": "Merchant-facing SaaS with integrations: onboarding and account management."},
+    {"name": "Cori Clinical", "desc": "AI automation of clinical-trial back-office work.", "sector": "HealthTech · AI", "s": [1, 5, 5, 3, 3, 2], "why": "Document-heavy AI automation, close to KYC document processing; clinical buyers are new ground."},
+    {"name": "Pontio", "desc": "Financing platform for energy-transition products.", "sector": "FinTech · Energy", "s": [4, 5, 2, 3, 3, 2], "why": "Embedded financing with partner installers: fintech flows and B2B2C onboarding."},
+    {"name": "Didimo", "desc": "3D technology for virtual interactions.", "sector": "3D · AI", "hq": "Portugal", "s": [1, 4, 4, 3, 2, 5], "why": "Generative 3D tech; the AI product side fits, the graphics pipeline less."},
+    {"name": "Weezie", "desc": "Fibre-optic network management.", "sector": "Telecom software", "hq": "Portugal", "s": [1, 5, 2, 3, 3, 5], "why": "B2B SaaS for telecom operators: enterprise onboarding and CS."},
+    {"name": "Zenrows", "desc": "Web-scraping and data-automation toolkit.", "sector": "Developer tools · Data", "s": [2, 5, 3, 3, 3, 2], "why": "Developer API with PLG: activation funnels and usage-based pricing."},
+    {"name": "Nuuenergy", "desc": "Digital platform for heat-pump installers.", "sector": "Energy SaaS", "s": [2, 5, 2, 3, 4, 2], "why": "Vertical SaaS for installers: SMB onboarding and a sales motion."},
+    {"name": "Last App", "desc": "Restaurant-management software.", "sector": "Vertical SaaS", "s": [2, 5, 2, 3, 4, 2], "why": "SMB vertical SaaS with payments: onboarding and RevOps."},
+    {"name": "Luope", "desc": "Intelligent vending-machine management.", "sector": "Retail · IoT", "s": [2, 4, 3, 3, 3, 2], "why": "Operator SaaS with IoT data: B2B onboarding."},
+    {"name": "Tandem", "desc": "Social platform for language learners.", "sector": "EdTech · Consumer", "hq": "Germany", "s": [4, 5, 3, 2, 2, 1], "why": "Consumer edtech with community features, like the ones I shipped at Campus Coach."},
+    {"name": "Quixotic", "desc": "Software for smart utilities.", "sector": "Energy SaaS", "s": [1, 5, 3, 3, 3, 2], "why": "B2B SaaS for utilities: long enterprise cycles, less domain overlap."},
+    {"name": "Trebellar", "desc": "Smart-building and energy-transition software.", "sector": "PropTech · Energy", "s": [1, 5, 3, 3, 3, 2], "why": "B2B SaaS with IoT data: enterprise onboarding."},
+    {"name": "Amelia Virtual Care (Psious)", "desc": "Virtual reality for mental health.", "sector": "HealthTech · VR", "s": [1, 4, 3, 3, 3, 2], "why": "B2B SaaS sold to clinicians; less domain overlap."},
+    {"name": "Medical Port", "desc": "Integrated medical tourism in Portugal.", "sector": "Health · Travel", "hq": "Portugal", "s": [2, 3, 1, 3, 2, 5], "why": "Travel-booking funnels, close to my HoteFinder side project."},
+    {"name": "Manie", "desc": "Automatic energy-switching platform.", "sector": "Consumer · Energy", "s": [2, 4, 2, 3, 2, 2], "why": "Consumer switching funnel: onboarding and conversion work."},
+    {"name": "CircuitLeap", "desc": "AI for integrated-circuit design.", "sector": "Semiconductors · AI", "s": [1, 4, 4, 3, 2, 1], "why": "AI product side only; chip design is outside my experience."},
+    {"name": "Spacebackend", "desc": "Cloud platform for satellite and payload companies.", "sector": "SpaceTech · Cloud", "s": [1, 4, 2, 3, 2, 2], "why": "Developer-facing platform; space is outside my experience."},
+    {"name": "Ukio", "desc": "Curated apartments for mid-term stays.", "sector": "Travel · PropTech", "s": [2, 3, 2, 3, 2, 2], "why": "Booking funnels and guest experience; operations-heavy."},
+    {"name": "Pollen", "desc": "Battery swapping for delivery fleets and scooters.", "sector": "Mobility · Energy", "s": [1, 2, 2, 3, 2, 2], "why": "Fleet app and location data; hardware-heavy beyond that."},
+    {"name": "FastInov", "desc": "Medical device for early antimicrobial-susceptibility testing.", "sector": "MedTech", "hq": "Portugal", "s": [0, 1, 2, 3, 1, 5], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Zenvi", "desc": "Battery storage and energy optimisation for commercial sites.", "sector": "Energy", "s": [0, 2, 2, 3, 2, 2], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Rice", "desc": "Marketplace for authentic Asian food.", "sector": "Food e-commerce", "s": [1, 3, 1, 3, 1, 2], "why": "Little overlap beyond e-commerce funnels."},
+    {"name": "Incapto", "desc": "Automatic coffee machine with a bean subscription.", "sector": "Consumer hardware", "s": [1, 2, 1, 3, 1, 2], "why": "Little overlap beyond subscription funnels."},
+    {"name": "Impress", "desc": "Omnichannel invisible-aligners brand.", "sector": "Consumer health", "s": [0, 2, 1, 2, 2, 2], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Guud", "desc": "Hormonal-health and supplements platform.", "sector": "Consumer health", "s": [0, 2, 1, 3, 1, 2], "why": "No meaningful overlap; listed for completeness."}
+  ],
+  "method_notes": ["Bynd's site doesn't label each company's status or country, so every listed company is scored; where the HQ isn't known, Portugal presence is set to 2 (Iberian, location unverified)."],
+  "sources": [
+    ["Bynd portfolio", "https://www.bynd.vc/en/portfolio"],
+    ["About Bynd", "https://www.bynd.vc/en/about-us"]
+  ]
+}

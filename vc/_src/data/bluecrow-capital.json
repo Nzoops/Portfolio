@@ -1,0 +1,54 @@
+{
+  "slug": "bluecrow-capital",
+  "name": "BlueCrow Capital",
+  "website": "https://www.bluecrowcapital.com/en/",
+  "portfolio_url": "https://www.bluecrowcapital.com/en/portfolio/",
+  "facts": [
+    ["VC fund", "Next Tech Fund I"],
+    ["Focus", "Deep tech, AI, bioeconomy, energy transition"],
+    ["Base", "Lisbon"],
+    ["Eligibility", "R&D recognised by ANI"],
+    ["Also", "Private equity, real assets"]
+  ],
+  "position": "BlueCrow Capital is a Portuguese asset manager running venture-capital, private-equity and real-asset strategies. Its venture side, through the Next Tech Fund I, backs Portuguese and international founders whose R&D is recognised by the National Innovation Agency, across science-based technologies, food systems, bioeconomy and energy transition.",
+  "lede": "I'm a Lisbon-based Product & RevOps manager. Your venture portfolio is small and technical, and its software companies, from Leadzai and AgentifAI to Paynest and Bandora, are where I can help most: turning strong R&D into a product that sells.",
+  "summary": "BlueCrow backs R&D-intensive companies, and the gap after the R&D is almost always product and go-to-market: understanding buyers, shipping what they'll pay for, and building the sales and CS machine. I've spent nine years there, from AI-powered KYC at 14M-user scale to ad tech and customer operations in New York, and I'm comfortable working with engineers and scientists on specs and ML evaluation. Your AI, adtech and fintech companies match my background directly.",
+  "reasons": [
+    {
+      "title": "From R&D to revenue",
+      "body": "I write specs engineers respect, from SDKs at HEROW to ML features judged on F1, and run discovery with buyers. That's the bridge R&D-led companies need."
+    },
+    {
+      "title": "AI and adtech, shipped",
+      "body": "Leadzai and AgentifAI put AI in front of customers. I've shipped LLM features with evals and guardrails, and worked on ad tech from both the platform and publisher side."
+    },
+    {
+      "title": "Hands-on, from Lisbon",
+      "body": "I'm based in Lisbon and speak French, English and Portuguese. I can embed with a portfolio company for a project or join full-time."
+    }
+  ],
+  "vc_manual": {"thesis": 2, "stage": 3, "platform": 2},
+  "vc_notes": {
+    "thesis": "Deep tech, food and energy dominate; my overlap is with the AI and software companies.",
+    "stage": "Several development stages, including around the prototype phase.",
+    "platform": "No platform or talent function found on the website."
+  },
+  "companies": [
+    {"name": "Leadzai", "desc": "AI-driven customer acquisition that automates digital ads for businesses.", "sector": "AdTech · AI", "hq": "Portugal", "s": [5, 5, 5, 3, 4, 5], "why": "Performance ads plus AI for SMBs: ad tech from Vibe.co and Pi Network, and the SMB onboarding I've automated."},
+    {"name": "AgentifAI", "desc": "Conversational AI for banking and health call centres.", "sector": "AI · CX", "hq": "Portugal", "s": [4, 5, 5, 3, 4, 5], "why": "Conversational AI sold to banks: LLM evals and guardrails, plus a compliance-aware buyer I know from KYC."},
+    {"name": "Paynest", "desc": "Employee financial tools and flexible compensation.", "sector": "FinTech · HR", "hq": "Portugal", "s": [4, 5, 2, 3, 4, 5], "why": "B2B2C fintech sold to HR teams: compliant onboarding plus a sales motion that needs RevOps."},
+    {"name": "Bandora", "desc": "AI that helps buildings cut energy use and manage resources.", "sector": "Energy · AI", "hq": "Portugal", "s": [2, 5, 4, 3, 4, 5], "why": "AI SaaS expanding to US chains: ML product work and a multi-site B2B sales motion."},
+    {"name": "Tonic Easy Medical", "desc": "Mobile app for doctors' clinical workflows.", "sector": "HealthTech · SaaS", "hq": "Portugal", "s": [2, 5, 3, 3, 3, 5], "why": "Daily-use clinical app: mobile product discovery and B2B hospital sales."},
+    {"name": "KIT-AR", "desc": "Augmented-reality support for factory workers.", "sector": "Industrial · AR", "hq": "Portugal", "s": [1, 4, 3, 3, 3, 5], "why": "Enterprise roll-out and onboarding; less domain overlap."},
+    {"name": "SilicoLife", "desc": "Computational biology for designing microbial production strains.", "sector": "BioTech · Software", "hq": "Portugal", "s": [0, 2, 4, 3, 1, 5], "why": "Algorithmic R&D platform; the biotech domain is outside my track record."},
+    {"name": "Maven Pet", "desc": "Continuous health monitoring for dogs and cats.", "sector": "Pet health · IoT", "s": [1, 3, 4, 3, 2, 1], "why": "Consumer IoT app and data product; hardware is outside my experience."},
+    {"name": "Ophiomics", "desc": "Precision-medicine biotech developing molecular diagnostics.", "sector": "BioTech", "hq": "Portugal", "s": [0, 1, 2, 3, 1, 5], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Oceano Fresco", "desc": "Sustainable clam farming.", "sector": "Aquaculture", "hq": "Portugal", "s": [0, 0, 0, 2, 0, 5], "why": "No meaningful overlap; listed for completeness."}
+  ],
+  "method_notes": ["BlueCrow's portfolio page mixes venture, private-equity and real-asset holdings without descriptions. Scored here: the venture and technology holdings I could identify. Not scored for lack of a public description: Q-Better, Senseidata, BTOCNET, Flowbotic Mobile Systems."],
+  "sources": [
+    ["BlueCrow portfolio", "https://www.bluecrowcapital.com/en/portfolio/"],
+    ["BlueCrow venture capital", "https://www.bluecrowcapital.com/en/areas-of-activity/venture-capital/56/"],
+    ["Bandora round led by BlueCrow (Techleap)", "https://finder.techleap.nl/news/feed/bandora-systems-secures-1-5m-funding"]
+  ]
+}

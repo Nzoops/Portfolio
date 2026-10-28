@@ -1,0 +1,95 @@
+{
+  "slug": "iberis-capital",
+  "name": "Iberis Capital",
+  "website": "https://iberiscapital.com/",
+  "portfolio_url": "https://iberiscapital.com/venture-capital/",
+  "facts": [
+    ["Stage", "Pre-seed to Series E"],
+    ["Focus", "Broad tech: fintech, adtech, AI, health, space"],
+    ["Base", "Lisbon and Porto"],
+    ["Portfolio", "54 listed, 52 active"],
+    ["Support", "Strategy, operations, team building"]
+  ],
+  "position": "Iberis Capital is a Portuguese venture-capital and private-equity manager with offices in Lisbon and Porto. It backs founders solving big problems through technology at every stage from pre-seed to Series E, and supports them on strategy, processes and team building as well as capital and network.",
+  "lede": "I'm a Lisbon-based Product & RevOps manager. Your portfolio covers almost every field I've worked in: fraud and identity (Feedzai, LOQR, Fraudio), ad tech (Mobrand, Primetag, Kevel, Frameplay) and conversational AI (Agentifai). That's rare, and it's why I'm writing to you first.",
+  "summary": "Iberis supports its founders on strategy, processes and team building, which is precisely where a senior Product & RevOps operator plugs in. I've spent nine years in tech on B2B and B2C products: KYC and bot detection at 14M-user scale, a geofencing SDK for mobile apps, and customer and revenue operations for a New York ad platform. With fintech, ad tech and AI companies across every stage of your portfolio, I can help one company for a few months or several over time.",
+  "reasons": [
+    {
+      "title": "Fraud, identity and embedded finance",
+      "body": "I owned KYC at Pi Network, scaling to 14M+ users with bot detection and silent bans. Feedzai, LOQR, Fraudio, Habit and Paynest live in that world."
+    },
+    {
+      "title": "Ad tech from both sides",
+      "body": "I've worked on an ad platform (Vibe.co) and on the publisher side, helping start Pi Network's ad network. That's Mobrand, Primetag, Kevel, Frameplay and Mediaprobe."
+    },
+    {
+      "title": "The team-building part of your support",
+      "body": "Iberis already helps founders with processes and team building. I can be the senior product or RevOps person you place with a founder, freelance or full-time, from Lisbon."
+    }
+  ],
+  "vc_manual": {"thesis": 4, "stage": 5, "platform": 4},
+  "vc_notes": {
+    "thesis": "Broad tech with fintech, ad tech and AI well represented, all central to my track record.",
+    "stage": "Pre-seed to Series E: every stage where product and RevOps work matters.",
+    "platform": "Hands-on support on strategy, processes and team building."
+  },
+  "companies": [
+    {"name": "Feedzai", "url": "https://feedzai.com", "desc": "AI-based fraud and financial-crime detection for banks and payment providers.", "sector": "FinTech · Fraud · AI", "hq": "Portugal, USA", "s": [5, 5, 5, 2, 4, 5], "why": "Fraud detection is what I built around KYC at Pi Network, with ML features judged on F1 and silent bans for bots."},
+    {"name": "Agentifai", "desc": "Conversational AI for banking and health call centres.", "sector": "AI · CX", "hq": "Portugal", "s": [4, 5, 5, 3, 4, 5], "why": "Conversational AI sold to banks: LLM evals and guardrails, plus a compliance-aware buyer I know from KYC."},
+    {"name": "Mobrand", "desc": "Mobile ad-tech targeting.", "sector": "AdTech · Mobile", "hq": "Portugal", "s": [5, 5, 4, 3, 3, 5], "why": "Mobile ad tech is home turf: ad platforms at Vibe.co, Pi Network's ad network, and HEROW's mobile SDK."},
+    {"name": "Primetag", "desc": "Influencer-marketing software.", "sector": "MarTech · SaaS", "hq": "Portugal", "s": [5, 5, 3, 3, 4, 5], "why": "Martech and ad tech are home turf, and an agency-facing SaaS needs the CS tiering and onboarding I built at Vibe.co."},
+    {"name": "Data4Deals", "desc": "Targeted campaigns built on bank-transaction data.", "sector": "FinTech · MarTech", "hq": "Portugal", "s": [5, 5, 4, 3, 3, 5], "why": "Card-linked marketing sits between my two domains: fintech data and ad tech."},
+    {"name": "LOQR", "url": "https://loqr.com", "desc": "Digital-branch and customer-journey platform for banks.", "sector": "FinTech · RegTech", "hq": "Portugal", "s": [5, 5, 4, 3, 3, 5], "why": "Bank onboarding and compliance is the product I scaled at Pi Network, from about 1M to 14M+ verified users."},
+    {"name": "Habit", "desc": "Embedded insurance distribution.", "sector": "InsurTech", "hq": "Portugal", "s": [4, 5, 3, 3, 4, 5], "why": "Embedded finance with partner integrations and compliant onboarding, sold B2B2C."},
+    {"name": "Student Finance", "desc": "Financing for career mobility and upskilling.", "sector": "FinTech · EdTech", "hq": "Portugal", "s": [5, 5, 3, 3, 3, 5], "why": "Fintech meets edtech: risk and identity checks plus learner onboarding funnels."},
+    {"name": "Unbabel", "desc": "AI-assisted translation combining machine tools with human translators.", "sector": "AI · Language", "hq": "Portugal", "s": [3, 5, 5, 2, 4, 5], "why": "AI plus human-in-the-loop quality, sold to CX teams: the review loops I ran in KYC, and CS ops from Vibe.co."},
+    {"name": "Fraudio", "desc": "SaaS for payment fraud and financial crime.", "sector": "FinTech · Fraud", "hq": "Netherlands", "s": [5, 5, 5, 3, 4, 1], "why": "Payment fraud and AML is the same family of problems as the KYC and bot detection I owned at Pi Network."},
+    {"name": "Paynest", "desc": "Flexible compensation packages and employee financial tools.", "sector": "FinTech · HR", "hq": "Portugal", "s": [4, 5, 2, 3, 4, 5], "why": "B2B2C fintech sold to HR teams: compliant onboarding plus a sales motion that needs RevOps."},
+    {"name": "Defined.ai", "desc": "Marketplace for AI data, tools and models.", "sector": "AI/ML · Data", "hq": "Portugal, USA", "s": [3, 4, 5, 3, 3, 5], "why": "I've trained and evaluated ML models and run human-review loops in KYC, where label quality decides the product."},
+    {"name": "Jscrambler", "desc": "Client-side security for web applications.", "sector": "Cybersecurity", "hq": "Portugal", "s": [3, 5, 3, 3, 4, 5], "why": "Security sold to e-commerce and fintech, with an enterprise sales motion; I oversaw pentesting and fraud work at Pi Network."},
+    {"name": "Sensei", "desc": "Checkout-free stores powered by computer vision.", "sector": "Retail tech · AI", "hq": "Portugal", "s": [3, 4, 5, 3, 3, 5], "why": "Computer vision in production, with retail partners to onboard: ML evaluation and B2B roll-out."},
+    {"name": "Mediaprobe", "desc": "Measures audience engagement with biometric sensors.", "sector": "MarTech · Research", "hq": "Portugal", "s": [4, 4, 4, 3, 3, 5], "why": "Audience measurement for advertisers: ad tech context and data-product work."},
+    {"name": "Engine.AI", "desc": "AI analytics for capital markets.", "sector": "FinTech · AI", "s": [4, 5, 5, 3, 3, 3], "why": "AI product for finance professionals: model evaluation and trust."},
+    {"name": "NeuralShift", "desc": "Custom AI products for business automation.", "sector": "AI · Automation", "hq": "Portugal", "s": [3, 4, 5, 3, 3, 5], "why": "Agentic automation in production: evals, guardrails and cost monitoring."},
+    {"name": "Kevel", "desc": "APIs for building custom ad platforms.", "sector": "AdTech · API", "hq": "USA", "s": [5, 5, 3, 3, 4, 1], "why": "Ad-server infrastructure: I've worked on ad platforms from both the platform and the publisher side."},
+    {"name": "GOFACT", "desc": "Financial and document management for companies and individuals.", "sector": "FinTech · Documents", "hq": "Portugal", "s": [4, 5, 3, 2, 3, 5], "why": "Document capture and finance workflows: OCR experience from KYC."},
+    {"name": "UBIRIDER", "desc": "Digital transport operations and payments.", "sector": "Mobility · Payments", "hq": "Portugal", "s": [4, 5, 2, 3, 3, 5], "why": "Payments plus location-based transport: fintech flows and HEROW's location work."},
+    {"name": "ZeroPact", "desc": "AI calculation of product carbon footprints.", "sector": "Climate · AI", "hq": "Portugal", "s": [2, 5, 4, 3, 3, 5], "why": "Data-heavy B2B SaaS at pre-seed: first product and first sales motion."},
+    {"name": "Sword Health", "url": "https://swordhealth.com", "desc": "Virtual physical therapy with AI feedback.", "sector": "Digital health · AI", "hq": "Portugal, USA", "s": [2, 5, 5, 2, 3, 5], "why": "AI-first product at scale from Porto: ML evaluation and consumer onboarding funnels."},
+    {"name": "Bolttech", "desc": "Embedded insurance distribution through a single API.", "sector": "InsurTech", "hq": "Singapore", "s": [4, 5, 3, 2, 4, 1], "why": "Embedded insurance with partner integrations: fintech and B2B2C onboarding."},
+    {"name": "Codacy", "url": "https://www.codacy.com", "desc": "Automated code review to catch issues and bugs.", "sector": "Developer tools", "hq": "Portugal", "s": [1, 5, 3, 3, 4, 5], "why": "PLG-to-sales SaaS from Lisbon: the product-qualified-lead hand-off and CS tooling."},
+    {"name": "FRVR", "desc": "Game distribution outside the app stores.", "sector": "Gaming · AdTech", "hq": "Portugal, UK", "s": [3, 5, 4, 3, 2, 4], "why": "Web games monetised by ads: ad tech from both sides plus AI product work."},
+    {"name": "Tonic App", "desc": "Mobile app for clinicians' daily workflows.", "sector": "HealthTech · SaaS", "hq": "Portugal", "s": [2, 5, 3, 3, 3, 5], "why": "Daily-use clinical app: mobile product discovery and B2B hospital sales."},
+    {"name": "Reckon.ai", "desc": "Turns dispensing cabinets into smart cabinets.", "sector": "Retail · IoT", "hq": "Portugal", "s": [2, 4, 4, 3, 3, 5], "why": "Computer vision plus SaaS for operators: ML evaluation and B2B onboarding."},
+    {"name": "Sensefinity", "desc": "AI and blockchain supply-chain platform.", "sector": "Supply chain · AI", "hq": "Portugal", "s": [3, 4, 3, 3, 3, 5], "why": "Blockchain and tracking data: crypto experience plus location and IoT data."},
+    {"name": "SIX FLOOR", "desc": "Video analysis that detects key moments in broadcasts.", "sector": "Media tech · AI", "hq": "Portugal", "s": [2, 4, 5, 3, 2, 5], "why": "Computer-vision product for media: ML evaluation and broadcaster sales."},
+    {"name": "Frameplay", "desc": "In-game advertising integrated into 3D environments.", "sector": "AdTech · Gaming", "s": [5, 5, 3, 3, 3, 1], "why": "Intrinsic in-game ads: ad-platform experience from Vibe.co's CTV ads."},
+    {"name": "Bizay", "desc": "Marketplace for customised printed marketing products for SMEs.", "sector": "Marketplace · MarTech", "hq": "Portugal", "s": [3, 4, 2, 3, 3, 5], "why": "SMB marketing marketplace: martech background and SMB activation."},
+    {"name": "Tryp", "desc": "Discounted travel itineraries bundling transport and lodging.", "sector": "Travel", "hq": "Portugal", "s": [3, 4, 3, 3, 2, 5], "why": "Travel search and bundling: close to my HoteFinder side project, with B2C funnels."},
+    {"name": "Hope Care", "desc": "Remote patient monitoring for hospital-at-home care.", "sector": "HealthTech", "hq": "Portugal", "s": [1, 5, 3, 3, 3, 5], "why": "Hospital-facing SaaS with devices: product discovery and enterprise CS."},
+    {"name": "PULSELY", "desc": "DE&I analytics for workplaces.", "sector": "HR Tech · Analytics", "hq": "Portugal", "s": [1, 5, 3, 3, 3, 5], "why": "B2B analytics SaaS sold to HR: onboarding and a sales motion."},
+    {"name": "Inductiva", "desc": "Single-API access to computer simulations.", "sector": "Scientific computing", "hq": "Portugal", "s": [1, 5, 4, 3, 2, 5], "why": "Developer API product: technical specs and PLG funnels."},
+    {"name": "KIT-AR", "desc": "Augmented-reality support for factory workers.", "sector": "Industrial · AR", "hq": "Portugal", "s": [1, 4, 3, 3, 3, 5], "why": "Enterprise roll-out and onboarding; less domain overlap."},
+    {"name": "Musiversal", "desc": "Platform for music creation and production.", "sector": "Creator marketplace", "hq": "Portugal", "s": [2, 4, 2, 3, 2, 5], "why": "Creator marketplace: supply onboarding and funnel work."},
+    {"name": "STONIFY", "desc": "Digital platform for the natural-stone industry.", "sector": "Industrial SaaS", "hq": "Portugal", "s": [1, 4, 2, 3, 3, 5], "why": "Vertical B2B platform at pre-seed: first product and first sales motion."},
+    {"name": "Barkyn", "desc": "Personalised dog-nutrition bundles.", "sector": "D2C subscription", "hq": "Portugal", "s": [2, 3, 2, 3, 2, 5], "why": "Subscription retention, onboarding and personalisation."},
+    {"name": "Sound Particles", "desc": "Particle-based sound-design software.", "sector": "Creative software", "hq": "Portugal", "s": [1, 4, 2, 3, 2, 5], "why": "Pro-tool SaaS: pricing, onboarding and licensing, less domain overlap."},
+    {"name": "INFOS", "desc": "Vertical IT and management solutions for Portuguese industries.", "sector": "IT services", "hq": "Portugal", "s": [1, 3, 2, 2, 3, 5], "why": "Software services with vertical products: some B2B overlap."},
+    {"name": "Maven Pet", "desc": "Continuous health monitoring for dogs and cats.", "sector": "Pet health · IoT", "s": [1, 3, 4, 3, 2, 1], "why": "Consumer IoT app and data product; hardware is outside my experience."},
+    {"name": "TEKEVER", "desc": "AI-equipped drones for maritime surveillance.", "sector": "Defence · Drones", "hq": "Portugal", "s": [0, 1, 4, 2, 1, 5], "why": "Limited overlap beyond AI; defence hardware is outside my experience."},
+    {"name": "Open Cosmos", "desc": "Satellite missions and LEO connectivity for governments and businesses.", "sector": "SpaceTech", "hq": "UK", "s": [1, 2, 3, 2, 2, 3], "why": "Space data platform side only."},
+    {"name": "Antoniq", "desc": "Autonomous robot for greenhouse spraying and monitoring.", "sector": "AgriTech · Robotics", "hq": "Portugal", "s": [0, 1, 3, 3, 1, 5], "why": "Robotics is outside my experience."},
+    {"name": "SiPhox", "desc": "At-home blood testing on silicon photonics.", "sector": "HealthTech", "hq": "USA", "s": [0, 2, 2, 3, 2, 1], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Inflammatix", "desc": "Diagnostic tests for acute infections.", "sector": "Diagnostics", "hq": "USA", "s": [0, 1, 3, 2, 2, 1], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Carbocode", "desc": "Human gangliosides produced through glycotechnology.", "sector": "BioTech", "hq": "Portugal", "s": [0, 0, 1, 3, 0, 5], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "CorPower Ocean", "desc": "Wave-energy generation.", "sector": "Clean energy", "s": [0, 0, 1, 3, 1, 4], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "D-ORBIT", "desc": "Satellite transport and deployment with in-orbit services.", "sector": "SpaceTech", "s": [0, 1, 1, 2, 1, 3], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Tecmafoods", "desc": "Insect production for feed and food.", "sector": "Food · AgriTech", "hq": "Portugal", "s": [0, 0, 0, 3, 0, 5], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Avextra", "desc": "Medical-cannabis production and sales.", "sector": "Healthcare", "s": [0, 0, 0, 3, 1, 3], "why": "No meaningful overlap; listed for completeness."}
+  ],
+  "inactive": ["Connected (divested), Probely (acquired)"],
+  "sources": [
+    ["Iberis Capital venture capital", "https://iberiscapital.com/venture-capital/"],
+    ["About Iberis", "https://iberiscapital.com/about-iberis/"]
+  ]
+}

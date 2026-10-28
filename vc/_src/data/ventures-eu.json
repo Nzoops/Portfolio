@@ -1,0 +1,109 @@
+{
+  "slug": "ventures-eu",
+  "name": "Ventures.eu",
+  "website": "https://ventures.eu/",
+  "portfolio_url": "https://ventures.eu/our-approach/",
+  "facts": [
+    [
+      "Stage",
+      "Pre-seed, seed, Series A"
+    ],
+    [
+      "Focus",
+      "Deep tech & AI, climate & agri, ICT"
+    ],
+    [
+      "Base",
+      "Lisbon"
+    ],
+    [
+      "Ticket",
+      "€250K to €2M"
+    ],
+    [
+      "Platform",
+      "Dealflow.eu, corporate pilots, EU grants"
+    ]
+  ],
+  "position": "Ventures.eu is a Lisbon-based venture firm that picks standout European startups from Dealflow.eu's pipeline of 24,000+ mapped tech companies. Fund I invests from pre-seed to Series A in deep tech and AI, climate and agri-tech, and ICT including fintech and cybersecurity, and backs founders with corporate pilots, EU grants and operational support through a dedicated platform team.",
+  "lede": "I'm a Lisbon-based Product & RevOps manager. Your edge is commercial validation, matching European deep-tech and AI startups with corporates, and that's exactly where founders need a product and revenue operator: turning pilots into paying customers.",
+  "summary": "Ventures.eu helps founders prove their technology with corporate partners, and the step after a successful pilot is where many stall: packaging the product, pricing it and building the sales and CS motion to repeat it. I've spent nine years on that step, as a PM on data- and AI-heavy products and as the person wiring the CRM and onboarding behind a New York ad platform. Fund I is young, so beyond the companies named so far, I'd be glad to be an operator your platform team can introduce as the portfolio grows.",
+  "reasons": [
+    {
+      "title": "From pilot to repeatable revenue",
+      "body": "Corporate pilots are your platform's strength. I build what comes next: discovery with the buyer, a product they can roll out, and pipeline and CS tooling to repeat the sale."
+    },
+    {
+      "title": "AI and data products, shipped",
+      "body": "I've shipped LLM features with evaluation sets and guardrails, and ML features judged on F1. Spot Ship's AI chartering is that kind of product."
+    },
+    {
+      "title": "An operator for your platform team",
+      "body": "You have a Head of Platform and operational support in IT, legal and finance. Product and RevOps would complete that offer, and I'm based in Lisbon."
+    }
+  ],
+  "vc_manual": {
+    "thesis": 3,
+    "stage": 4,
+    "platform": 5
+  },
+  "vc_notes": {
+    "thesis": "AI and ICT (fintech, cybersecurity) overlap well; deep-tech hardware and climate less.",
+    "stage": "Pre-seed to Series A: first product and first revenue engine.",
+    "platform": "Head of Platform, corporate matchmaking for 300+ startups a year, EU-grant support."
+  },
+  "companies": [
+    {
+      "name": "Bitsight",
+      "desc": "Cyber-risk ratings and third-party risk management.",
+      "sector": "Cybersecurity · Data",
+      "hq": "USA, Portugal",
+      "s": [
+        3,
+        5,
+        4,
+        2,
+        5,
+        5
+      ],
+      "why": "Security data sold through a large enterprise sales and CS organisation with a big Lisbon team: RevOps and data-product work."
+    },
+    {
+      "name": "Spot Ship",
+      "desc": "SaaS that uses AI to cut ship chartering from days to hours for brokers, charterers and owners.",
+      "sector": "Maritime SaaS · AI",
+      "hq": "UK",
+      "s": [
+        3,
+        5,
+        5,
+        4,
+        4,
+        1
+      ],
+      "why": "AI marketplace SaaS for brokers: LLM and ML evaluation plus a broker-facing sales motion; Fund I's first deal, in January 2026."
+    }
+  ],
+  "method_notes": [
+    "Fund I is recent; the companies scored are the ones Ventures.eu names publicly. Not scored for lack of a description: Marketsite."
+  ],
+  "sources": [
+    [
+      "Ventures.eu",
+      "https://ventures.eu/"
+    ],
+    [
+      "Our approach",
+      "https://ventures.eu/our-approach/"
+    ],
+    [
+      "About Ventures.eu",
+      "https://ventures.eu/about-us/"
+    ],
+    [
+      "Spot Ship round",
+      "https://ventures.eu/ventures-eu-leads-the-1m-round-in-spot-ship-marking-first-fund-i-deal-to-modernise-global-ship-chartering/"
+    ]
+  ],
+  "matches_intro": "Fund I is young: the 2 companies Ventures.eu names publicly"
+}

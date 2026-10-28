@@ -1,0 +1,54 @@
+{
+  "name": "Enzo Garry",
+  "role": "Product & RevOps Manager",
+  "base": "Lisbon",
+  "languages": "FR · EN · PT",
+  "calendly": "https://calendly.com/garry-enzo-m/30min",
+  "linkedin": "https://www.linkedin.com/in/enzo-garry/",
+  "portfolio": "../../",
+  "resume": "../../assets/downloads/Enzo-Resume.pdf",
+  "stats": [
+    ["9+", "years in tech, since 2017"],
+    ["10M+", "users on products I built"],
+    ["7", "companies, from MarTech to FinTech"]
+  ],
+  "proof": [
+    {
+      "org": "Pi Network",
+      "role": "Product Manager, KYC · 2022–2024",
+      "body": "Scaled an AI-powered KYC flow from about 1M to 14M+ users: ID capture, liveness, human review, bot detection with silent bans."
+    },
+    {
+      "org": "Vibe.co",
+      "role": "Customer Success Ops · New York · 2024–2025",
+      "body": "Redesigned customer tiering and onboarding for a CTV ad platform, built at-risk alerts and growth reporting on Planhat, BigQuery and Looker."
+    },
+    {
+      "org": "HEROW",
+      "role": "Customer Success, then PM · 2019–2021",
+      "body": "Geofencing and location SDK for iOS and Android: specs, roadmap, analytics and client integrations."
+    },
+    {
+      "org": "Freelance",
+      "role": "Campus Coach, Hop-Place, Coverage.tech · 2025–2026",
+      "body": "Shipped content and community features, automated onboarding with Intercom, designed the UX of a new product vertical."
+    }
+  ],
+  "engagements": [
+    {
+      "title": "Fractional or interim product lead",
+      "body": "Part-time or interim cover to structure discovery, roadmap and delivery, or to bridge a Head of Product gap.",
+      "fit": "Seed to Series B"
+    },
+    {
+      "title": "RevOps project",
+      "body": "Wire the revenue stack: pipeline stages, SLAs, health scores, dashboards and onboarding automation on HubSpot, Planhat or Intercom.",
+      "fit": "Sales- or CS-led SaaS"
+    },
+    {
+      "title": "Full-time PM or Senior PM",
+      "body": "Own a product area or a squad end to end, on-site or hybrid in Lisbon.",
+      "fit": "Series A to C"
+    }
+  ]
+}

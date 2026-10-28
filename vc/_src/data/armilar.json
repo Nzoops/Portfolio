@@ -1,0 +1,57 @@
+{
+  "slug": "armilar",
+  "name": "Armilar Venture Partners",
+  "website": "https://www.armilar.com/",
+  "portfolio_url": "https://v2.armilar.com/",
+  "facts": [
+    ["Stage", "Early stage"],
+    ["Focus", "Deep tech: enterprise software, fintech, AI, health"],
+    ["Base", "Lisbon"],
+    ["Portfolio", "15 current companies"],
+    ["Track record", "Early backer of OutSystems and Feedzai"]
+  ],
+  "position": "Armilar has been a deep-tech venture investor since 1999, backing teams that use technology to tackle large problems, and was an early investor in OutSystems and Feedzai. Its current portfolio is concentrated in enterprise software, fintech, AI and digital health, most of it built out of Portugal.",
+  "lede": "I'm a Lisbon-based Product & RevOps manager. Your portfolio reads like my CV in reverse: Amplemarket sells to revenue teams like the ones I've built for, Feedzai fights the fraud I fought at Pi Network, and Coverflex and CASAFARI run the B2B motions I work on.",
+  "summary": "Armilar backs technical founders early and helps them become global software companies. The gap I fill is the one that opens right after the first technical wins: product discovery with real customers, a roadmap tied to metrics, and a sales and CS engine that can scale. I've done both for nine years, from AI-powered KYC at 14M-user scale to revenue operations at a New York ad platform, and nearly all of your current companies sell B2B software, mostly out of Portugal.",
+  "reasons": [
+    {
+      "title": "Fraud and identity at scale",
+      "body": "I owned KYC at Pi Network, from about 1M to 14M+ users, including bot detection and silent bans. Feedzai and brighter AI work on the same family of problems."
+    },
+    {
+      "title": "I've been Amplemarket's customer",
+      "body": "I build pipeline stages, SLAs, health scores and dashboards for sales and CS teams. That's the buyer of Amplemarket, and the internal need at Coverflex, CASAFARI and knok."
+    },
+    {
+      "title": "Technical enough for deep tech",
+      "body": "I've written specs for SDKs (HEROW), trained and evaluated ML models, and studied full-stack development. I can translate between your engineers and their customers."
+    }
+  ],
+  "vc_manual": {"thesis": 4, "stage": 4, "platform": 3},
+  "vc_notes": {
+    "thesis": "Enterprise software, fintech and AI overlap strongly with my track record.",
+    "stage": "Early stage: the point where a first senior PM or RevOps lead matters most.",
+    "platform": "Experienced partners; no dedicated talent or platform role found on the website."
+  },
+  "companies": [
+    {"name": "Amplemarket", "url": "https://www.amplemarket.com", "desc": "A new generation of AI sales tools for prospecting and outreach.", "sector": "Sales tech · AI", "hq": "Portugal, USA", "s": [5, 5, 5, 3, 5, 5], "why": "Sales tech is RevOps as a product. I've been the internal buyer: pipeline, SLAs and dashboards for GTM teams, plus LLM features with evals."},
+    {"name": "Feedzai", "url": "https://feedzai.com", "desc": "AI technology for fraud prevention and the future of commerce.", "sector": "FinTech · Fraud · AI", "hq": "Portugal, USA", "s": [5, 5, 5, 2, 4, 5], "why": "Fraud detection is what I built around KYC at Pi Network, with ML features judged on F1 and silent bans for bots."},
+    {"name": "CASAFARI", "url": "https://www.casafari.com", "desc": "Real-estate data platform that cuts information gaps for property professionals.", "sector": "PropTech · Data", "hq": "Portugal", "s": [3, 5, 4, 3, 4, 5], "why": "Data SaaS for agents with a subscription sales motion: ML data quality plus CS and pipeline tooling."},
+    {"name": "Coverflex", "url": "https://www.coverflex.com", "desc": "Platform reimagining how employee compensation and benefits work.", "sector": "B2B FinTech · HR", "hq": "Portugal", "s": [4, 5, 2, 3, 5, 5], "why": "B2B fintech sold to HR teams: compliant onboarding plus a sales and CS motion that needs RevOps."},
+    {"name": "OutSystems", "url": "https://www.outsystems.com", "desc": "Low-code platform changing how enterprise software is built and delivered.", "sector": "Enterprise software", "hq": "Portugal, USA", "s": [2, 5, 4, 2, 4, 5], "why": "Enterprise SaaS with AI features and big Lisbon teams: product discovery and customer-success operations."},
+    {"name": "Rows", "desc": "A spreadsheet with built-in integrations, AI and sharing.", "sector": "Productivity · AI", "hq": "Portugal, Germany", "s": [2, 5, 4, 3, 3, 5], "why": "PLG product with AI features: activation funnels and LLM evaluation."},
+    {"name": "knok", "desc": "Healthcare delivered to people anywhere, anytime.", "sector": "Digital health", "hq": "Portugal", "s": [2, 5, 3, 3, 4, 5], "why": "B2B2C health platform sold to insurers and employers: partner onboarding and RevOps."},
+    {"name": "Codacy", "url": "https://www.codacy.com", "desc": "Helps developers ship higher-quality code faster.", "sector": "Developer tools", "hq": "Portugal", "s": [1, 5, 3, 3, 4, 5], "why": "PLG-to-sales SaaS from Lisbon: the product-qualified-lead hand-off and CS tooling."},
+    {"name": "TonicApp", "desc": "Improves the efficiency of doctors' clinical work.", "sector": "HealthTech · SaaS", "hq": "Portugal", "s": [2, 5, 3, 3, 3, 5], "why": "Daily-use clinical app: mobile product discovery and B2B hospital sales."},
+    {"name": "brighter AI", "desc": "Protects personal identity in public spaces with image anonymisation.", "sector": "Privacy · Computer vision", "hq": "Germany", "s": [3, 5, 5, 3, 3, 1], "why": "Identity and computer vision: close to the liveness and ID-capture work in KYC."},
+    {"name": "Trendtracker", "desc": "AI-driven platform for strategic intelligence.", "sector": "AI · Market intelligence", "s": [3, 5, 5, 3, 3, 1], "why": "AI insights product for strategy teams: LLM evals and B2B onboarding."},
+    {"name": "Veeton", "desc": "Redefines visual creation for fashion.", "sector": "Fashion tech · AI", "s": [2, 5, 4, 3, 3, 3], "why": "Creative AI sold to brand teams: model quality and martech buyers."},
+    {"name": "Didimo", "desc": "Automates the generation of digital humans.", "sector": "3D · AI", "hq": "Portugal", "s": [1, 4, 4, 3, 2, 5], "why": "Generative 3D tech; the AI product side fits, the graphics pipeline less."},
+    {"name": "Coreflux", "desc": "Faster data connectivity for the Internet of Things.", "sector": "IoT · Industrial data", "s": [2, 4, 2, 3, 2, 3], "why": "Developer-facing IoT platform: SDK product work like HEROW's."},
+    {"name": "Codavel", "desc": "Pushes mobile and wireless communication speeds to their limits.", "sector": "Networking · SDK", "hq": "Portugal", "s": [1, 4, 2, 3, 2, 5], "why": "Mobile SDK sold to app companies: I was PM on HEROW's iOS and Android SDK."}
+  ],
+  "sources": [
+    ["Armilar Venture Partners", "https://v2.armilar.com/"],
+    ["brighter AI Series A (Armilar)", "https://www.armilar.com/articles/brighter-ai-raises-a-series-a-round-led-by-armilar"]
+  ]
+}

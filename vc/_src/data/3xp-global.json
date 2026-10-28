@@ -1,0 +1,68 @@
+{
+  "slug": "3xp-global",
+  "name": "3xP Global",
+  "website": "https://www.3xpglobal.eu/",
+  "portfolio_url": "https://www.3xpglobal.eu/portfolio",
+  "facts": [
+    ["Verticals", "Health & life sciences, impact, tailor-made"],
+    ["Approach", "Hands-on, deeply involved"],
+    ["Base", "Lisbon"],
+    ["Portfolio", "26 companies, 25 active"],
+    ["Funds", "Impact, Health, SIF, Responsible AI"]
+  ],
+  "position": "3xP Global is a Lisbon-based investor that gets deeply involved in the companies it backs, combining ESG principles with long-term value creation. It invests through an Impact Innovation Fund, a Health Innovation Fund, the SIF Innovation Fund and a Responsible AI Fund, almost entirely in Portuguese companies.",
+  "lede": "I'm a Lisbon-based Product & RevOps manager. Your hands-on model is exactly how I like to work, and several of your companies, from Biometrid and Leadzai to Granter and Intuitivo, sit right on top of what I've built.",
+  "summary": "3xP Global doesn't just invest, it gets involved, and the involvement that pays off fastest in an early company is usually product and revenue. I've spent nine years on both: AI-powered KYC and biometric onboarding at 14M-user scale, ad tech on both sides of the market, and customer and revenue operations for a New York ad platform. Your identity, adtech and AI companies, plus the Responsible AI Fund's portfolio, are where I'd add value first, from Lisbon and alongside your team.",
+  "reasons": [
+    {
+      "title": "Biometric identity, done at scale",
+      "body": "I owned KYC at Pi Network: ID capture, liveness checks, human review and fraud for 14M+ users. That's Biometrid's market."
+    },
+    {
+      "title": "Responsible AI is a product discipline",
+      "body": "I've shipped LLM features with evaluation sets and production guardrails. That's what Leadzai, LoopOS, PeekMed and Granter need as AI moves into production."
+    },
+    {
+      "title": "Built for hands-on investors",
+      "body": "You're deeply involved with your founders. I can be the embedded product or RevOps lead who turns that involvement into shipped work, freelance or full-time."
+    }
+  ],
+  "vc_manual": {"thesis": 3, "stage": 3, "platform": 4},
+  "vc_notes": {
+    "thesis": "Health and impact dominate; the SIF and Responsible AI funds hold my strongest matches.",
+    "stage": "Stage isn't stated; the portfolio mixes early-stage startups and growing companies.",
+    "platform": "A deliberately hands-on, deeply involved model."
+  },
+  "companies": [
+    {"name": "Biometrid", "desc": "Remote identity verification and biometric authentication.", "sector": "Identity · Biometrics", "hq": "Portugal", "s": [5, 5, 5, 3, 4, 5], "why": "Remote identity verification is the product I owned at Pi Network, scaled to 14M+ users."},
+    {"name": "Leadzai", "desc": "Customer-acquisition platform for online business growth.", "sector": "AdTech · AI", "hq": "Portugal", "s": [5, 5, 5, 3, 4, 5], "why": "Performance ads plus AI for SMBs: ad tech from Vibe.co and Pi Network, and the SMB onboarding I've automated."},
+    {"name": "Granter", "desc": "AI platform that helps European SMEs find and apply for public funding.", "sector": "AI · GovTech", "hq": "Portugal", "s": [3, 5, 5, 3, 4, 5], "why": "LLMs that read and draft long documents for SMBs: evals, guardrails and an SMB sales motion."},
+    {"name": "Intuitivo", "desc": "Platform that automates school assessments, from creation to grading.", "sector": "EdTech · AI", "hq": "Portugal", "s": [4, 5, 4, 3, 3, 5], "why": "EdTech with AI grading, close to my EM Lyon teaching and Campus Coach work."},
+    {"name": "Goparity", "desc": "App connecting investors with projects that advance the UN SDGs.", "sector": "FinTech · Impact", "hq": "Portugal", "s": [4, 5, 2, 3, 3, 5], "why": "Retail investing needs KYC, trust and onboarding funnels: my Pi Network background."},
+    {"name": "LoopOS", "desc": "Circular-economy ERP for buybacks, repairs, trade-ins and rentals.", "sector": "Retail SaaS", "hq": "Portugal", "s": [2, 5, 3, 3, 4, 5], "why": "B2B SaaS sold to retailers: integrations, onboarding and an enterprise sales motion."},
+    {"name": "BloodFlow", "desc": "AI tool that interprets blood-test results for doctors.", "sector": "HealthTech · AI", "hq": "Portugal", "s": [1, 5, 5, 3, 2, 5], "why": "Clinical AI needs evals and guardrails, which I've built for LLM features."},
+    {"name": "Qevo", "desc": "Cloud-based queue-management software.", "sector": "B2B SaaS", "hq": "Portugal", "s": [2, 5, 2, 3, 4, 5], "why": "Operations SaaS for service businesses: onboarding and account management."},
+    {"name": "PeekMed", "desc": "AI surgical planning for orthopaedic procedures.", "sector": "MedTech · AI", "hq": "Portugal", "s": [1, 4, 5, 3, 3, 5], "why": "AI in a regulated product: evaluation and safety reviews."},
+    {"name": "Octo Health", "desc": "Platform consolidating health data for people with chronic conditions.", "sector": "HealthTech", "hq": "Portugal", "s": [1, 5, 3, 3, 2, 5], "why": "Consumer health data product: onboarding and retention."},
+    {"name": "Skill Augment", "desc": "Augmented-reality tools that reduce errors in industrial work.", "sector": "Industrial · AR", "hq": "Portugal", "s": [1, 4, 3, 3, 3, 5], "why": "Enterprise roll-out and onboarding; less domain overlap."},
+    {"name": "Kinetikos Health", "desc": "Smartphone-based motor-skill monitoring, CE-marked as a medical device.", "sector": "HealthTech · Mobile", "hq": "Portugal", "s": [1, 4, 4, 3, 2, 5], "why": "Mobile sensing product: SDK and data work like HEROW's."},
+    {"name": "Seedsight", "desc": "AI and optical sensing for real-time seed and grain verification.", "sector": "AgriTech · AI", "hq": "Portugal", "s": [1, 3, 4, 3, 2, 5], "why": "Computer vision in production; agri buyers are new ground."},
+    {"name": "Sioslife", "desc": "Brain and physical-activity tools and care software for seniors.", "sector": "HealthTech · Care", "hq": "Portugal", "s": [1, 4, 2, 3, 3, 5], "why": "B2B2C care software: onboarding and institutional sales."},
+    {"name": "nuAura Health", "desc": "Subscription-based preventive health and longevity platform.", "sector": "Consumer health", "hq": "Portugal", "s": [1, 4, 2, 3, 2, 5], "why": "Subscription funnels and retention; limited domain overlap."},
+    {"name": "Bolsa Social", "desc": "Impact-investment platform linking social and environmental SMEs with investors.", "sector": "FinTech · Impact", "hq": "Spain", "s": [4, 4, 2, 3, 3, 1], "why": "Investment platform with investor onboarding and KYC."},
+    {"name": "ECO-ONE", "desc": "Sustainability platform for hotels: products, furniture, efficiency and training.", "sector": "Hospitality · Sustainability", "hq": "Spain", "s": [3, 4, 2, 3, 3, 1], "why": "Hotel buyers I know from my HoteFinder side project; B2B sales motion."},
+    {"name": "Mútua Saúde", "desc": "Health insurer with no age limits or pre-existing-condition exclusions.", "sector": "Insurance", "hq": "Portugal", "s": [2, 2, 1, 3, 2, 5], "why": "Digital onboarding for an insurer; limited product overlap."},
+    {"name": "Amparo", "desc": "Direct-fit prosthetic sockets fitted in a single visit.", "sector": "MedTech", "hq": "Portugal", "s": [0, 0, 1, 3, 1, 5], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Inokem", "desc": "Concentrated, biodegradable cleaning and disinfection products.", "sector": "Consumer goods", "hq": "Portugal", "s": [0, 0, 0, 3, 1, 5], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Spanance", "desc": "Contract manufacturer for sterile injectables.", "sector": "Pharma manufacturing", "hq": "Portugal", "s": [0, 0, 0, 3, 0, 5], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Instituto Galénico", "desc": "Contract manufacturer for medical devices, cosmetics and supplements.", "sector": "Manufacturing", "hq": "Portugal", "s": [0, 0, 0, 3, 0, 5], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Exogenus Therapeutics", "desc": "Exosome-based biologics.", "sector": "BioTech", "hq": "Portugal", "s": [0, 0, 0, 3, 0, 5], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Sea4us", "desc": "Marine-derived drug discovery, developing an analgesic.", "sector": "BioTech", "hq": "Portugal", "s": [0, 0, 0, 3, 0, 5], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Mezze", "desc": "Restaurant providing training and jobs for refugees and migrants.", "sector": "Social impact", "hq": "Portugal", "s": [0, 0, 0, 2, 0, 5], "why": "No meaningful overlap; listed for completeness."}
+  ],
+  "inactive": ["LiMM (dormant)"],
+  "sources": [
+    ["3xP Global portfolio", "https://www.3xpglobal.eu/portfolio"],
+    ["Qevo spotlight (3xP news)", "https://www.3xpglobal.eu/news/3xp-global-spotlight-series-qevo"]
+  ]
+}

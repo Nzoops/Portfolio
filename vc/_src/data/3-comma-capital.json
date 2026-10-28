@@ -1,0 +1,62 @@
+{
+  "slug": "3-comma-capital",
+  "name": "3 Comma Capital",
+  "prepared_for": "Duarte Caldas and the 3 Comma Capital team",
+  "website": "https://www.3commacapital.com/",
+  "portfolio_url": "https://www.3commacapital.com/en/venture-capital/portfolio/",
+  "facts": [
+    ["Stage", "Seed to growth equity"],
+    ["Focus", "Digital assets, Web3 and AI"],
+    ["Base", "Lisbon"],
+    ["Portfolio", "19 venture companies"],
+    ["Funds", "Global Crypto, Atlantic Growth and more"]
+  ],
+  "position": "3 Comma Capital is an independent, CMVM-regulated Lisbon asset manager bridging traditional finance and digital-asset innovation. Its venture portfolio leans heavily into Web3, from DeFi security and tokenised real-world assets to on-chain loyalty, alongside AI holdings such as Anthropic and causaLens.",
+  "lede": "I'm a Lisbon-based Product & RevOps manager who built crypto products at Pi Network. Your portfolio sits where I've spent my career, crypto plus identity plus AI, with companies like Nefture, Loyi, Credi and 3 Comma Digital right on top of it.",
+  "summary": "3 Comma Capital bets on the convergence of traditional finance, digital assets and AI, and the products in that space only work if users trust them: verified identities, fraud controls and onboarding that doesn't leak. At Pi Network I owned exactly that: an AI-powered KYC flow scaled from about 1M to 14M+ users with bot detection and silent bans, and I also worked on the inception of Pi's ad network. Add LLM features shipped with evals and guardrails, and customer operations at a New York ad platform, and your Web3 and AI companies match my background closely.",
+  "reasons": [
+    {
+      "title": "Crypto products at real scale",
+      "body": "Pi Network's KYC was one of the largest identity programmes in crypto: 14M+ users, liveness, human review and bot detection. Few PMs have run Web3 onboarding at that size."
+    },
+    {
+      "title": "Security and fraud, product-side",
+      "body": "I oversaw white- and black-box pentests and built silent-ban logic for bots. That's Nefture's problem space and every DeFi product's trust problem."
+    },
+    {
+      "title": "Loyalty, ads and communities",
+      "body": "Loyi, Common Ground and Zoop live on engagement. I've worked on Pi's ad network and shipped community features at Campus Coach."
+    }
+  ],
+  "vc_manual": {"thesis": 4, "stage": 4, "platform": 3},
+  "vc_notes": {
+    "thesis": "Digital assets, Web3 and AI: crypto and identity are my core domains.",
+    "stage": "Seed to growth equity, with tickets from about $100K to $5M.",
+    "platform": "Financing, mentorship, networking and tech support; no dedicated talent role found."
+  },
+  "companies": [
+    {"name": "3 Comma Digital", "desc": "Staking, DeFi liquidity, crypto lending and borrowing, and node and validator management.", "sector": "Web3 · DeFi", "hq": "Portugal", "s": [5, 4, 3, 3, 2, 5], "why": "Crypto financial products need KYC, risk controls and clear onboarding, which is what I owned at Pi Network."},
+    {"name": "Nefture", "desc": "Protects DeFi asset managers from exploits, hacks, scams and financial risk.", "sector": "Web3 · Security", "s": [5, 5, 4, 3, 3, 1], "why": "Fraud and bot detection with automatic silent bans is what I built at Pi Network."},
+    {"name": "causaLens", "desc": "Causal AI for decision-making in complex enterprise projects.", "sector": "AI · Enterprise", "hq": "UK", "s": [3, 5, 5, 3, 4, 1], "why": "Enterprise AI where trust in the model decides adoption: evals, explainability and an enterprise sales motion."},
+    {"name": "Civey", "desc": "Real-time digital market and opinion research with a large open panel.", "sector": "MarTech · Research", "hq": "Germany", "s": [4, 5, 4, 3, 4, 1], "why": "Audience data sold to brands and media: ad-tech context and a subscription sales motion."},
+    {"name": "Loyi", "desc": "Web3 loyalty memberships with redeemable utility for communities.", "sector": "Web3 · Loyalty", "s": [5, 5, 2, 3, 3, 1], "why": "Loyalty is martech, on-chain is crypto: both are my domains."},
+    {"name": "Credi", "desc": "Tokenised real-world assets with reward tokens tied to fixed-income products.", "sector": "FinTech · Tokenisation", "s": [5, 4, 2, 3, 3, 2], "why": "Tokenised investment products need KYC, trust and onboarding funnels: my Pi Network background."},
+    {"name": "Bitrefill", "desc": "Crypto e-commerce for gift cards and phone top-ups paid in Bitcoin.", "sector": "Crypto · E-commerce", "hq": "Sweden", "s": [5, 5, 2, 3, 3, 1], "why": "Crypto payments at checkout: fraud controls, KYC thresholds and conversion funnels."},
+    {"name": "Common Ground", "desc": "Web3 community platform for creators and communities.", "sector": "Web3 · Community", "s": [5, 5, 2, 3, 2, 1], "why": "Crypto plus community features: Pi Network and Campus Coach."},
+    {"name": "Anthropic", "desc": "AI safety and research company building reliable, interpretable, steerable AI systems.", "sector": "AI", "hq": "USA", "s": [3, 5, 5, 1, 3, 1], "why": "I build on Claude daily and have shipped LLM features with evals and guardrails; the company is far past my sweet-spot stage."},
+    {"name": "Exclusible", "desc": "Links physical and digital products for luxury brands.", "sector": "Web3 · Luxury", "s": [4, 4, 2, 2, 2, 3], "why": "Crypto product experience from Pi Network applied to brand-facing digital collectibles."},
+    {"name": "ByteDance", "desc": "Technology company behind content platforms that inform, educate and entertain.", "sector": "Consumer · AdTech", "hq": "China, global", "s": [4, 5, 5, 0, 2, 1], "why": "Ad-driven consumer platforms are my domain; at this scale it's a different job from what I'd bring a portfolio company."},
+    {"name": "Scorestars", "desc": "Fan platform for fantasy basketball and trading digital basketball cards.", "sector": "Sports · Web3", "s": [4, 4, 2, 3, 2, 2], "why": "Sports engagement plus digital collectibles: Campus Coach's sports app and Pi's crypto product."},
+    {"name": "Tru Markets", "desc": "Smart-contract supply-chain traceability for product origin and quality.", "sector": "Blockchain · Supply chain", "s": [4, 4, 2, 3, 3, 1], "why": "Blockchain product sold B2B: crypto experience plus enterprise onboarding."},
+    {"name": "Lamina1", "desc": "Blockchain framework for building the open metaverse.", "sector": "Blockchain · Metaverse", "s": [4, 4, 2, 3, 2, 1], "why": "Developer-facing Web3 platform; crypto product experience applies."},
+    {"name": "Zoop", "desc": "Destination for collectors' connections, communities and experiences.", "sector": "Collectibles · Community", "s": [4, 4, 2, 3, 2, 1], "why": "Community and collectibles: engagement product work."},
+    {"name": "Cavrnus", "desc": "Shared-reality platform for spatial, immersive collaboration.", "sector": "XR · Collaboration", "hq": "USA", "s": [1, 4, 3, 3, 3, 1], "why": "B2B collaboration product; XR is outside my track record."},
+    {"name": "Laddercast", "desc": "Ladder-ranking strategy game with an NFT player-to-player marketplace.", "sector": "Gaming · NFT", "s": [3, 4, 2, 3, 1, 1], "why": "NFT marketplace mechanics; game design is outside my experience."},
+    {"name": "Time Guardian", "desc": "Secure long-term information transfer that preserves confidentiality and data ownership.", "sector": "Data security", "s": [2, 4, 2, 3, 2, 1], "why": "Security and privacy product; limited domain overlap."},
+    {"name": "Aquaterra", "desc": "Sustainable agriculture with high ESG standards.", "sector": "AgriTech", "s": [0, 0, 0, 2, 1, 2], "why": "No meaningful overlap; listed for completeness."}
+  ],
+  "sources": [
+    ["3 Comma Capital venture portfolio", "https://www.3commacapital.com/en/venture-capital/portfolio/"],
+    ["3 Comma Capital profile (Superscout)", "https://superscout.co/investor/3-comma-capital-scr-sa"]
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "slug": "ow-ventures",
+  "name": "OW Ventures",
+  "prepared_for": "the OW Ventures and Olisipo Way team",
+  "website": "https://www.owventures.pt/",
+  "portfolio_url": "https://www.owventures.pt/community",
+  "facts": [
+    ["Stage", "Pre-seed and seed"],
+    ["Focus", "Software, AI, adtech, emerging tech"],
+    ["Base", "Lisbon"],
+    ["Group", "Includes Olisipo Way and M4 Ventures"],
+    ["Vehicles", "Angels Way, COREangels Atlantic & SportsTech"]
+  ],
+  "position": "OW Ventures is a CMVM-regulated Lisbon venture firm investing in startups with cutting-edge software, hardware and emerging tech. The group brings together Olisipo Way's pre-seed B2B focus on sales, marketing, adtech and productivity tools, M4 Ventures, the community-driven Angels Way fund and the COREangels Atlantic and SportsTech angel funds.",
+  "lede": "I'm a Lisbon-based Product & RevOps manager. Olisipo Way's thesis, B2B tools for sales, marketing and adtech, is literally my CV, and your community includes companies like Leadzai, DOJO AI, Visor.ai and hAPI that sit right on top of what I've built.",
+  "summary": "OW Ventures backs Portuguese founders very early, when the product is still being shaped and the first revenue engine doesn't exist yet. That's where a senior Product & RevOps operator changes the trajectory. I've spent nine years in tech building B2B and B2C products, from KYC and bot detection at 14M-user scale to ad tech and customer operations in New York. Your adtech, AI and identity companies match my experience directly, and I can work with them from Lisbon, freelance or full-time.",
+  "reasons": [
+    {
+      "title": "Sales, marketing and adtech tools",
+      "body": "I've built for growth teams and been one: CS ops and reporting at Vibe.co, the start of Pi Network's ad network. That's Leadzai, DOJO AI and Brands&Ninjas."
+    },
+    {
+      "title": "Identity, onboarding and crypto",
+      "body": "I owned KYC at Pi Network for 14M+ users. hAPI, CheckfirstAI, FLUXE, Talent Protocol and Lympid work on verification, fraud or onchain identity."
+    },
+    {
+      "title": "A fit for your community model",
+      "body": "OW runs on community, from Angels Way to COREangels. I'm a Lisbon-based operator your founders can call on, for a sprint or for the long run."
+    }
+  ],
+  "vc_manual": {"thesis": 4, "stage": 4, "platform": 4},
+  "vc_notes": {
+    "thesis": "Olisipo Way's B2B sales, marketing and adtech focus is my exact background.",
+    "stage": "Pre-seed and seed: first product and first revenue engine.",
+    "platform": "A community-driven model: Angels Way, COREangels and 50+ professionals."
+  },
+  "companies": [
+    {"name": "Leadzai", "desc": "AI-driven customer-acquisition platform that automates digital ads and charges per lead.", "sector": "AdTech · AI", "hq": "Portugal", "s": [5, 5, 5, 3, 4, 5], "why": "Performance ads plus AI for SMBs: ad tech from Vibe.co and Pi Network, and the SMB onboarding I've automated."},
+    {"name": "DOJO AI", "desc": "AI marketing platform for challenger brands, run by autonomous agents.", "sector": "MarTech · AI", "hq": "Portugal", "s": [5, 5, 5, 4, 4, 5], "why": "Agentic martech: growth-team buyers I know, and LLM output quality I know how to evaluate."},
+    {"name": "Visor.ai", "desc": "AI customer-service automation for banks and insurers across chat, email and voice.", "sector": "AI · CX", "hq": "Portugal", "s": [4, 5, 5, 3, 4, 5], "why": "Conversational AI sold to banks: LLM evals and guardrails, plus a compliance-aware buyer I know from KYC."},
+    {"name": "hAPI", "desc": "APIs that give instant access to verified personal and financial data for onboarding.", "sector": "RegTech · Identity", "hq": "Portugal", "s": [5, 5, 4, 3, 4, 4], "why": "Verified-data onboarding is the KYC pipeline I owned at Pi Network."},
+    {"name": "CheckfirstAI", "desc": "AI suite for scheduling, document verification and on-site data in testing and inspection.", "sector": "AI · Compliance", "s": [4, 5, 5, 3, 3, 4], "why": "Document verification and compliance workflows: OCR and review loops from KYC."},
+    {"name": "FLUXE", "desc": "AI that automates vehicle-damage detection for motor-insurance claims.", "sector": "InsurTech · AI", "hq": "Portugal", "s": [4, 5, 5, 3, 3, 4], "why": "Computer vision against claims fraud: ML evaluation and fraud-detection logic from Pi Network."},
+    {"name": "Nutrium", "desc": "Digital nutrition platform for nutritionists, plus corporate employee wellness.", "sector": "HealthTech · SaaS", "hq": "Portugal", "s": [3, 5, 3, 3, 4, 5], "why": "A two-sided product plus a corporate-wellness B2B motion: marketplace product work and a sales stack to build."},
+    {"name": "Paynest", "desc": "Employee financial wellbeing: salary advances, expense management and coaching.", "sector": "FinTech · HR", "hq": "Portugal", "s": [4, 5, 2, 3, 4, 5], "why": "B2B2C fintech sold to HR teams: compliant onboarding plus a sales motion that needs RevOps."},
+    {"name": "Indie Seguros", "desc": "Digital insurer for comparing and buying health, auto and property cover online.", "sector": "InsurTech", "hq": "Portugal", "s": [4, 5, 3, 3, 3, 5], "why": "Online insurance funnels with identity checks: fintech and B2C conversion work."},
+    {"name": "Brands&Ninjas", "desc": "Crowdsourced in-store tasks that give brands retail-execution data.", "sector": "Retail data · MarTech", "hq": "Portugal", "s": [4, 4, 3, 3, 3, 5], "why": "Location-based task marketplace for brand teams: HEROW's geolocation plus martech buyers."},
+    {"name": "SheerMe", "desc": "App for booking and paying for wellness, beauty and fitness services, with cashback.", "sector": "Consumer marketplace", "hq": "Portugal", "s": [4, 5, 2, 3, 3, 5], "why": "Two-sided booking marketplace with payments and cashback: fintech flows and SMB onboarding."},
+    {"name": "Reatia", "desc": "Software for real-estate agents and agencies: listings, leads and client relations.", "sector": "PropTech · CRM", "s": [3, 5, 2, 3, 4, 4], "why": "A CRM for agents: lead management and pipelines are RevOps fundamentals."},
+    {"name": "Lympid", "desc": "App for fractional ownership of alternative assets such as watches, art and real estate.", "sector": "FinTech · Tokenisation", "s": [5, 5, 2, 3, 3, 4], "why": "Tokenised assets need KYC and trust: crypto and identity experience from Pi Network."},
+    {"name": "Talent Protocol", "desc": "Onchain professional-reputation system that makes builders more visible.", "sector": "Web3 · Identity", "s": [5, 5, 3, 3, 2, 4], "why": "Onchain identity and reputation: crypto plus identity, both core to my Pi Network years."},
+    {"name": "Zharta", "desc": "Lending protocol with instant loans secured by NFTs, AI appraisals and DeFi pools.", "sector": "Crypto · DeFi", "hq": "Portugal", "s": [5, 4, 3, 2, 2, 4], "why": "Crypto and identity are my domain: I owned KYC and fraud at Pi Network."},
+    {"name": "MyCareforce", "desc": "Platform matching nurses with short-term shifts; expanding to Brazil.", "sector": "HealthTech · Marketplace", "hq": "Portugal", "s": [2, 4, 2, 3, 4, 5], "why": "Two-sided staffing marketplace with institutional buyers: supply onboarding and RevOps."},
+    {"name": "Fluxio", "desc": "Collaboration and workflow tools for project management and team communication.", "sector": "Productivity SaaS", "s": [2, 5, 3, 3, 3, 4], "why": "Team SaaS with PLG: activation funnels and onboarding."},
+    {"name": "DoJob", "desc": "Marketplace connecting businesses with freelancers for design, development and marketing.", "sector": "Marketplace", "hq": "Portugal", "s": [3, 4, 2, 3, 3, 5], "why": "Freelance marketplace: I've lived both sides as a freelance PM."},
+    {"name": "OSCAR", "desc": "On-demand home-services app with fixed prices.", "sector": "Consumer marketplace", "hq": "Portugal", "s": [2, 4, 2, 3, 2, 5], "why": "Local marketplace in Lisbon: supply onboarding and B2C funnels."},
+    {"name": "Climber RMS", "desc": "Resource and operations management for construction and engineering projects.", "sector": "ConTech · SaaS", "s": [1, 5, 2, 3, 3, 4], "why": "Vertical B2B SaaS: product discovery with field teams, less domain overlap."},
+    {"name": "Decision Eyes", "desc": "Preference gathering and consensus-building for healthcare decisions.", "sector": "HealthTech", "s": [1, 4, 2, 3, 2, 4], "why": "B2B SaaS for healthcare buyers; limited domain overlap."},
+    {"name": "Epic Web3", "desc": "Global Web3 builder hub running events, conferences and hackathons.", "sector": "Web3 · Community", "s": [4, 2, 1, 3, 2, 4], "why": "Web3 plus hackathons: I ran six hackathons across Asia at Agorize."},
+    {"name": "Eat Tasty", "desc": "Subscription service for healthy, freshly prepared meals.", "sector": "Food tech", "hq": "Portugal", "s": [1, 3, 2, 3, 2, 5], "why": "Consumer subscription funnels; limited domain overlap."},
+    {"name": "WOWPLUG", "desc": "EV charging-station operator across Portuguese municipalities.", "sector": "E-mobility", "hq": "Portugal", "s": [1, 2, 1, 3, 2, 5], "why": "Limited overlap beyond the customer app."},
+    {"name": "Planetiers", "desc": "Sustainability ecosystem connecting businesses and experts through events and talent matching.", "sector": "Sustainability · Community", "hq": "Portugal", "s": [1, 2, 1, 3, 2, 5], "why": "Event and community business; limited overlap."},
+    {"name": "Tecmafoods", "desc": "Sustainable insect-based ingredients for human, animal and plant nutrition.", "sector": "Food tech", "hq": "Portugal", "s": [0, 0, 0, 3, 0, 5], "why": "No meaningful overlap; listed for completeness."}
+  ],
+  "method_notes": ["Companies come from the OW Ventures community page, which doesn't say which group fund holds each one or label status; the group reports 70+ portfolio companies in total."],
+  "sources": [
+    ["OW Ventures", "https://www.owventures.pt/"],
+    ["OW Ventures community", "https://www.owventures.pt/community"],
+    ["Olisipo Way (Seedtable)", "https://seedtable.com/investors/olisipo-way"]
+  ]
+}

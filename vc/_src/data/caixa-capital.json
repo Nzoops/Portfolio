@@ -1,0 +1,66 @@
+{
+  "slug": "caixa-capital",
+  "name": "Caixa Capital",
+  "website": "https://caixacapital.pt/",
+  "portfolio_url": "https://caixacapital.pt/venture-capital/",
+  "facts": [
+    ["Group", "Caixa Geral de Depósitos"],
+    ["Focus", "Disruptive teams scaling globally"],
+    ["Base", "Lisbon"],
+    ["Portfolio", "35 listed, 23 active startups"],
+    ["Also", "Fund of funds, Caixa Empreender Award"]
+  ],
+  "position": "Caixa Capital is the venture and private-equity arm of the Caixa Geral de Depósitos group. It invests directly in disruptive teams with global ambition, backs Portuguese VCs such as Faber and Shilling through its fund of funds, and runs the Caixa Empreender Award. Its direct portfolio spans AI software, health, energy and consumer platforms, nearly all built in Portugal.",
+  "lede": "I'm a Lisbon-based Product & RevOps manager. Your direct portfolio is almost entirely Portuguese, and several of its software companies, from Amplemarket and Noxus to Hijiffy, Youverse and Growappy, sit right on top of what I've built.",
+  "summary": "Caixa Capital backs Portuguese teams with global ambition, and the step that decides whether they get there is usually product and revenue, not technology. I've spent nine years on that step: AI-powered KYC at 14M-user scale, a geofencing SDK used by mobile apps, and customer operations for a New York ad platform. Your AI, identity and B2B SaaS companies are where I'd add value fastest, and as a bank-backed investor you'll appreciate that compliance-heavy products are familiar ground for me.",
+  "reasons": [
+    {
+      "title": "Identity and compliance, from a bank's angle",
+      "body": "I owned KYC at Pi Network: ID capture, liveness, human review and fraud for 14M+ users. Youverse and the banking customers of your AI companies speak that language."
+    },
+    {
+      "title": "Conversational AI that sells",
+      "body": "Hijiffy, Noxus and Amplemarket put AI agents in front of customers and sales teams. I've shipped LLM features with evals and guardrails, and built the GTM tooling they plug into."
+    },
+    {
+      "title": "Portugal-first, globally minded",
+      "body": "I'm based in Lisbon, speak French, English and Portuguese, and have worked in Hong Kong and New York. I can help a Portuguese team sell abroad."
+    }
+  ],
+  "vc_manual": {"thesis": 3, "stage": 4, "platform": 3},
+  "vc_notes": {
+    "thesis": "Generalist: strong overlap on AI and software, little on energy and biotech.",
+    "stage": "Early-stage direct investments, plus exposure to Faber and Shilling as a fund of funds.",
+    "platform": "Access to the CGD group's network; no dedicated talent role found on the website."
+  },
+  "companies": [
+    {"name": "Amplemarket", "url": "https://www.amplemarket.com", "desc": "B2B sales automation for lead generation, outreach and qualification.", "sector": "Sales tech · AI", "hq": "Portugal, USA", "s": [5, 5, 5, 3, 5, 5], "why": "Sales tech is RevOps as a product. I've been the internal buyer: pipeline, SLAs and dashboards for GTM teams, plus LLM features with evals."},
+    {"name": "Hijiffy", "desc": "AI chat assistant for hotel bookings plus an integrated guest-communication platform.", "sector": "Hospitality · AI", "hq": "Portugal", "s": [4, 5, 5, 3, 4, 5], "why": "Conversational AI sold to hotels: LLM evals and guardrails, and I built a hotel-search app (HoteFinder) as a side project."},
+    {"name": "Noxus", "desc": "No-code AI platform that automates complex processes with multi-agent environments.", "sector": "AI · Automation", "hq": "Portugal", "s": [3, 5, 5, 4, 4, 5], "why": "I build agentic workflows myself (n8n, Make, Claude); in production they need evals, guardrails and cost monitoring."},
+    {"name": "YOUVERSE", "desc": "Plug-and-play, decentralised passwordless facial biometric authentication.", "sector": "Identity · Biometrics", "hq": "Portugal", "s": [5, 5, 5, 3, 3, 4], "why": "Biometric identity is my core domain: I owned KYC with liveness checks and fraud detection at Pi Network."},
+    {"name": "Growappy", "desc": "AI-powered platform for early-childhood education, linking educators, families and administration.", "sector": "EdTech · AI", "hq": "Portugal", "s": [4, 5, 4, 3, 3, 5], "why": "EdTech with AI and a school-facing sales motion, close to my Campus Coach and EM Lyon work."},
+    {"name": "Infraspeak", "desc": "Mobile platform for managing facility maintenance and service requests.", "sector": "B2B SaaS", "hq": "Portugal", "s": [3, 5, 3, 3, 5, 5], "why": "B2B SaaS with a sales- and CS-heavy motion: where product discovery and RevOps meet."},
+    {"name": "Unbabel", "desc": "AI translation combined with human editors.", "sector": "AI · Language", "hq": "Portugal", "s": [3, 5, 5, 2, 4, 5], "why": "AI plus human-in-the-loop quality, sold to CX teams: the review loops I ran in KYC, and CS ops from Vibe.co."},
+    {"name": "sheerME", "desc": "Wellness and beauty marketplace with bookings, payments and cashback.", "sector": "Consumer marketplace", "hq": "Portugal", "s": [4, 5, 2, 3, 3, 5], "why": "Two-sided booking marketplace with payments and cashback: fintech flows and SMB onboarding."},
+    {"name": "Hole19", "desc": "Golf app with GPS shot planning and post-round statistics.", "sector": "Consumer app · Sports", "hq": "Portugal", "s": [4, 5, 3, 3, 2, 5], "why": "GPS-based consumer app with subscriptions: HEROW's location work and Campus Coach's sports-app work."},
+    {"name": "Codacy", "url": "https://www.codacy.com", "desc": "Automated code review, technical-debt and code-quality management.", "sector": "Developer tools", "hq": "Portugal", "s": [1, 5, 3, 3, 4, 5], "why": "PLG-to-sales SaaS from Lisbon: the product-qualified-lead hand-off and CS tooling."},
+    {"name": "MyCareForce", "desc": "Platform matching nurses and assistants with healthcare-facility vacancies.", "sector": "HealthTech · Marketplace", "hq": "Portugal", "s": [2, 4, 2, 3, 4, 5], "why": "Two-sided staffing marketplace with institutional buyers: supply onboarding and RevOps."},
+    {"name": "Uphill", "desc": "Cloud solution that digitises clinical best-practice protocols for doctors and health organisations.", "sector": "HealthTech · SaaS", "hq": "Portugal", "s": [1, 5, 3, 3, 3, 5], "why": "Hospital-facing SaaS: product discovery with clinicians and enterprise customer success."},
+    {"name": "LUGGit", "desc": "App to schedule luggage pickup, storage and delivery around travel.", "sector": "Travel · Logistics", "hq": "Portugal", "s": [3, 4, 2, 3, 2, 5], "why": "Location-based consumer service with partner operations: geolocation and B2C funnels."},
+    {"name": "Uniplaces", "desc": "Marketplace connecting students and landlords for temporary accommodation.", "sector": "Marketplace", "hq": "Portugal", "s": [3, 4, 2, 2, 3, 5], "why": "Two-sided marketplace with trust and verification needs, a KYC-adjacent problem."},
+    {"name": "Uplink", "desc": "SDKs for secure device-to-device mesh communication without internet.", "sector": "Connectivity · SDK", "hq": "Portugal", "s": [2, 4, 2, 3, 2, 5], "why": "Mobile SDK product work, as on HEROW's iOS and Android SDK."},
+    {"name": "Fever", "desc": "App that promotes a city's main cultural events to its users.", "sector": "Consumer · Events", "hq": "Spain, USA", "s": [3, 4, 4, 2, 3, 1], "why": "Consumer discovery and ad-driven growth at scale; the company is well past my sweet-spot stage."},
+    {"name": "Food Orchestrator (EatTasty)", "desc": "Platform delivering home-style meals from a daily menu.", "sector": "Food delivery", "hq": "Portugal", "s": [1, 3, 2, 3, 2, 5], "why": "Consumer app and delivery logistics; limited domain overlap."},
+    {"name": "Watgrid", "desc": "Real-time wine-fermentation monitoring with software and smart sensors.", "sector": "AgriTech · IoT", "hq": "Portugal", "s": [0, 3, 2, 3, 2, 5], "why": "IoT data product with a vertical SaaS; little domain overlap."},
+    {"name": "Fibersail", "desc": "Fibre-optic monitoring of wind-turbine blade wear and performance.", "sector": "Energy · Sensors", "hq": "Portugal", "s": [0, 2, 3, 3, 1, 5], "why": "Monitoring data product; energy hardware is outside my experience."},
+    {"name": "Nu-Rise", "desc": "Ultrasensitive photonics for real-time monitoring of adaptive radiotherapy.", "sector": "MedTech", "hq": "Portugal", "s": [0, 1, 2, 3, 1, 5], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Charge2Change", "desc": "Fast-charging, long-life batteries for heavy vehicles.", "sector": "Energy", "hq": "Portugal", "s": [0, 0, 1, 3, 0, 5], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Delox", "desc": "Bio-decontamination systems based on a solid hydrogen-peroxide formulation.", "sector": "Health · Industrial", "hq": "Portugal", "s": [0, 0, 0, 3, 1, 5], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Exogenus Therapeutics", "desc": "Exosome-based therapies for chronic wounds and autoimmune diseases.", "sector": "BioTech", "hq": "Portugal", "s": [0, 0, 0, 3, 0, 5], "why": "No meaningful overlap; listed for completeness."}
+  ],
+  "inactive": ["AbDart, Agentifai, BioMimetx, D-Orbit, LifeTag, META, NeuropsyAI, Plux, Probely, Prodsmart (exited); Faber and Shilling are fund holdings"],
+  "sources": [
+    ["Caixa Capital venture capital", "https://caixacapital.pt/venture-capital/"],
+    ["Caixa Capital fund of funds", "https://caixacapital.pt/fundo-de-fundos/"]
+  ]
+}

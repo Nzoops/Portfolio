@@ -1,0 +1,711 @@
+{
+  "slug": "faber",
+  "name": "Faber",
+  "website": "https://www.faber.vc/",
+  "portfolio_url": "https://f4.fund/firms/faber",
+  "facts": [
+    [
+      "Stage",
+      "Pre-seed and seed"
+    ],
+    [
+      "Focus",
+      "Deep tech: applied science & digital, climate & ocean"
+    ],
+    [
+      "Base",
+      "Lisbon"
+    ],
+    [
+      "Portfolio",
+      "54 listed, 42 scored"
+    ],
+    [
+      "Platform",
+      "Talent board, Entrepreneurship Program"
+    ]
+  ],
+  "position": "Faber is a Lisbon-based deep-tech VC investing at pre-seed and seed across two tracks: applied science and digital transformation, and climate and ocean tech. Beyond capital, it runs a talent board for its portfolio and an Entrepreneurship Program for scientists turning research into companies.",
+  "lede": "I'm a Lisbon-based Product & RevOps manager. Deep-tech founders spend years getting the science right; I help with what comes next, turning it into a product customers adopt and pay for. Youverse, Passworks, Meight, Equall and Unbabel sit right on top of what I've built.",
+  "summary": "Faber backs scientists and engineers early, and the hardest step for them is usually the first product and the first revenue engine, not the technology. I've spent nine years on exactly that translation: specs for SDKs and ML systems, discovery with real customers, and the CRM and onboarding stack that lets a young company sell. Your identity, logistics, data and AI-software companies match my background directly, and your talent board is the natural place for someone like me.",
+  "reasons": [
+    {
+      "title": "Biometrics and identity, shipped",
+      "body": "I owned an AI-powered KYC product at Pi Network: ID capture, liveness, human review and bot detection for 14M+ users. That's Youverse's world."
+    },
+    {
+      "title": "From lab to first customers",
+      "body": "I write specs engineers respect (SDKs at HEROW, ML features judged on F1) and run discovery with buyers. That's the bridge your seed-stage founders need."
+    },
+    {
+      "title": "Made for your talent board",
+      "body": "Faber already connects talent with portfolio companies. I'm Lisbon-based, freelance or full-time, and can start with one company or several."
+    }
+  ],
+  "vc_manual": {
+    "thesis": 2,
+    "stage": 4,
+    "platform": 5
+  },
+  "vc_notes": {
+    "thesis": "Deep tech and climate dominate; my overlap is with the software, data and AI side of the portfolio.",
+    "stage": "Pre-seed and seed: first product and first revenue engine.",
+    "platform": "A portfolio talent board and an Entrepreneurship Program."
+  },
+  "companies": [
+    {
+      "name": "Youverse",
+      "desc": "Passwordless, privacy-preserving facial biometric authentication.",
+      "sector": "Identity · Biometrics",
+      "hq": "Portugal",
+      "s": [
+        5,
+        5,
+        5,
+        3,
+        3,
+        4
+      ],
+      "why": "Biometric identity is my core domain: I owned KYC with liveness checks and fraud detection at Pi Network."
+    },
+    {
+      "name": "Passworks",
+      "desc": "Customer acquisition and engagement tools, including mobile-wallet campaigns, that drive store traffic.",
+      "sector": "MarTech · Mobile",
+      "hq": "Portugal",
+      "s": [
+        5,
+        5,
+        3,
+        2,
+        4,
+        5
+      ],
+      "why": "Location-based mobile marketing is HEROW's world, and martech is home turf from Vibe.co."
+    },
+    {
+      "name": "Meight",
+      "desc": "Logistics software that plans and optimises freight operations.",
+      "sector": "Logistics SaaS · AI",
+      "hq": "Portugal",
+      "s": [
+        3,
+        5,
+        4,
+        3,
+        4,
+        5
+      ],
+      "why": "Optimisation SaaS for transport operators: location data, B2B onboarding and a sales stack to build."
+    },
+    {
+      "name": "Equall",
+      "desc": "Frontier AI for legal work.",
+      "sector": "AI · LegalTech",
+      "hq": "Portugal",
+      "s": [
+        3,
+        5,
+        5,
+        3,
+        4,
+        4
+      ],
+      "why": "LLM product for professionals: evals, guardrails and the trust work that legal buyers demand."
+    },
+    {
+      "name": "Unbabel",
+      "desc": "Language operations platform combining AI translation with human experts.",
+      "sector": "AI · Language",
+      "hq": "Portugal",
+      "s": [
+        3,
+        5,
+        5,
+        2,
+        4,
+        5
+      ],
+      "why": "AI plus human-in-the-loop quality, sold to CX teams: the review loops I ran in KYC, and CS ops from Vibe.co."
+    },
+    {
+      "name": "Advicefront",
+      "desc": "Software platform for financial advisers and their clients.",
+      "sector": "FinTech · SaaS",
+      "hq": "UK, Portugal",
+      "s": [
+        4,
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "why": "Regulated fintech workflows with client onboarding: KYC experience plus B2B SaaS RevOps."
+    },
+    {
+      "name": "YData",
+      "desc": "Better datasets, including synthetic data, for AI development.",
+      "sector": "Data · AI",
+      "hq": "USA, Portugal",
+      "s": [
+        2,
+        5,
+        5,
+        3,
+        3,
+        4
+      ],
+      "why": "I've trained and evaluated ML models; data quality is the problem I'd help productise."
+    },
+    {
+      "name": "Hole19",
+      "desc": "Golf app with GPS for planning shots and reviewing round statistics.",
+      "sector": "Consumer app · Sports",
+      "hq": "Portugal",
+      "s": [
+        4,
+        5,
+        3,
+        3,
+        2,
+        5
+      ],
+      "why": "GPS-based consumer app with subscriptions: HEROW's location work and Campus Coach's sports-app work."
+    },
+    {
+      "name": "Sword Health",
+      "url": "https://swordhealth.com",
+      "desc": "Digital musculoskeletal care, backed by Faber since 2020.",
+      "sector": "Digital health · AI",
+      "hq": "Portugal, USA",
+      "s": [
+        2,
+        5,
+        5,
+        2,
+        3,
+        5
+      ],
+      "why": "AI-first product at scale from Porto: ML evaluation and consumer onboarding funnels."
+    },
+    {
+      "name": "OpNova",
+      "desc": "Agentic AI that automates manual, repetitive processes.",
+      "sector": "AI · Automation",
+      "hq": "USA",
+      "s": [
+        3,
+        5,
+        5,
+        3,
+        3,
+        2
+      ],
+      "why": "Agentic automation is what I build for myself with n8n and Claude; in production it needs evals and guardrails."
+    },
+    {
+      "name": "Codacy",
+      "url": "https://www.codacy.com",
+      "desc": "Code quality and security for developers.",
+      "sector": "Developer tools",
+      "hq": "Portugal",
+      "s": [
+        1,
+        5,
+        3,
+        3,
+        4,
+        5
+      ],
+      "why": "PLG-to-sales SaaS from Lisbon: the product-qualified-lead hand-off and CS tooling."
+    },
+    {
+      "name": "Smartex",
+      "desc": "AI computer vision for automated textile-defect inspection.",
+      "sector": "Industrial AI",
+      "hq": "Portugal",
+      "s": [
+        1,
+        4,
+        5,
+        3,
+        3,
+        4
+      ],
+      "why": "Computer vision in production: ML evaluation and enterprise roll-out."
+    },
+    {
+      "name": "GetSocial",
+      "desc": "Engagement, community and referral features for mobile apps.",
+      "sector": "Mobile · MarTech",
+      "s": [
+        4,
+        5,
+        3,
+        3,
+        3,
+        1
+      ],
+      "why": "In-app growth tooling: mobile SDK product work from HEROW and growth work from Vibe.co."
+    },
+    {
+      "name": "Kern AI",
+      "desc": "Data-centric platform for building natural-language interfaces.",
+      "sector": "AI · NLP",
+      "hq": "Germany",
+      "s": [
+        2,
+        5,
+        5,
+        3,
+        3,
+        1
+      ],
+      "why": "LLM tooling: evaluation sets and production guardrails, from the builder's side."
+    },
+    {
+      "name": "Tandem",
+      "desc": "Language-exchange community app.",
+      "sector": "EdTech · Consumer",
+      "hq": "Germany",
+      "s": [
+        4,
+        5,
+        3,
+        2,
+        2,
+        1
+      ],
+      "why": "Consumer edtech with community features, like the ones I shipped at Campus Coach."
+    },
+    {
+      "name": "AstraKode",
+      "desc": "Low-code platform for enterprise blockchain and smart-contract development.",
+      "sector": "Web3 · Low-code",
+      "hq": "Italy",
+      "s": [
+        4,
+        5,
+        2,
+        2,
+        3,
+        1
+      ],
+      "why": "Blockchain plus enterprise software: crypto product experience from Pi Network."
+    },
+    {
+      "name": "iLoF",
+      "desc": "AI digital-health platform for personalised medicine.",
+      "sector": "HealthTech · AI",
+      "hq": "UK, Portugal",
+      "s": [
+        1,
+        3,
+        4,
+        3,
+        2,
+        4
+      ],
+      "why": "AI product work; clinical research buyers are further from my track record."
+    },
+    {
+      "name": "Resoniks",
+      "desc": "AI acoustic testing for non-destructive, zero-defect manufacturing.",
+      "sector": "Industrial AI",
+      "hq": "Netherlands",
+      "s": [
+        1,
+        4,
+        5,
+        3,
+        2,
+        1
+      ],
+      "why": "Applied ML with evaluation at its core; industrial buyers less so."
+    },
+    {
+      "name": "Abtrace",
+      "desc": "Digital-health tools that scale medical expertise.",
+      "sector": "HealthTech · AI",
+      "hq": "UK",
+      "s": [
+        1,
+        4,
+        4,
+        3,
+        3,
+        1
+      ],
+      "why": "Clinical AI product work; NHS-style buyers are new ground."
+    },
+    {
+      "name": "Mitiga Solutions",
+      "desc": "Climate-risk intelligence combining science, AI and high-performance computing.",
+      "sector": "Climate · AI",
+      "hq": "Spain",
+      "s": [
+        1,
+        4,
+        4,
+        3,
+        3,
+        1
+      ],
+      "why": "Risk-data SaaS: product packaging and B2B onboarding."
+    },
+    {
+      "name": "ANNEA",
+      "desc": "Predictive-maintenance and asset-performance platform.",
+      "sector": "Energy · AI",
+      "hq": "Germany",
+      "s": [
+        1,
+        4,
+        4,
+        3,
+        3,
+        1
+      ],
+      "why": "Predictive ML in a B2B SaaS; the wind-energy domain is new to me."
+    },
+    {
+      "name": "CircuitLeap",
+      "desc": "AI for integrated-circuit design.",
+      "sector": "Semiconductors · AI",
+      "s": [
+        1,
+        4,
+        4,
+        3,
+        2,
+        1
+      ],
+      "why": "AI product side only; chip design is outside my experience."
+    },
+    {
+      "name": "Hefring Marine",
+      "desc": "AI decision intelligence for safety and efficiency on vessels.",
+      "sector": "Maritime · AI",
+      "hq": "Iceland",
+      "s": [
+        2,
+        3,
+        4,
+        3,
+        2,
+        1
+      ],
+      "why": "Telemetry and location data, like HEROW's; marine hardware less so."
+    },
+    {
+      "name": "Maven Pet",
+      "desc": "24/7 health tracker for cats and dogs.",
+      "sector": "Pet health · IoT",
+      "hq": "USA",
+      "s": [
+        1,
+        3,
+        4,
+        3,
+        2,
+        1
+      ],
+      "why": "Consumer IoT app and data product; hardware is outside my experience."
+    },
+    {
+      "name": "Vyoma",
+      "desc": "Real-time space-debris observation using AI for safe satellite operations.",
+      "sector": "SpaceTech · AI",
+      "hq": "Germany",
+      "s": [
+        1,
+        3,
+        4,
+        3,
+        1,
+        1
+      ],
+      "why": "Space data platform side only."
+    },
+    {
+      "name": "SubDron",
+      "desc": "Data processing for underwater inspections and autonomous underwater navigation.",
+      "sector": "Ocean tech · Robotics",
+      "hq": "Austria",
+      "s": [
+        1,
+        2,
+        4,
+        3,
+        2,
+        1
+      ],
+      "why": "Data layer only; underwater robotics is outside my experience."
+    },
+    {
+      "name": "Nostos Genomics",
+      "desc": "AI-driven analysis of genetic diseases.",
+      "sector": "Genomics · AI",
+      "hq": "Germany",
+      "s": [
+        0,
+        3,
+        4,
+        3,
+        2,
+        1
+      ],
+      "why": "Limited overlap beyond ML product work."
+    },
+    {
+      "name": "Koa Biotech",
+      "desc": "IoT technology that improves farm productivity.",
+      "sector": "AgTech · IoT",
+      "hq": "Spain",
+      "s": [
+        1,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "why": "Limited overlap beyond the IoT data layer."
+    },
+    {
+      "name": "Biographica",
+      "desc": "Knowledge graphs and machine learning for gene discovery in agriculture.",
+      "sector": "AgBio · AI",
+      "hq": "UK",
+      "s": [
+        0,
+        2,
+        4,
+        3,
+        1,
+        1
+      ],
+      "why": "Limited overlap beyond ML product work."
+    },
+    {
+      "name": "Zymvol",
+      "desc": "Computational enzyme discovery and design.",
+      "sector": "BioTech",
+      "hq": "Spain",
+      "s": [
+        0,
+        1,
+        3,
+        3,
+        1,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "Ocean Ecostructures",
+      "desc": "Biodiversity-regeneration programmes for businesses and governments.",
+      "sector": "Ocean · Climate",
+      "hq": "Spain",
+      "s": [
+        0,
+        1,
+        1,
+        3,
+        1,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "YPlasma",
+      "desc": "Plasma actuators for flow control and chip and data-centre cooling.",
+      "sector": "Hardware",
+      "hq": "Spain",
+      "s": [
+        0,
+        1,
+        1,
+        3,
+        1,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "PHOTON IP",
+      "desc": "Chipmaker for advanced optical chips.",
+      "sector": "Photonics",
+      "hq": "Netherlands",
+      "s": [
+        0,
+        1,
+        1,
+        3,
+        1,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "Porelio",
+      "desc": "Environmental tech for water and industrial chemical purification.",
+      "sector": "Climate tech",
+      "hq": "Germany",
+      "s": [
+        0,
+        0,
+        1,
+        3,
+        1,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "Ponda",
+      "desc": "Planet-positive textiles and insulation from regenerative wetlands.",
+      "sector": "Materials",
+      "hq": "UK",
+      "s": [
+        0,
+        0,
+        1,
+        3,
+        1,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "Luminate Medical",
+      "desc": "Medical device that prevents hair loss during chemotherapy.",
+      "sector": "MedTech",
+      "hq": "Ireland",
+      "s": [
+        0,
+        0,
+        1,
+        3,
+        1,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "B'ZEOS",
+      "desc": "Compostable packaging made from seaweed extracts.",
+      "sector": "Materials",
+      "hq": "Switzerland",
+      "s": [
+        0,
+        0,
+        0,
+        3,
+        1,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "1s1 Energy",
+      "desc": "Materials for PEM water electrolysis in green-hydrogen production.",
+      "sector": "Energy",
+      "hq": "USA",
+      "s": [
+        0,
+        0,
+        1,
+        3,
+        0,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "ATMOS Space Cargo",
+      "desc": "Reusable orbital return vehicles.",
+      "sector": "SpaceTech",
+      "hq": "Germany",
+      "s": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "InSpacePropulsion",
+      "desc": "Non-toxic propulsion systems for spacecraft.",
+      "sector": "SpaceTech",
+      "hq": "Germany",
+      "s": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "Poseidona",
+      "desc": "Sustainable proteins made from algal waste and invasive biomass.",
+      "sector": "Food tech",
+      "hq": "Spain",
+      "s": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "MicroHarvest",
+      "desc": "Bacterial single-cell protein production.",
+      "sector": "Food tech",
+      "hq": "Germany",
+      "s": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    }
+  ],
+  "inactive": [
+    "EnjoyHQ, Gitter, Seedrs, Emotai and Zaask (acquired)"
+  ],
+  "method_notes": [
+    "Faber's own site doesn't publish a portfolio list; the list comes from f4.fund and VC Backed. Not scored for lack of a public description: Kloov, MC5ID, TiTech, Deb0x, Hifi Finance, Kamu, Seamore Tech, Allium Engineering."
+  ],
+  "sources": [
+    [
+      "Faber portfolio (f4.fund)",
+      "https://f4.fund/firms/faber"
+    ],
+    [
+      "Faber portfolio (VC Backed)",
+      "https://www.vcbacked.co/directory/investors/faber"
+    ],
+    [
+      "Faber talent board",
+      "https://talent.faber.vc/companies/codacy"
+    ],
+    [
+      "Faber third fund (TechCrunch)",
+      "https://techcrunch.com/2024/11/06/faber-launches-third-vc-fund-with-34m-first-close-aims-for-64m"
+    ]
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "slug": "semapa-next",
+  "name": "Semapa Next",
+  "short": "Semapa Next",
+  "website": "https://semapanext.com/",
+  "portfolio_url": "https://semapanext.com/portfolio/",
+  "prepared_for": "Michal Mashall and the Semapa Next platform team",
+  "facts": [
+    ["Stage", "Series A"],
+    ["Focus", "Sector-agnostic, pan-European"],
+    ["Base", "Lisbon, “from Lisbon to Europe”"],
+    ["Portfolio", "20 companies, 16 active"],
+    ["Platform", "Access, Leadership, Finance"]
+  ],
+  "position": "Semapa Next is the venture arm of the Semapa group. It backs Series A companies across Europe that aim to become global category leaders, with a portfolio spread over Portugal, the UK, Germany and the Netherlands. Its platform team supports founders on three pillars: access to experts and the group's network, leadership (coaching, senior hires, product, engineering and sales organisation) and finance.",
+  "lede": "I'm a Lisbon-based Product & RevOps manager. Your Series A companies are at the point where product and revenue operations have to scale, and three of them, Sonant, LOQR and JUPUS, sit right on top of what I've built.",
+  "summary": "Series A is the stage where a product that works has to become a product and revenue engine that scales: clearer discovery, a roadmap tied to metrics, and a sales and CS stack that doesn't break. That is the exact job I've done for nine years, from AI-powered KYC at 14M-user scale to customer operations at a New York ad-tech platform. Sonant, LOQR and JUPUS sit right on top of my experience, and your Leadership pillar is where I can plug in: as a fractional product lead, a RevOps project, or a full-time hire.",
+  "reasons": [
+    {
+      "title": "Your stage is my sweet spot",
+      "body": "You invest at Series A, when PM and RevOps practices need to professionalise fast. I've built both: specs, roadmaps and squads on one side, CRM, health scores and onboarding automation on the other."
+    },
+    {
+      "title": "AI in production, not in decks",
+      "body": "I've shipped an LLM feature with its evaluation set and production guardrails, and ML and reinforcement-learning features judged on F1. That maps to Sonant, JUPUS, Defined.ai and overstory."
+    },
+    {
+      "title": "An extension of your Leadership pillar",
+      "body": "Your platform already helps founders with senior hires and product, engineering and sales organisation. I'm a Lisbon-based operator you can put in front of a founder this month, in French, English or Portuguese."
+    }
+  ],
+  "vc_manual": {
+    "thesis": 3,
+    "stage": 4,
+    "platform": 5
+  },
+  "vc_notes": {
+    "thesis": "Sector-agnostic, but the portfolio leans climate and industrial, where my overlap is thinner.",
+    "stage": "Series A: the stage where a senior PM or RevOps lead changes the trajectory.",
+    "platform": "Dedicated Head of Platform and a Leadership pillar that includes senior talent."
+  },
+  "companies": [
+    {
+      "name": "Sonant",
+      "url": "https://sonant.ai",
+      "desc": "AI receptionist that handles scheduling, call routing and quote intake for insurance agencies.",
+      "sector": "AI · InsurTech",
+      "hq": "Portugal, USA",
+      "s": [3, 5, 5, 4, 5, 4],
+      "why": "Voice-AI agents sold to SMB agencies, seed-funded in 2025: I've shipped LLM features with evals and guardrails, and set up the onboarding and CS tooling a young SaaS needs."
+    },
+    {
+      "name": "LOQR",
+      "url": "https://loqr.com",
+      "desc": "Customer-facing platform that helps banks digitise onboarding and offer compliant services.",
+      "sector": "FinTech · RegTech",
+      "hq": "Portugal",
+      "s": [5, 5, 4, 3, 3, 5],
+      "why": "Bank onboarding and compliance is the product I scaled at Pi Network: ID capture, liveness, fraud and edge cases from about 1M to 14M+ verified users."
+    },
+    {
+      "name": "JUPUS",
+      "url": "https://jupus.de",
+      "desc": "AI secretariat that automates law-firm work, from the first client call to the finished document.",
+      "sector": "AI · LegalTech",
+      "hq": "Germany",
+      "s": [3, 5, 5, 5, 4, 1],
+      "why": "Fresh €13M Series A (June 2026) and an LLM product sold to SMB law firms: the right moment to structure discovery, evals and the sales and CS stack."
+    },
+    {
+      "name": "Defined.ai",
+      "url": "https://defined.ai",
+      "desc": "Training data and infrastructure for AI development.",
+      "sector": "AI/ML · Data",
+      "hq": "Portugal, USA",
+      "s": [3, 4, 5, 3, 3, 5],
+      "why": "I know the buyer side of training data: I've trained and evaluated ML models and run human-review loops in KYC, where label quality decides the product."
+    },
+    {
+      "name": "Flecto",
+      "url": "https://flecto.io",
+      "desc": "Platform that runs rental operations and multiple sales channels for the access economy.",
+      "sector": "Vertical SaaS · FinTech",
+      "hq": "Portugal",
+      "s": [3, 5, 2, 3, 4, 5],
+      "why": "Vertical SaaS with payments built in for SMBs: onboarding automation and CS tooling are what I set up at Hop-Place and Vibe.co."
+    },
+    {
+      "name": "Spoke",
+      "url": "https://spoke.com",
+      "desc": "Delivery software that makes last-mile logistics faster and simpler.",
+      "sector": "Logistics · Supply chain",
+      "hq": "UK",
+      "s": [4, 5, 3, 3, 3, 1],
+      "why": "Last-mile routing is location tech: I was PM on HEROW's geofencing SDK and platform for iOS and Android."
+    },
+    {
+      "name": "Meisterwerk",
+      "url": "https://en.meisterwerk.app",
+      "desc": "Mobile and desktop app that helps craft businesses manage projects, quotes, invoicing and staff.",
+      "sector": "Vertical SaaS · FinTech",
+      "hq": "Germany",
+      "s": [3, 5, 2, 3, 4, 1],
+      "why": "Mobile and web SaaS for SMBs with invoicing: activation, onboarding and the RevOps stack behind a high-volume SMB motion."
+    },
+    {
+      "name": "overstory",
+      "url": "https://overstory.com",
+      "desc": "Machine learning on satellite imagery to assess forests and vegetation risk for utilities.",
+      "sector": "AI/ML · ClimateTech",
+      "hq": "The Netherlands",
+      "s": [3, 4, 5, 3, 2, 1],
+      "why": "A geospatial data product like HEROW's, with ML evaluation I've done hands-on. Less overlap on the long utilities sales cycle."
+    },
+    {
+      "name": "Sybilion",
+      "url": "https://sybilion.com",
+      "desc": "Predictive forecasting for textile and fashion, built on anonymised market data.",
+      "sector": "Data · Business software",
+      "hq": "Portugal",
+      "s": [2, 3, 4, 2, 2, 5],
+      "why": "Data-product discovery and turning a forecasting service into a productised SaaS."
+    },
+    {
+      "name": "Fero",
+      "url": "https://ferodrinks.com",
+      "desc": "Working-capital and stock-management software for the wine and spirits industry.",
+      "sector": "FinTech · Supply chain",
+      "hq": "UK",
+      "s": [4, 4, 2, 3, 3, 1],
+      "why": "Embedded finance for one vertical: fintech flows plus an SMB sales motion, both in my background."
+    },
+    {
+      "name": "Airly",
+      "url": "https://airly.org",
+      "desc": "Sensor network and SaaS that deliver hyper-local air-pollution data.",
+      "sector": "ClimateTech · IoT",
+      "hq": "Poland, USA",
+      "s": [2, 3, 3, 3, 3, 1],
+      "why": "I'd help on the SaaS and data layer and on B2B customer success, less on the hardware."
+    },
+    {
+      "name": "Kencko",
+      "url": "https://kencko.com",
+      "desc": "Organic fruit and vegetable products, flash-frozen and slow-dried from whole plant foods.",
+      "sector": "Food · Consumer",
+      "hq": "Portugal, USA",
+      "s": [2, 2, 1, 3, 2, 5],
+      "why": "Consumer subscription: retention and web-to-app funnel work fits, the food supply chain doesn't."
+    },
+    {
+      "name": "Gigaton",
+      "url": "https://gigaton.co",
+      "desc": "AI-driven decarbonisation of cement pyroprocesses that cuts energy waste and emissions.",
+      "sector": "Industrial SaaS · AI",
+      "hq": "UK",
+      "s": [1, 3, 4, 3, 2, 1],
+      "why": "Strong AI angle, but heavy industry is far from my track record."
+    },
+    {
+      "name": "Constellr",
+      "url": "https://constellr.com",
+      "desc": "Satellite imaging beyond the visible spectrum to monitor vegetation, soil, water, carbon and industrial activity.",
+      "sector": "SpaceTech · ClimateTech",
+      "hq": "Germany",
+      "s": [1, 2, 4, 3, 1, 1],
+      "why": "Overlap on the data product only; satellite hardware sits outside my experience."
+    },
+    {
+      "name": "GROPYUS",
+      "url": "https://gropyus.com",
+      "desc": "Technology-driven builder of sustainable, affordable homes, from design to asset management.",
+      "sector": "ConstructionTech",
+      "hq": "Austria, Germany",
+      "s": [1, 1, 1, 3, 1, 1],
+      "why": "Limited overlap with my software-product background."
+    },
+    {
+      "name": "Oceano Fresco",
+      "url": "https://oceano-fresco.pt",
+      "desc": "Sustainable seafood company farming bivalves with aquaculture techniques.",
+      "sector": "AgTech · Food",
+      "hq": "Portugal",
+      "s": [0, 0, 0, 2, 0, 5],
+      "why": "No meaningful overlap; listed for completeness."
+    }
+  ],
+  "inactive": ["Emotai (acquired)", "Probely (acquired)", "Soveren (acquired)", "REALFEVR (closed)"],
+  "sources": [
+    ["Semapa Next portfolio", "https://semapanext.com/portfolio/"],
+    ["Semapa Next approach", "https://semapanext.com/our-approach/"],
+    ["Semapa Next team", "https://semapanext.com/team/"],
+    ["JUPUS Series A (Tech.eu)", "https://tech.eu/2026/06/23/jupus-raises-eur13m-to-power-the-next-generation-of-ai-driven-law-firms"],
+    ["Sonant seed round (VC Backed)", "https://www.vcbacked.co/company/sonant-ai"]
+  ]
+}

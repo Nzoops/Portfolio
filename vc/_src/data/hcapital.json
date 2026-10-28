@@ -1,0 +1,58 @@
+{
+  "slug": "hcapital",
+  "name": "HCapital",
+  "website": "https://hcapital.pt/",
+  "portfolio_url": "https://hcapital.pt/portfolio-venture-capital/",
+  "facts": [
+    ["Funds", "New Ideas I and New Ideas II"],
+    ["Focus", "Energy, e-mobility, industrial and digital"],
+    ["Base", "Lisbon"],
+    ["Portfolio", "16 VC companies, 15 active"],
+    ["Also", "Private equity"]
+  ],
+  "position": "HCapital is a Portuguese private-equity and venture-capital manager. Its venture side invests through the New Ideas I and New Ideas II funds, with a portfolio concentrated in energy, e-mobility, logistics and industrial software, alongside AI automation and digital identity.",
+  "lede": "I'm a Lisbon-based Product & RevOps manager. Most of your venture portfolio is hardware-heavy, but the software layer on top, from Automaise and LOQR to Routal and Evio, is exactly where I work: product, data and the revenue engine.",
+  "summary": "HCapital's companies build physical infrastructure, from charging networks to second-life batteries, and almost all of them depend on software to win customers and run operations. That's where I come in. I've spent nine years in tech building B2B and B2C products, including location and routing tech at HEROW and identity at Pi Network, and setting up the CRM and customer-success systems that let B2B companies scale. Your AI, identity and logistics-software companies match my background directly.",
+  "reasons": [
+    {
+      "title": "Location and routing tech",
+      "body": "I was PM on HEROW's geofencing SDK and platform. Routal, Dingoo and Evio live on location data, routing and mobile apps."
+    },
+    {
+      "title": "AI automation and identity",
+      "body": "Automaise and LOQR serve banks and insurers with AI and digital onboarding. I scaled KYC to 14M+ users and shipped LLM features with evals and guardrails."
+    },
+    {
+      "title": "Software on top of hardware",
+      "body": "For energy and e-mobility companies, the app, the data and the B2B sales motion decide adoption. I can own that layer without needing to own the hardware."
+    }
+  ],
+  "vc_manual": {"thesis": 2, "stage": 3, "platform": 2},
+  "vc_notes": {
+    "thesis": "Energy and industrial focus; my overlap is the software, AI and identity part of the portfolio.",
+    "stage": "Investment stage isn't stated; the portfolio spans early-stage and growing companies.",
+    "platform": "No platform or talent function found on the website."
+  },
+  "companies": [
+    {"name": "Automaise", "desc": "AI and low-code automation.", "sector": "AI · Automation", "hq": "Portugal", "s": [4, 5, 5, 3, 4, 5], "why": "AI automation for customer operations: LLM evals and guardrails, plus the CS tooling I built at Vibe.co."},
+    {"name": "LOQR", "url": "https://loqr.com", "desc": "Cybersecurity and digital-identity management.", "sector": "Identity · FinTech", "hq": "Portugal", "s": [5, 5, 4, 3, 3, 5], "why": "Digital identity and onboarding is the product I scaled at Pi Network, from about 1M to 14M+ verified users."},
+    {"name": "Routal", "desc": "Smart planning and optimisation for last-mile delivery.", "sector": "Logistics SaaS", "s": [4, 5, 4, 3, 4, 2], "why": "Route planning is location tech: I was PM on HEROW's geofencing platform."},
+    {"name": "Evio", "desc": "Integrated platform for managing and operating electric mobility.", "sector": "E-mobility · Platform", "hq": "Portugal", "s": [3, 5, 3, 3, 3, 5], "why": "A driver app plus an operator platform: mobile product, location data and B2B onboarding."},
+    {"name": "Dingoo", "desc": "Last-mile delivery operator with proprietary optimisation models.", "sector": "Logistics", "hq": "Portugal", "s": [3, 3, 4, 3, 2, 5], "why": "Optimisation models and location data are the product core; operations-heavy beyond that."},
+    {"name": "Progrow", "desc": "SaaS for industrial processes and Industry 4.0.", "sector": "Industrial SaaS", "hq": "Portugal", "s": [1, 5, 3, 3, 3, 5], "why": "B2B SaaS with factory buyers: product discovery and customer success."},
+    {"name": "Glartek", "desc": "Augmented reality and asset management for industrial teams.", "sector": "Industrial software · AR", "hq": "Portugal", "s": [1, 4, 3, 3, 3, 5], "why": "Enterprise SaaS roll-out and onboarding; less domain overlap."},
+    {"name": "Eneida.io", "desc": "Sensors and IoT for electricity grids.", "sector": "Energy · IoT", "hq": "Portugal", "s": [1, 3, 3, 3, 2, 5], "why": "IoT data platform side only."},
+    {"name": "Omniflow", "desc": "Intelligent energy platform for IoT in smart cities.", "sector": "Smart cities · IoT", "hq": "Portugal", "s": [1, 3, 3, 3, 2, 5], "why": "Smart-city data layer: some location and IoT overlap."},
+    {"name": "Tugbot", "desc": "Autonomous mobile robot (AMR) solutions.", "sector": "Robotics", "hq": "Portugal", "s": [0, 1, 3, 3, 2, 5], "why": "Robotics is outside my experience; fleet software less so."},
+    {"name": "Ecozoleti", "desc": "Electric-mobility services and charging solutions.", "sector": "E-mobility", "hq": "Portugal", "s": [1, 2, 1, 3, 2, 5], "why": "Limited overlap beyond the customer app."},
+    {"name": "Sunny Sunday", "desc": "Electric-vehicle charging network operator.", "sector": "E-mobility", "hq": "Portugal", "s": [1, 2, 1, 3, 1, 5], "why": "Limited overlap beyond the customer app."},
+    {"name": "GT Renewables", "desc": "Decentralised energy systems and e-mobility infrastructure.", "sector": "Energy", "hq": "Portugal", "s": [0, 1, 1, 3, 1, 5], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Libattion", "desc": "Second-life batteries for energy-storage systems.", "sector": "Energy storage", "hq": "Portugal", "s": [0, 0, 1, 3, 1, 5], "why": "No meaningful overlap; listed for completeness."},
+    {"name": "Reefilla", "desc": "Mobile power and storage using second-life batteries.", "sector": "Energy storage", "s": [0, 1, 1, 3, 1, 2], "why": "No meaningful overlap; listed for completeness."}
+  ],
+  "inactive": ["Enline (divested in 2023)"],
+  "sources": [
+    ["HCapital venture-capital portfolio", "https://hcapital.pt/portfolio-venture-capital/"],
+    ["HCapital venture capital", "https://hcapital.pt/venture-capital/"]
+  ]
+}

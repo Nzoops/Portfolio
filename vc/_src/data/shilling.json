@@ -1,0 +1,1038 @@
+{
+  "slug": "shilling",
+  "name": "Shilling",
+  "website": "https://www.shilling.vc/",
+  "portfolio_url": "https://www.shilling.vc/portfolio",
+  "facts": [
+    [
+      "Stage",
+      "Early backers, plus growth"
+    ],
+    [
+      "Focus",
+      "Generalist, Portuguese ecosystem"
+    ],
+    [
+      "Base",
+      "Lisbon"
+    ],
+    [
+      "Portfolio",
+      "99 listed, 66 active"
+    ],
+    [
+      "Funds",
+      "Fund I, Founders Fund, Opportunity Fund"
+    ]
+  ],
+  "position": "Shilling backs early winners in the Portuguese ecosystem and stays with them as they grow, now including a €50M Opportunity Fund for growth-stage rounds. It's a generalist, with a portfolio spanning AI, fintech, health, consumer and web3, and a large network of founders around the firm.",
+  "lede": "I'm a Lisbon-based Product & RevOps manager. Your portfolio is the densest map of Portuguese startups I know, and a dozen of them, from Aptivio and Assimetria to Replai, Anybrain and Coverflex, sit right on top of what I've built.",
+  "summary": "Shilling's companies are Portuguese-founded and increasingly AI-native, and many are at the stage where a first senior PM or a proper revenue stack makes the difference. That's my job: nine years in tech across B2B and B2C SaaS, from KYC and bot detection at 14M-user scale to customer ops on a New York ad platform. Revenue-intelligence, fraud, ad-tech and fintech companies in your portfolio match my background almost one to one, and I can work with them from Lisbon, freelance or full-time.",
+  "reasons": [
+    {
+      "title": "Fraud, identity and fintech",
+      "body": "I scaled KYC at Pi Network from about 1M to 14M+ users, with bot detection and silent bans. That's the daily problem at Anybrain, Fraudio, Student Finance and Coverflex."
+    },
+    {
+      "title": "Revenue and ad tech, from the inside",
+      "body": "Aptivio, Replai and Framedrop sell into growth and revenue teams. I've been one: CS ops and growth reporting at Vibe.co, and the start of Pi Network's ad network."
+    },
+    {
+      "title": "AI-native, shipped for real",
+      "body": "Assimetria, Equall, tl;dv, Talka and Bitskout live or die on LLM quality. I've shipped LLM features with evaluation sets and production guardrails."
+    }
+  ],
+  "vc_manual": {
+    "thesis": 4,
+    "stage": 4,
+    "platform": 4
+  },
+  "vc_notes": {
+    "thesis": "Generalist, but heavy on AI, SaaS and fintech, where my overlap is strongest.",
+    "stage": "Early rounds plus a growth Opportunity Fund: seed to Series C covered.",
+    "platform": "A large network of founders and operators around the firm."
+  },
+  "companies": [
+    {
+      "name": "Aptivio",
+      "desc": "Buyer-intent AI that drives revenue growth.",
+      "sector": "Revenue AI · B2B SaaS",
+      "s": [
+        5,
+        5,
+        5,
+        3,
+        5,
+        3
+      ],
+      "why": "Revenue intelligence is RevOps turned into a product: I've built the pipeline, intent and health signals that GTM teams use."
+    },
+    {
+      "name": "Assimetria",
+      "desc": "AI-native operator building a self-optimising portfolio of B2B SaaS products.",
+      "sector": "AI · B2B SaaS",
+      "hq": "Portugal",
+      "s": [
+        3,
+        5,
+        5,
+        4,
+        4,
+        5
+      ],
+      "why": "Many products, one operating system: repeatable product discovery, LLM evals and a shared revenue stack."
+    },
+    {
+      "name": "Replai",
+      "desc": "Computer-vision platform that informs mobile ad creative strategy.",
+      "sector": "AdTech · AI",
+      "hq": "Portugal",
+      "s": [
+        5,
+        5,
+        5,
+        3,
+        3,
+        4
+      ],
+      "why": "Ad tech plus applied ML: I've worked on ad platforms from both sides and shipped ML features judged on F1."
+    },
+    {
+      "name": "Anybrain",
+      "desc": "Security and anti-fraud technology for gaming.",
+      "sector": "Fraud · Gaming",
+      "hq": "Portugal",
+      "s": [
+        5,
+        5,
+        5,
+        3,
+        3,
+        4
+      ],
+      "why": "Bot detection with automatic silent bans is what I built at Pi Network for 14M+ users."
+    },
+    {
+      "name": "Equall",
+      "desc": "Frontier AI systems that solve legal problems.",
+      "sector": "AI · LegalTech",
+      "hq": "Portugal",
+      "s": [
+        3,
+        5,
+        5,
+        3,
+        4,
+        4
+      ],
+      "why": "LLM product for professionals: evals, guardrails and the trust work that legal buyers demand."
+    },
+    {
+      "name": "Coverflex",
+      "url": "https://www.coverflex.com",
+      "desc": "Digital compensation and benefits platform.",
+      "sector": "B2B FinTech · HR",
+      "hq": "Portugal",
+      "s": [
+        4,
+        5,
+        2,
+        3,
+        5,
+        5
+      ],
+      "why": "B2B fintech sold to HR teams: compliant onboarding plus a sales and CS motion that needs RevOps."
+    },
+    {
+      "name": "Casafari",
+      "url": "https://www.casafari.com",
+      "desc": "Machine-learning property-market platform for real-estate professionals.",
+      "sector": "PropTech · AI",
+      "hq": "Portugal",
+      "s": [
+        3,
+        5,
+        4,
+        3,
+        4,
+        5
+      ],
+      "why": "Data SaaS for agents with a subscription sales motion: ML data quality plus CS and pipeline tooling."
+    },
+    {
+      "name": "tl;dv",
+      "desc": "Meeting productivity tool for remote teams.",
+      "sector": "Productivity · AI",
+      "s": [
+        3,
+        5,
+        5,
+        3,
+        4,
+        4
+      ],
+      "why": "PLG with AI summaries feeding CRMs: LLM features and the product-to-sales hand-off I work on."
+    },
+    {
+      "name": "InnovationCast",
+      "desc": "Modular SaaS for innovation management.",
+      "sector": "B2B SaaS · Open innovation",
+      "hq": "Portugal",
+      "s": [
+        5,
+        5,
+        2,
+        3,
+        4,
+        5
+      ],
+      "why": "Open innovation SaaS is where I started: Agorize programmes for AWS, Singapore Airlines and LVMH."
+    },
+    {
+      "name": "Student Finance",
+      "desc": "AI-powered income-share agreements that finance education.",
+      "sector": "FinTech · EdTech",
+      "hq": "Portugal",
+      "s": [
+        5,
+        5,
+        3,
+        3,
+        3,
+        5
+      ],
+      "why": "Fintech meets edtech: risk and identity checks plus learner onboarding funnels."
+    },
+    {
+      "name": "Algori",
+      "desc": "AI analytics for FMCG brands and retailers.",
+      "sector": "Retail analytics · AI",
+      "hq": "Portugal",
+      "s": [
+        3,
+        5,
+        5,
+        3,
+        4,
+        5
+      ],
+      "why": "Analytics SaaS sold to brand teams: martech context, ML product work and an enterprise sales motion."
+    },
+    {
+      "name": "Fraudio",
+      "desc": "AI payment-fraud and AML SaaS.",
+      "sector": "FinTech · Fraud",
+      "hq": "Netherlands",
+      "s": [
+        5,
+        5,
+        5,
+        3,
+        4,
+        1
+      ],
+      "why": "Payment fraud and AML is the same family of problems as KYC and bot detection I owned at Pi Network."
+    },
+    {
+      "name": "Bitskout",
+      "desc": "AI plugins that extract data from files and emails.",
+      "sector": "AI · Document automation",
+      "s": [
+        4,
+        5,
+        5,
+        3,
+        3,
+        3
+      ],
+      "why": "Document extraction is OCR, which I shipped for KYC document capture."
+    },
+    {
+      "name": "Talka",
+      "desc": "Conversational AI for business insights.",
+      "sector": "AI · B2B SaaS",
+      "s": [
+        3,
+        5,
+        5,
+        3,
+        4,
+        3
+      ],
+      "why": "Conversational AI for business users: LLM evaluation and B2B onboarding."
+    },
+    {
+      "name": "Sword Health",
+      "url": "https://swordhealth.com",
+      "desc": "AI-driven digital musculoskeletal therapy.",
+      "sector": "Digital health · AI",
+      "hq": "Portugal, USA",
+      "s": [
+        2,
+        5,
+        5,
+        2,
+        3,
+        5
+      ],
+      "why": "AI-first product at scale from Porto: ML evaluation and consumer onboarding funnels."
+    },
+    {
+      "name": "Spotlite",
+      "desc": "Satellite-data SaaS for infrastructure monitoring.",
+      "sector": "Geospatial · AI",
+      "hq": "Portugal",
+      "s": [
+        3,
+        4,
+        4,
+        3,
+        3,
+        5
+      ],
+      "why": "Geospatial data product, like HEROW's location platform, with hands-on ML evaluation."
+    },
+    {
+      "name": "BetterGroup",
+      "desc": "AI-generated on-model product visuals for e-commerce.",
+      "sector": "AI · E-commerce",
+      "s": [
+        3,
+        5,
+        5,
+        3,
+        3,
+        3
+      ],
+      "why": "Generative AI sold to e-commerce marketing teams: model quality and martech buyers."
+    },
+    {
+      "name": "Datalinks",
+      "desc": "Semantic-layer technology for data and AI.",
+      "sector": "Data infrastructure",
+      "s": [
+        2,
+        5,
+        5,
+        3,
+        3,
+        3
+      ],
+      "why": "Data infrastructure for AI: technical product specs and developer onboarding."
+    },
+    {
+      "name": "Networkme",
+      "desc": "Career-development platform for students.",
+      "sector": "EdTech · HR",
+      "hq": "Portugal",
+      "s": [
+        4,
+        4,
+        2,
+        3,
+        3,
+        5
+      ],
+      "why": "EdTech close to my EM Lyon teaching and Campus Coach work, with an employer-side B2B motion."
+    },
+    {
+      "name": "Relive",
+      "desc": "Cloud brokerage for new real-estate agents.",
+      "sector": "PropTech · B2B SaaS",
+      "hq": "Portugal",
+      "s": [
+        3,
+        4,
+        2,
+        3,
+        4,
+        5
+      ],
+      "why": "Agent-facing product with commissions and onboarding: marketplace product and CRM work."
+    },
+    {
+      "name": "Tonic App",
+      "desc": "Platform that improves doctors' clinical efficiency.",
+      "sector": "HealthTech · SaaS",
+      "hq": "Portugal",
+      "s": [
+        2,
+        5,
+        3,
+        3,
+        3,
+        5
+      ],
+      "why": "Daily-use clinical app: mobile product discovery and B2B hospital sales."
+    },
+    {
+      "name": "Framedrop",
+      "desc": "Off-stream monetisation for live streamers.",
+      "sector": "Creator economy · AdTech",
+      "s": [
+        4,
+        5,
+        3,
+        3,
+        2,
+        3
+      ],
+      "why": "Creator monetisation and ad inventory: ad tech from both sides."
+    },
+    {
+      "name": "Zharta",
+      "desc": "Peer-to-pool loans collateralised by NFTs.",
+      "sector": "Crypto · DeFi",
+      "hq": "Portugal",
+      "s": [
+        5,
+        4,
+        3,
+        2,
+        2,
+        4
+      ],
+      "why": "Crypto and identity are my domain: I owned KYC and fraud at Pi Network."
+    },
+    {
+      "name": "Workfully",
+      "desc": "B2B recruiting marketplace.",
+      "sector": "HR Tech · Marketplace",
+      "s": [
+        2,
+        5,
+        3,
+        3,
+        4,
+        3
+      ],
+      "why": "Two-sided B2B marketplace with a sales-led motion."
+    },
+    {
+      "name": "Punto Health",
+      "desc": "AI-driven personalised patient support.",
+      "sector": "HealthTech · AI",
+      "s": [
+        2,
+        5,
+        4,
+        3,
+        3,
+        3
+      ],
+      "why": "Patient-facing AI: conversation quality, evals and guardrails."
+    },
+    {
+      "name": "Smartex",
+      "desc": "AI solution that reduces defects in textile production.",
+      "sector": "Industrial AI",
+      "hq": "Portugal, UK",
+      "s": [
+        1,
+        4,
+        5,
+        3,
+        3,
+        4
+      ],
+      "why": "Computer vision in production: ML evaluation and enterprise roll-out."
+    },
+    {
+      "name": "MyCareforce",
+      "desc": "Platform connecting healthcare professionals to per-diem shifts.",
+      "sector": "HealthTech · Marketplace",
+      "hq": "Portugal",
+      "s": [
+        2,
+        4,
+        2,
+        3,
+        4,
+        5
+      ],
+      "why": "Two-sided staffing marketplace with institutional buyers: supply onboarding and RevOps."
+    },
+    {
+      "name": "Promptly",
+      "desc": "Outcome-analytics SaaS for value-based healthcare.",
+      "sector": "HealthTech · SaaS",
+      "hq": "Portugal",
+      "s": [
+        1,
+        5,
+        3,
+        3,
+        3,
+        5
+      ],
+      "why": "Hospital-facing analytics SaaS: product analytics and enterprise customer success."
+    },
+    {
+      "name": "Vawlt",
+      "desc": "Encrypted data storage spread across cloud providers.",
+      "sector": "Security · Cloud",
+      "hq": "Portugal",
+      "s": [
+        2,
+        5,
+        2,
+        3,
+        3,
+        5
+      ],
+      "why": "Security SaaS: I oversaw white- and black-box pentests and fraud work at Pi Network."
+    },
+    {
+      "name": "Bizay",
+      "desc": "Marketplace for personalised business products.",
+      "sector": "Marketplace · MarTech",
+      "hq": "Portugal",
+      "s": [
+        3,
+        4,
+        2,
+        3,
+        3,
+        5
+      ],
+      "why": "SMB marketing marketplace: martech background and SMB activation."
+    },
+    {
+      "name": "Ergodic",
+      "desc": "Active AI for enterprise metrics.",
+      "sector": "AI · Enterprise",
+      "hq": "UK",
+      "s": [
+        2,
+        5,
+        5,
+        3,
+        3,
+        1
+      ],
+      "why": "Enterprise AI on business metrics: model evaluation and KPI design."
+    },
+    {
+      "name": "Barte",
+      "desc": "B2B payments and financial OS for mid-market firms.",
+      "sector": "B2B FinTech",
+      "hq": "Brazil",
+      "s": [
+        4,
+        5,
+        2,
+        3,
+        4,
+        1
+      ],
+      "why": "B2B payments with a mid-market sales motion: fintech plus RevOps."
+    },
+    {
+      "name": "Upflex",
+      "desc": "Workspace booking and management.",
+      "sector": "PropTech · SaaS",
+      "s": [
+        2,
+        5,
+        2,
+        3,
+        4,
+        3
+      ],
+      "why": "B2B SaaS with a sales and account-management motion."
+    },
+    {
+      "name": "Tucuvi",
+      "desc": "Certified AI voice bot for clinical workflows.",
+      "sector": "HealthTech · Voice AI",
+      "hq": "Spain",
+      "s": [
+        2,
+        5,
+        5,
+        3,
+        3,
+        1
+      ],
+      "why": "Voice AI in a regulated setting: evals, guardrails and safety reviews."
+    },
+    {
+      "name": "Gira",
+      "desc": "B2B marketplace for SMBs.",
+      "sector": "B2B marketplace",
+      "s": [
+        3,
+        4,
+        2,
+        3,
+        4,
+        3
+      ],
+      "why": "SMB marketplace: activation, retention and sales-team tooling."
+    },
+    {
+      "name": "Zax",
+      "desc": "B2B e-commerce for wholesale products.",
+      "sector": "B2B e-commerce",
+      "s": [
+        3,
+        4,
+        2,
+        3,
+        4,
+        3
+      ],
+      "why": "B2B ordering platform: buyer onboarding and account management."
+    },
+    {
+      "name": "Uniplaces",
+      "desc": "Student-accommodation marketplace.",
+      "sector": "Marketplace",
+      "hq": "Portugal",
+      "s": [
+        3,
+        4,
+        2,
+        2,
+        3,
+        5
+      ],
+      "why": "Two-sided marketplace with trust and verification needs, a KYC-adjacent problem."
+    },
+    {
+      "name": "Specter",
+      "desc": "Construction-management SaaS built on 3D models.",
+      "sector": "ConTech · SaaS",
+      "s": [
+        1,
+        5,
+        3,
+        3,
+        3,
+        3
+      ],
+      "why": "Vertical SaaS: product discovery with field teams, less domain overlap."
+    },
+    {
+      "name": "Superhuman",
+      "desc": "AI email client built for speed and focus.",
+      "sector": "Productivity · AI",
+      "hq": "USA",
+      "s": [
+        2,
+        5,
+        5,
+        2,
+        3,
+        1
+      ],
+      "why": "LLM features in a daily-use product, where evals and guardrails matter."
+    },
+    {
+      "name": "Super Agent",
+      "desc": "Automated privacy control for users.",
+      "sector": "Privacy",
+      "s": [
+        3,
+        4,
+        3,
+        3,
+        2,
+        3
+      ],
+      "why": "Consent and privacy sit next to ad tech and identity, both in my background."
+    },
+    {
+      "name": "Detech.ai",
+      "desc": "AI-driven incident detection and management.",
+      "sector": "DevOps · AI",
+      "s": [
+        1,
+        5,
+        4,
+        3,
+        2,
+        3
+      ],
+      "why": "Anomaly detection, close to fraud models; developer buyers are less my turf."
+    },
+    {
+      "name": "Phase",
+      "desc": "No-code tool for UI and UX designers.",
+      "sector": "Design tools",
+      "s": [
+        2,
+        5,
+        2,
+        3,
+        3,
+        3
+      ],
+      "why": "PLG design tool: activation and onboarding funnels."
+    },
+    {
+      "name": "Musiversal",
+      "desc": "Music-production platform.",
+      "sector": "Creator marketplace",
+      "hq": "Portugal",
+      "s": [
+        2,
+        4,
+        2,
+        3,
+        2,
+        5
+      ],
+      "why": "Creator marketplace: supply onboarding and funnel work."
+    },
+    {
+      "name": "Balance",
+      "desc": "Doctor-led AI platform for obesity treatment.",
+      "sector": "HealthTech · AI",
+      "s": [
+        1,
+        4,
+        4,
+        3,
+        2,
+        3
+      ],
+      "why": "Consumer health with AI: onboarding and retention, less domain overlap."
+    },
+    {
+      "name": "Exclusible",
+      "desc": "NFT platform for luxury brands.",
+      "sector": "Web3 · Luxury",
+      "s": [
+        4,
+        4,
+        2,
+        2,
+        2,
+        3
+      ],
+      "why": "Crypto product experience from Pi Network applied to brand-facing digital collectibles."
+    },
+    {
+      "name": "Dreamstories",
+      "desc": "Personalised interactive media platform.",
+      "sector": "Consumer · AI",
+      "s": [
+        2,
+        4,
+        4,
+        3,
+        1,
+        3
+      ],
+      "why": "Generative consumer product: AI quality and retention loops."
+    },
+    {
+      "name": "Nilo",
+      "desc": "AI tool for creating and animating 3D worlds.",
+      "sector": "Gaming · AI",
+      "s": [
+        1,
+        4,
+        5,
+        3,
+        1,
+        3
+      ],
+      "why": "Generative AI product work; gaming creation tools are outside my track record."
+    },
+    {
+      "name": "Barkyn",
+      "desc": "Products and services for dogs.",
+      "sector": "D2C subscription",
+      "hq": "Portugal",
+      "s": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        5
+      ],
+      "why": "Subscription retention, onboarding and personalisation."
+    },
+    {
+      "name": "Katoo",
+      "desc": "Tools for an efficient, fair food supply chain.",
+      "sector": "FoodTech · B2B",
+      "s": [
+        2,
+        4,
+        2,
+        3,
+        3,
+        3
+      ],
+      "why": "B2B ordering for restaurants and suppliers: two-sided onboarding."
+    },
+    {
+      "name": "Luca",
+      "desc": "Tutoring and test prep for grades 1 to 12 in Latin America.",
+      "sector": "EdTech",
+      "hq": "Latin America",
+      "s": [
+        4,
+        4,
+        2,
+        3,
+        2,
+        1
+      ],
+      "why": "Consumer edtech close to my teaching and coaching-app work."
+    },
+    {
+      "name": "Manie",
+      "desc": "App that switches consumers to the cheapest energy provider.",
+      "sector": "Consumer · Energy",
+      "s": [
+        2,
+        4,
+        2,
+        3,
+        2,
+        3
+      ],
+      "why": "Consumer switching funnel: onboarding and conversion work."
+    },
+    {
+      "name": "Nhost",
+      "desc": "Managed, extensible backend platform for developers.",
+      "sector": "Developer tools",
+      "s": [
+        1,
+        5,
+        2,
+        3,
+        3,
+        1
+      ],
+      "why": "Developer platform: PLG funnels, less domain overlap."
+    },
+    {
+      "name": "Puter",
+      "desc": "Cloud operating system.",
+      "sector": "Developer tools",
+      "s": [
+        1,
+        4,
+        2,
+        3,
+        2,
+        3
+      ],
+      "why": "Platform product with developer users; limited overlap."
+    },
+    {
+      "name": "Timeleft",
+      "desc": "Social app connecting people with shared goals.",
+      "sector": "Consumer social",
+      "s": [
+        2,
+        4,
+        2,
+        3,
+        1,
+        3
+      ],
+      "why": "Consumer app with matching and community features, like Campus Coach's community work."
+    },
+    {
+      "name": "Bounce",
+      "desc": "Luggage-storage app.",
+      "sector": "Travel marketplace",
+      "hq": "USA",
+      "s": [
+        3,
+        4,
+        2,
+        3,
+        2,
+        1
+      ],
+      "why": "Location-based marketplace: geolocation and partner onboarding."
+    },
+    {
+      "name": "Cafler",
+      "desc": "On-demand vehicle-services marketplace.",
+      "sector": "Mobility marketplace",
+      "hq": "Spain",
+      "s": [
+        2,
+        4,
+        2,
+        3,
+        3,
+        1
+      ],
+      "why": "Operations-heavy marketplace: logistics and B2B accounts."
+    },
+    {
+      "name": "Volt Games",
+      "desc": "Hyper-casual web3 mobile game studio.",
+      "sector": "Web3 · Gaming",
+      "s": [
+        3,
+        4,
+        2,
+        2,
+        1,
+        3
+      ],
+      "why": "Web3 consumer product and ad monetisation; studio work less so."
+    },
+    {
+      "name": "PandaGo",
+      "desc": "Electric fleet solutions and rentals.",
+      "sector": "Mobility",
+      "s": [
+        2,
+        2,
+        2,
+        3,
+        2,
+        3
+      ],
+      "why": "Fleet operations with a software layer; limited overlap."
+    },
+    {
+      "name": "Open Cosmos",
+      "desc": "Small satellite missions and space data.",
+      "sector": "SpaceTech",
+      "hq": "UK",
+      "s": [
+        1,
+        2,
+        3,
+        2,
+        2,
+        3
+      ],
+      "why": "Space data platform side only."
+    },
+    {
+      "name": "Connected",
+      "desc": "Satellite connectivity, including remote regions.",
+      "sector": "SpaceTech · IoT",
+      "s": [
+        1,
+        2,
+        2,
+        3,
+        2,
+        3
+      ],
+      "why": "Limited overlap beyond the IoT data layer."
+    },
+    {
+      "name": "Kencko",
+      "desc": "Organic fruit and vegetable products.",
+      "sector": "Food · Consumer",
+      "hq": "Portugal, USA",
+      "s": [
+        2,
+        2,
+        1,
+        3,
+        2,
+        5
+      ],
+      "why": "Consumer subscription retention fits; the food supply chain doesn't."
+    },
+    {
+      "name": "Life Supplies",
+      "desc": "Plant-based, refillable household and body supplies.",
+      "sector": "Consumer goods",
+      "hq": "Portugal",
+      "s": [
+        0,
+        2,
+        1,
+        3,
+        1,
+        5
+      ],
+      "why": "Little overlap beyond D2C subscription funnels."
+    },
+    {
+      "name": "Hunter Boards",
+      "desc": "Premium electric boards sold with a subscription model.",
+      "sector": "Mobility · Consumer",
+      "hq": "Portugal",
+      "s": [
+        1,
+        1,
+        1,
+        3,
+        1,
+        5
+      ],
+      "why": "Hardware-led consumer product; limited overlap."
+    },
+    {
+      "name": "Cuyna",
+      "desc": "Dark-kitchen franchisee of food and beverage brands.",
+      "sector": "FoodTech",
+      "hq": "Portugal",
+      "s": [
+        0,
+        1,
+        1,
+        3,
+        1,
+        5
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "Biocol Labs",
+      "desc": "Natural health-products brand.",
+      "sector": "Consumer health",
+      "hq": "Portugal",
+      "s": [
+        0,
+        1,
+        0,
+        3,
+        1,
+        5
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "Zymvol",
+      "desc": "Computational enzyme discovery and design platform.",
+      "sector": "BioTech",
+      "hq": "Spain",
+      "s": [
+        0,
+        1,
+        3,
+        3,
+        1,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    }
+  ],
+  "inactive": [
+    "30 exited companies, including Unbabel, Rows, Probely and Payze, plus REALFEVR"
+  ],
+  "method_notes": [
+    "Where a company's HQ isn't listed, Portugal presence is set to 3, since Shilling backs founders from the Portuguese ecosystem."
+  ],
+  "sources": [
+    [
+      "Shilling portfolio",
+      "https://www.shilling.vc/portfolio"
+    ],
+    [
+      "Shilling Opportunity Fund (TechCrunch)",
+      "https://techcrunch.com/2024/05/15/portuguese-vc-firm-shilling-launches-e50m-opportunity-fund-to-back-growth-stage-startups"
+    ]
+  ]
+}

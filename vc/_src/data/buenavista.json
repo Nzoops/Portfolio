@@ -1,0 +1,472 @@
+{
+  "slug": "buenavista",
+  "name": "Buenavista Equity Partners",
+  "short": "Buenavista",
+  "prepared_for": "the Buenavista Ventures team in Lisbon",
+  "website": "https://www.buenavistaequity.com/en/",
+  "portfolio_url": "https://www.buenavistaequity.com/en/investment-areas/ged-ventures/",
+  "facts": [
+    [
+      "VC funds",
+      "Tech Seed (PT, €100M), Ventures (ES, €50M)"
+    ],
+    [
+      "Stage",
+      "Seed in Portugal, Series A in Spain"
+    ],
+    [
+      "Base",
+      "Lisbon and Madrid"
+    ],
+    [
+      "Focus",
+      "Proprietary tech and disruptive digital models"
+    ],
+    [
+      "Support",
+      "Strategy, commercial, HR, international"
+    ]
+  ],
+  "position": "Buenavista Ventures, formerly GED Ventures, is the venture arm of Buenavista Equity Partners, with about €150M under management. Its Portuguese Tech Seed fund backs seed and post-seed companies with ANI-certified R&D in digital, health and clean tech, while the Spanish fund leads Series A rounds in software, fintech, e-commerce and AI. The team supports founders on strategy, commercial, HR and international expansion.",
+  "lede": "I'm a Lisbon-based Product & RevOps manager. Your Portuguese seed portfolio is full of AI products that now need to find and keep customers, like Sqill, Full Venue, PluggableAI and Pleez, and that's exactly the stage I help with.",
+  "summary": "Buenavista supports its founders on strategy, commercial execution and international expansion, which is the work a senior Product & RevOps operator does day to day. I've spent nine years in tech on B2B and B2C products, from KYC and fraud at 14M-user scale to ad tech and customer operations in New York, across Hong Kong, New York and Lisbon. Your martech, fan-engagement, fraud and geospatial companies match my background, and I can work alongside your Lisbon team, freelance or full-time.",
+  "reasons": [
+    {
+      "title": "Audience, content and ad tech",
+      "body": "Sqill, Full Venue and PluggableAI sell to marketing, media and sports teams. I've worked on ad platforms from both sides and built growth reporting for those buyers."
+    },
+    {
+      "title": "Fraud, payments and location",
+      "body": "Feedzai, Kushki and Ritmo live on payments and risk; Xoople and Troop on geospatial and travel data. I've owned KYC at 14M-user scale and a geofencing platform at HEROW."
+    },
+    {
+      "title": "International by default",
+      "body": "I've worked in Hong Kong, New York and Lisbon and speak French, English and Portuguese, a fit for your support on international expansion."
+    }
+  ],
+  "vc_manual": {
+    "thesis": 3,
+    "stage": 4,
+    "platform": 4
+  },
+  "vc_notes": {
+    "thesis": "Digital and AI overlap well; health, biotech and clean tech much less.",
+    "stage": "Seed in Portugal and Series A in Spain: the stages where product and RevOps matter most.",
+    "platform": "Strategic, commercial, HR and international-expansion support from a 15-person team."
+  },
+  "companies": [
+    {
+      "name": "Feedzai",
+      "url": "https://feedzai.com",
+      "desc": "AI-based fraud and financial-crime prevention.",
+      "sector": "FinTech · Fraud · AI",
+      "hq": "Portugal, USA",
+      "s": [
+        5,
+        5,
+        5,
+        2,
+        4,
+        5
+      ],
+      "why": "Fraud detection is what I built around KYC at Pi Network, with ML features judged on F1 and silent bans for bots."
+    },
+    {
+      "name": "Sqill",
+      "desc": "AI-powered content-creation studio for social-media teams working with many creators.",
+      "sector": "MarTech · AI",
+      "hq": "Portugal",
+      "s": [
+        4,
+        5,
+        5,
+        3,
+        3,
+        5
+      ],
+      "why": "Generative AI sold to marketing teams: martech buyers I know and LLM output quality I know how to evaluate."
+    },
+    {
+      "name": "Full Venue",
+      "desc": "AI audience segmentation that helps sports and events organisations monetise their audiences.",
+      "sector": "Sports tech · AI",
+      "hq": "Portugal",
+      "s": [
+        4,
+        5,
+        5,
+        3,
+        3,
+        4
+      ],
+      "why": "Audience data and monetisation is ad tech's core, and sports apps are my Campus Coach world."
+    },
+    {
+      "name": "PluggableAI",
+      "desc": "Digital communication and fan-engagement technology.",
+      "sector": "Fan engagement · AI",
+      "hq": "Portugal",
+      "s": [
+        4,
+        5,
+        4,
+        3,
+        3,
+        5
+      ],
+      "why": "Engagement and messaging products for sports audiences: martech plus community features I've shipped."
+    },
+    {
+      "name": "Pleez",
+      "desc": "AI platform that helps restaurants improve their performance on food-delivery apps.",
+      "sector": "Restaurant SaaS · AI",
+      "hq": "Portugal",
+      "s": [
+        3,
+        5,
+        4,
+        3,
+        4,
+        5
+      ],
+      "why": "SMB SaaS with a data core: onboarding, CS and pipeline tooling at scale."
+    },
+    {
+      "name": "Unbabel",
+      "desc": "AI translation paired with human experts.",
+      "sector": "AI · Language",
+      "hq": "Portugal",
+      "s": [
+        3,
+        5,
+        5,
+        2,
+        4,
+        5
+      ],
+      "why": "AI plus human-in-the-loop quality, sold to CX teams: the review loops I ran in KYC, and CS ops from Vibe.co."
+    },
+    {
+      "name": "DeepNeuronic",
+      "desc": "AI computer vision that detects suspicious activity in live video-surveillance feeds.",
+      "sector": "Computer vision · Security",
+      "hq": "Portugal",
+      "s": [
+        3,
+        4,
+        5,
+        3,
+        3,
+        5
+      ],
+      "why": "Computer vision against fraud and threats, close to liveness and bot detection in KYC."
+    },
+    {
+      "name": "Xoople",
+      "desc": "Geospatial artificial-intelligence platform.",
+      "sector": "Geospatial · AI",
+      "hq": "Spain",
+      "s": [
+        4,
+        4,
+        5,
+        4,
+        3,
+        1
+      ],
+      "why": "Location data at the core: I was PM on HEROW's geofencing platform, with hands-on ML evaluation."
+    },
+    {
+      "name": "Hotelverse",
+      "desc": "Digital-twin and room-selection technology that lifts hotels' direct bookings.",
+      "sector": "Hospitality tech",
+      "hq": "Spain",
+      "s": [
+        4,
+        5,
+        3,
+        4,
+        4,
+        1
+      ],
+      "why": "Hotel booking UX is my HoteFinder side project, and selling to hotel groups is a B2B motion I know."
+    },
+    {
+      "name": "Troop",
+      "desc": "AI-driven cloud platform for planning group meetings and travel.",
+      "sector": "Travel SaaS · AI",
+      "s": [
+        3,
+        5,
+        4,
+        3,
+        4,
+        2
+      ],
+      "why": "Travel planning with location data and AI: HEROW plus LLM product work."
+    },
+    {
+      "name": "Kushki",
+      "desc": "Payment solutions for businesses expanding in Latin America and the US.",
+      "sector": "Payments",
+      "hq": "Ecuador",
+      "s": [
+        5,
+        5,
+        3,
+        2,
+        4,
+        1
+      ],
+      "why": "Payments plus merchant onboarding and KYC: the fintech half of my background."
+    },
+    {
+      "name": "Ritmo",
+      "desc": "Revenue-based financing for growing businesses.",
+      "sector": "FinTech · Lending",
+      "hq": "Spain",
+      "s": [
+        4,
+        5,
+        3,
+        3,
+        4,
+        1
+      ],
+      "why": "Underwriting from business data with a sales-led motion: fintech plus RevOps."
+    },
+    {
+      "name": "Indie Campers",
+      "desc": "Campervan and RV rental marketplace.",
+      "sector": "Travel marketplace",
+      "hq": "Portugal",
+      "s": [
+        3,
+        4,
+        3,
+        2,
+        3,
+        5
+      ],
+      "why": "Lisbon-based marketplace with fleet and location operations: geolocation and B2C funnel work."
+    },
+    {
+      "name": "Virtuleap",
+      "desc": "VR games that assess and train cognitive skills.",
+      "sector": "HealthTech · EdTech",
+      "hq": "Portugal",
+      "s": [
+        3,
+        4,
+        3,
+        3,
+        2,
+        5
+      ],
+      "why": "Gamified learning and assessment, close to my teaching and coaching-app work."
+    },
+    {
+      "name": "Hope Care",
+      "desc": "Medical software for remote patient monitoring.",
+      "sector": "HealthTech",
+      "hq": "Portugal",
+      "s": [
+        1,
+        5,
+        3,
+        3,
+        3,
+        5
+      ],
+      "why": "Hospital-facing SaaS with devices: product discovery and enterprise CS."
+    },
+    {
+      "name": "Hoopers Club",
+      "desc": "Digital innovation for basketball communities.",
+      "sector": "Sports tech",
+      "hq": "Portugal",
+      "s": [
+        3,
+        4,
+        2,
+        3,
+        2,
+        5
+      ],
+      "why": "Sports community app, like the community features I shipped at Campus Coach."
+    },
+    {
+      "name": "LUGGit",
+      "desc": "App to schedule luggage pickup, storage and delivery.",
+      "sector": "Travel · Logistics",
+      "hq": "Portugal",
+      "s": [
+        3,
+        4,
+        2,
+        3,
+        2,
+        5
+      ],
+      "why": "Location-based consumer service with partner operations: geolocation and B2C funnels."
+    },
+    {
+      "name": "Weezie",
+      "desc": "Software for managing fibre-optic networks for telecom operators.",
+      "sector": "Telecom software",
+      "hq": "Portugal",
+      "s": [
+        1,
+        5,
+        2,
+        3,
+        3,
+        5
+      ],
+      "why": "B2B SaaS for telecom operators: enterprise onboarding and CS."
+    },
+    {
+      "name": "Erudit",
+      "desc": "Helps people leaders track, measure and manage culture with 40+ employee-experience metrics.",
+      "sector": "HR Tech · Analytics",
+      "s": [
+        2,
+        5,
+        4,
+        3,
+        3,
+        1
+      ],
+      "why": "AI analytics sold to HR: model trust and B2B onboarding."
+    },
+    {
+      "name": "Quibim",
+      "desc": "AI imaging biomarkers for medical research and care.",
+      "sector": "MedTech · AI",
+      "hq": "Spain",
+      "s": [
+        1,
+        4,
+        5,
+        3,
+        3,
+        1
+      ],
+      "why": "AI in a regulated product: evaluation and safety reviews; clinical buyers are new ground."
+    },
+    {
+      "name": "Galgus",
+      "desc": "Patented AI software that boosts Wi-Fi coverage and speed on existing hardware, including on transport.",
+      "sector": "Networking · AI",
+      "s": [
+        1,
+        4,
+        3,
+        3,
+        3,
+        1
+      ],
+      "why": "Infrastructure software with B2B sales; limited domain overlap."
+    },
+    {
+      "name": "SimpleCloud",
+      "desc": "Cloud computing for intensive remote work in animation, games, engineering and education.",
+      "sector": "Cloud",
+      "hq": "Spain",
+      "s": [
+        1,
+        4,
+        2,
+        3,
+        3,
+        1
+      ],
+      "why": "Infrastructure SaaS with education buyers; limited overlap."
+    },
+    {
+      "name": "Nu-Rise",
+      "desc": "Photonics for real-time monitoring of adaptive radiotherapy.",
+      "sector": "MedTech",
+      "hq": "Portugal",
+      "s": [
+        0,
+        1,
+        2,
+        3,
+        1,
+        5
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "Omniscope",
+      "desc": "Immune-profiling technology for precision medicine.",
+      "sector": "BioTech",
+      "hq": "Spain",
+      "s": [
+        0,
+        1,
+        3,
+        3,
+        1,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "Medyria",
+      "desc": "Early detection of coronary artery disease.",
+      "sector": "MedTech",
+      "hq": "Switzerland",
+      "s": [
+        0,
+        1,
+        2,
+        3,
+        1,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    },
+    {
+      "name": "Ienai Space",
+      "desc": "In-space propulsion for satellites.",
+      "sector": "SpaceTech",
+      "hq": "Spain",
+      "s": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        1
+      ],
+      "why": "No meaningful overlap; listed for completeness."
+    }
+  ],
+  "method_notes": [
+    "Buenavista's site doesn't publish a single venture list; companies come from its project pages and investment announcements. Private-equity and real-asset holdings are left out. Not scored for lack of a description: PFx Biotech."
+  ],
+  "sources": [
+    [
+      "Buenavista Ventures",
+      "https://www.buenavistaequity.com/en/investment-areas/ged-ventures/"
+    ],
+    [
+      "GED Ventures Portugal investment period",
+      "https://www.buenavistaequity.com/en/ged-ventures-portugal-closes-investment-period/"
+    ],
+    [
+      "Xoople investment",
+      "https://www.buenavistaequity.com/en/buenavista-invests-in-xoople-geospatial-artificial-intelligence/"
+    ],
+    [
+      "Hotelverse Series A",
+      "https://www.buenavistaequity.com/en/hotelverse-raises-5-million-series-a-led-by-ged-ventures/"
+    ],
+    [
+      "Sqill",
+      "https://www.buenavistaequity.com/en/proyect/sqill/"
+    ]
+  ]
+}

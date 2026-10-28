@@ -1,0 +1,54 @@
+{
+  "slug": "start-ventures",
+  "name": "Start Ventures",
+  "prepared_for": "the Start Ventures team at Banco BiG",
+  "website": "https://hub.waveup.com/funds/start-ventures",
+  "portfolio_url": "https://funding.tech.eu/investors/BiG%20Start%20Ventures",
+  "facts": [
+    ["Parent", "Banco de Investimento Global (BiG)"],
+    ["Stage", "Seed and Series A"],
+    ["Focus", "B2B fintech, insurtech, regtech, cybersecurity"],
+    ["Ticket", "$500K to $3M"],
+    ["Base", "Lisbon, since 2016"]
+  ],
+  "position": "Start Ventures is the venture arm of Banco BiG, investing since 2016 at seed and Series A in B2B startups across financial services: fintech, insurtech, regtech and cybersecurity. It favours patient, long-cycle engagement with founders building regulated B2B software, and typically joins rather than leads rounds.",
+  "lede": "I'm a Lisbon-based Product & RevOps manager. Your thesis, regulated B2B software for financial services, is the most direct match I've found: I owned KYC and fraud at 14M-user scale, and LOQR, Fraudio, Zango, Ethiack and Sonant sit right on top of it.",
+  "summary": "Start Ventures backs regulated B2B software, where product decisions are shaped by compliance, security and long enterprise sales cycles. That's the environment I know best. At Pi Network I owned an AI-powered KYC product, scaling it from about 1M to 14M+ users with liveness checks, human review, bot detection and pentesting; at Vibe.co I built the customer and revenue operations behind a B2B platform. Nearly every company in your portfolio sells to banks, insurers or finance teams, and I can help them from Lisbon, freelance or full-time.",
+  "reasons": [
+    {
+      "title": "Regulated products are my default",
+      "body": "KYC, fraud, liveness and audit trails were my daily work at Pi Network. LOQR, Zango, Fraudio and Wealthkernel build for buyers who think the same way."
+    },
+    {
+      "title": "Security from the product side",
+      "body": "I oversaw white- and black-box pentests and worked on a fraud-detection algorithm. That's useful context for Ethiack and for every fintech that sells to a bank."
+    },
+    {
+      "title": "Patient, long-cycle B2B",
+      "body": "Enterprise financial-services sales take time. I build the pipeline stages, SLAs and health scores that keep long cycles visible and renewals safe."
+    }
+  ],
+  "vc_manual": {"thesis": 5, "stage": 4, "platform": 3},
+  "vc_notes": {
+    "thesis": "B2B fintech, insurtech, regtech and security: the closest thesis to my track record.",
+    "stage": "Seed and Series A: first scaled product and first repeatable sales motion.",
+    "platform": "Banking expertise from Banco BiG; no dedicated talent role found."
+  },
+  "companies": [
+    {"name": "Sonant", "url": "https://sonant.ai", "desc": "AI receptionist that handles scheduling, call routing and quote intake for insurance agencies.", "sector": "InsurTech · AI", "hq": "USA, Portugal", "s": [3, 5, 5, 4, 5, 4], "why": "Voice-AI agents sold to SMB insurance agencies: LLM features with evals and guardrails, plus the onboarding and CS tooling a young SaaS needs."},
+    {"name": "LOQR", "url": "https://loqr.com", "desc": "Digital onboarding and customer-journey platform for banks.", "sector": "FinTech · RegTech", "hq": "Portugal", "s": [5, 5, 4, 3, 3, 5], "why": "Bank onboarding and compliance is the product I scaled at Pi Network: ID capture, liveness, fraud and edge cases from about 1M to 14M+ users."},
+    {"name": "Ethiack", "desc": "Autonomous ethical hacking that finds vulnerabilities continuously.", "sector": "Cybersecurity · AI", "hq": "Portugal", "s": [3, 5, 5, 3, 4, 5], "why": "I oversaw white- and black-box pentesting at Pi Network; productising it for security teams is a B2B motion I know."},
+    {"name": "Coverflex", "url": "https://www.coverflex.com", "desc": "Employee benefits and compensation platform.", "sector": "B2B FinTech · HR", "hq": "Portugal", "s": [4, 5, 2, 3, 5, 5], "why": "B2B fintech sold to HR teams: compliant onboarding plus a sales and CS motion that needs RevOps."},
+    {"name": "Zango", "desc": "Regtech and compliance specialist for financial services.", "sector": "RegTech · AI", "hq": "UK", "s": [5, 5, 5, 3, 4, 1], "why": "Compliance is the product context I worked in daily at Pi Network, from KYC rules to audit trails."},
+    {"name": "Fraudio", "desc": "Payment-fraud and AML solutions.", "sector": "FinTech · Fraud", "hq": "Netherlands", "s": [5, 5, 5, 3, 4, 1], "why": "Payment fraud and AML is the same family of problems as the KYC and bot detection I owned at Pi Network."},
+    {"name": "Wealthkernel", "desc": "Investment infrastructure that lets companies launch investing products.", "sector": "WealthTech · API", "hq": "UK", "s": [4, 5, 2, 3, 4, 1], "why": "API fintech with regulated onboarding and partner integrations: KYC plus B2B account management."},
+    {"name": "Countingup", "desc": "Business current account with built-in accounting for small businesses.", "sector": "FinTech · SMB banking", "hq": "UK", "s": [4, 5, 2, 3, 3, 1], "why": "SMB banking with KYC onboarding and activation funnels."},
+    {"name": "WeatherPromise", "desc": "Parametric weather insurance for hospitality and leisure.", "sector": "InsurTech", "hq": "UK", "s": [3, 4, 3, 3, 3, 1], "why": "Embedded insurance sold through travel and hospitality partners: B2B2C onboarding."}
+  ],
+  "method_notes": ["Start Ventures reports 13 disclosed investments; the companies scored here are the ones named publicly. Not scored for lack of a description: Claims Carbon."],
+  "sources": [
+    ["Start Ventures profile (WaveUp)", "https://hub.waveup.com/funds/start-ventures"],
+    ["BiG Start Ventures investments (Tech.eu)", "https://funding.tech.eu/investors/BiG%20Start%20Ventures"],
+    ["Sonant seed round (VC Backed)", "https://www.vcbacked.co/company/sonant-ai"]
+  ]
+}
