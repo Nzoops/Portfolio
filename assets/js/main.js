@@ -12,6 +12,16 @@
     try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
   });
 
+  // Owner-only link to the VC pages: visit ?me once to turn it on in this browser, ?me=off to turn it off
+  try {
+    const me = new URLSearchParams(location.search).get("me");
+    if (me !== null) {
+      if (me === "off") localStorage.removeItem("owner"); else localStorage.setItem("owner", "1");
+      history.replaceState(null, "", location.pathname + location.hash);
+    }
+    if (localStorage.getItem("owner")) $(".nav__owner")?.removeAttribute("hidden");
+  } catch (e) {}
+
   // Nav: active section + sliding pill
   const links = $$(".nav__links a");
   const pill = $(".nav__pill");

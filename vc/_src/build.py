@@ -4,6 +4,7 @@
 Usage:  python3 vc/_src/build.py            (from the repo root)
 Reads   vc/_src/data/_profile.json and vc/_src/data/<slug>.json
 Writes  vc/<slug>/index.html  (self-contained: inline CSS, SVG charts, small JS)
+        vc/index.html         (private hub: overview table + one tab per VC)
 
 Scoring
 - Each company gets six 0-5 scores, in this order:
@@ -543,6 +544,124 @@ def page(vc, me, built):
 """
 
 
+HUB_CSS = r"""
+html,body{height:100%}
+body{display:flex;flex-direction:column;overflow:hidden}
+.top__me{margin-right:0}
+.hub__count{font-family:var(--f-mono);font-size:var(--s-xs);color:var(--muted);margin-right:auto}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding:10px max(16px,env(safe-area-inset-left,0px));border-bottom:1px solid var(--line);background:var(--paper);scrollbar-width:thin;flex:none}
+.tab{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font:500 var(--s-xs)/1 var(--f-body);white-space:nowrap}
+.tab:hover{border-color:color-mix(in srgb,var(--ink) 35%,var(--line))}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.tab b{font-variant-numeric:tabular-nums;font-weight:600}
+.view{flex:1;min-height:0;position:relative}
+.view>[hidden]{display:none!important}
+.frame{position:absolute;inset:0;display:flex;flex-direction:column}
+.frame__bar{display:flex;align-items:center;gap:8px 12px;padding:8px max(16px,env(safe-area-inset-left,0px));border-bottom:1px solid var(--line);font-size:var(--s-xs);color:var(--muted);flex:none}
+.frame__url{font-family:var(--f-mono);margin-right:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;flex:1 1 0}
+.frame__bar .btn{flex:none}
+.frame iframe{flex:1;width:100%;border:0;background:var(--paper)}
+.overview{position:absolute;inset:0;overflow:auto;padding-block:clamp(28px,5vw,56px)}
+.tbl{width:100%;border-collapse:collapse;font-size:var(--s-sm)}
+.tbl th{font:500 var(--s-xs)/1.2 var(--f-mono);text-transform:uppercase;letter-spacing:.1em;color:var(--muted);text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--line);white-space:nowrap}
+.tbl td{padding:12px 12px 12px 0;border-bottom:1px solid var(--line);vertical-align:middle}
+.tbl td.n,.tbl th.n{text-align:right;font-variant-numeric:tabular-nums}
+.tbl tr{cursor:pointer}
+.tbl tbody tr:hover td{background:color-mix(in srgb,var(--line) 40%,transparent)}
+.tbl .nm{display:inline-flex;align-items:center;gap:10px;font-weight:600}
+.tbl a{color:var(--muted)}
+.tblwrap{overflow-x:auto}
+@media (max-width:640px){.tbl .opt{display:none}}
+"""
+
+HUB_JS = r"""
+(function(){
+var root=document.documentElement;
+try{var t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}
+var tb=document.querySelector(".theme");
+if(tb)tb.addEventListener("click",function(){var d=root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;root.dataset.theme=d?"light":"dark";try{localStorage.setItem("theme",root.dataset.theme)}catch(e){}
+document.querySelectorAll("iframe").forEach(function(f){try{f.contentDocument.documentElement.dataset.theme=root.dataset.theme}catch(e){}})});
+var tabs=[].slice.call(document.querySelectorAll(".tab")),frame=document.getElementById("frame"),ov=document.getElementById("overview"),
+ifr=frame.querySelector("iframe"),url=frame.querySelector(".frame__url"),open=frame.querySelector(".frame__open"),copy=frame.querySelector(".frame__copy");
+function abs(slug){return new URL(slug+"/",location.href).href}
+function show(slug){
+  var t=tabs.find(function(x){return x.dataset.slug===slug})||tabs[0];slug=t.dataset.slug;
+  tabs.forEach(function(x){x.setAttribute("aria-selected",x===t?"true":"false")});
+  t.scrollIntoView({block:"nearest",inline:"nearest"});
+  if(slug==="all"){ov.hidden=false;frame.hidden=true;document.title="VC pages";return}
+  ov.hidden=true;frame.hidden=false;
+  var u=abs(slug);if(ifr.dataset.slug!==slug){ifr.src=slug+"/";ifr.dataset.slug=slug}
+  url.textContent=u;open.href=u;copy.textContent="Copy link";document.title=t.dataset.name+" · VC pages";
+}
+function route(){show(decodeURIComponent(location.hash.slice(1))||"all")}
+tabs.forEach(function(t,i){
+  t.addEventListener("click",function(){location.hash=t.dataset.slug});
+  t.addEventListener("keydown",function(ev){var d=ev.key==="ArrowRight"?1:ev.key==="ArrowLeft"?-1:0;if(!d)return;ev.preventDefault();var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();n.click()});
+});
+document.querySelectorAll("tr[data-slug]").forEach(function(r){r.addEventListener("click",function(ev){if(ev.target.closest("a"))return;location.hash=r.dataset.slug})});
+copy.addEventListener("click",function(){var u=url.textContent;(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){copy.textContent="Copied"},function(){copy.textContent="Copy failed"})});
+ifr.addEventListener("load",function(){try{if(root.dataset.theme)ifr.contentDocument.documentElement.dataset.theme=root.dataset.theme}catch(e){}});
+addEventListener("hashchange",route);route();
+})();
+"""
+
+
+def hub(rows, me, built):
+    """Private index of every VC page: an overview table plus one tab per VC (each page in an iframe)."""
+    rows = sorted(rows, key=lambda r: (-r["overall"], r["name"].lower()))
+    built_h = built.strftime("%-d %b %Y")
+    tabs = '<button type="button" role="tab" class="tab" data-slug="all" data-name="Overview" aria-selected="true">Overview</button>' + "".join(
+        f'<button type="button" role="tab" class="tab" data-slug="{e(r["slug"])}" data-name="{e(r["name"])}" aria-selected="false">'
+        f'<span class="dot t-{r["key"]}" aria-hidden="true"></span>{e(r.get("short") or r["name"])} <b>{r["overall"]}</b></button>' for r in rows)
+    trs = "".join(
+        f'<tr data-slug="{e(r["slug"])}"><td><span class="nm"><span class="dot t-{r["key"]}" aria-hidden="true"></span>{e(r["name"])}</span></td>'
+        f'<td class="n"><b>{r["overall"]}</b></td><td class="n opt">{r["n"]}</td>'
+        f'<td class="opt">{" · ".join(f"{r["counts"][k]} {lab.lower()}" for _, k, lab in TIERS if r["counts"][k])}</td>'
+        f'<td class="opt">{e(r["best"])}</td>'
+        f'<td><a href="{e(r["slug"])}/" target="_blank" rel="noopener">Open ↗</a></td></tr>' for r in rows)
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>VC pages</title>
+<link rel="icon" href="../assets/icons/Favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>{CSS}{HUB_CSS}</style>
+</head>
+<body>
+<header class="top" style="position:static"><div class="wrap top__in">
+  <a class="top__me" href="{e(me['portfolio'])}">Enzo Garry <span>· VC pages</span></a>
+  <span class="hub__count">{len(rows)} VCs · built {built_h}</span>
+  <button class="theme" type="button" aria-label="Toggle dark mode">{MOON}</button>
+</div></header>
+<nav class="tabs" role="tablist" aria-label="VC pages">{tabs}</nav>
+<main class="view">
+  <div class="overview" id="overview"><div class="wrap">
+    <div class="head"><p class="eyebrow">Private · not linked from the site</p><h2>All VC pages.</h2>
+      <p>Sorted by match score. Click a row or a tab to preview the page; copy its link to send it.</p></div>
+    <div class="tblwrap"><table class="tbl">
+      <thead><tr><th>VC</th><th class="n">Score</th><th class="n opt">Cos.</th><th class="opt">Matches</th><th class="opt">Top company</th><th></th></tr></thead>
+      <tbody>{trs}</tbody>
+    </table></div>
+  </div></div>
+  <div class="frame" id="frame" hidden>
+    <div class="frame__bar"><span class="frame__url"></span>
+      <button type="button" class="btn btn--sm frame__copy">Copy link</button>
+      <a class="btn btn--sm frame__open" target="_blank" rel="noopener">Open ↗</a></div>
+    <iframe title="VC page preview"></iframe>
+  </div>
+</main>
+<script>{HUB_JS}</script>
+</body>
+</html>
+"""
+
+
 LIVE = "https://nzoops.github.io/Portfolio/"
 ART = pathlib.Path(__import__("os").environ["ARTIFACT_DIR"]) if __import__("os").environ.get("ARTIFACT_DIR") else None
 
@@ -563,6 +682,7 @@ def main():
     me = json.loads((SRC / "_profile.json").read_text())
     built = date.today()
     made = []
+    rows = []
     for f in sorted(SRC.glob("*.json")):
         if f.name.startswith("_"):
             continue
@@ -577,6 +697,10 @@ def main():
         vals, overall, _ = vc_scores(vc)
         counts = {k: sum(1 for c in vc["companies"] if tier(company_score(c))[0] == k) for _, k, _ in TIERS}
         made.append((vc["name"], overall, vals, len(vc["companies"]), counts))
+        best = max(vc["companies"], key=lambda c: company_score(c))
+        rows.append({"slug": vc["slug"], "name": vc["name"], "short": vc.get("short"), "overall": overall, "key": tier(overall)[0],
+                     "n": len(vc["companies"]), "counts": counts, "best": f'{best["name"]} ({company_score(best)})'})
+    (OUT / "index.html").write_text(hub(rows, me, built))
     for n, o, v, c, k in made:
         print(f"{n:30s} {o:3d}  {v}  companies={c} {k}")
 

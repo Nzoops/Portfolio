@@ -108,6 +108,8 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 }
 .nav__theme:hover { background: var(--line); }
 .nav__theme svg { width: 18px; height: 18px; }
+.nav a.nav__owner { flex: none; border: 1px dashed var(--line); color: var(--ink); }
+.nav__owner[hidden] { display: none; }
 @media (max-width: 720px) {
   .nav { top: auto; bottom: calc(env(safe-area-inset-bottom, 0px) + 12px); }
   .nav a { padding: 8px 12px; }
