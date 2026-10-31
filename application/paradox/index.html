@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enzo Garry × Paradox</title>
+<meta name="description" content="Senior Product Manager. I've worked in EdTech and shipped B2C and B2B products at scale, including AI in production, for 15M+ users worldwide. Based in Lisbon.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Enzo Garry × Paradox">
+<meta property="og:description" content="Greatness is trainable. I've spent the last 10 years building the training plan.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nzoops.github.io/Portfolio/application/paradox/">
+<meta property="og:image" content="https://nzoops.github.io/Portfolio/application/paradox/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Same theme choice as the rest of the portfolio (localStorage "theme"), set before paint -->
+<script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<!-- Umami: same website as the portfolio -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="431addf5-a596-4fca-a997-bb77a5741fce" data-domains="nzoops.github.io"></script>
+<style>
+  /* Tokens copied from nzoops.github.io/Portfolio so the page feels like the rest of the site */
+  :root {
+    --paper: #fcfbf8; --surface: #ffffff; --ink: #121a17; --muted: #5d625e; --line: #e2e0d9;
+    --accent: #3a3df0; --accent-ink: #ffffff; --hl: #ffd84d;
+    --accent-soft: rgb(58 61 240 / .08);
+    --shadow: 0 1px 2px rgb(18 26 23 / .06), 0 12px 32px -12px rgb(18 26 23 / .18);
+    --f-body: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --f-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
+    --f-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    --ease: cubic-bezier(.2, .7, .1, 1);
+    --radius: 14px;
+    --col: 1120px;
+    --gutter: clamp(16px, 5vw, 64px);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #0f1413; --surface: #171e1c; --ink: #e7eeea; --muted: #94a29c; --line: #2a3431;
+      --accent: #8f92ff; --accent-ink: #0f1413; --hl: rgb(230 194 58 / .38);
+      --accent-soft: rgb(143 146 255 / .12);
+      --shadow: 0 1px 2px rgb(0 0 0 / .3), 0 16px 40px -16px rgb(0 0 0 / .6);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0f1413; --surface: #171e1c; --ink: #e7eeea; --muted: #94a29c; --line: #2a3431;
+    --accent: #8f92ff; --accent-ink: #0f1413; --hl: rgb(230 194 58 / .38);
+    --accent-soft: rgb(143 146 255 / .12);
+    --shadow: 0 1px 2px rgb(0 0 0 / .3), 0 16px 40px -16px rgb(0 0 0 / .6);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 400 17px/1.6 var(--f-body); -webkit-font-smoothing: antialiased;
+    transition: background .3s, color .3s;
+  }
+  a { color: inherit; }
+  .wrap { max-width: var(--col); margin: 0 auto; padding: 0 var(--gutter); }
+  section { padding: clamp(72px, 11vw, 128px) 0; }
+  h1, h2, h3 { font-family: var(--f-display); font-weight: 600; letter-spacing: -0.02em; margin: 0; }
+  h2 { font-size: clamp(1.75rem, 1.2rem + 2vw, 2.75rem); line-height: 1.1; max-width: 22ch; }
+  h3 { font-size: 22px; line-height: 1.25; }
+  p { margin: 0; }
+  .eyebrow { font: 400 13px var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+  .lede { color: var(--muted); font-size: clamp(17px, 1.6vw, 19px); max-width: 58ch; margin-top: 16px; }
+  .hl { background: linear-gradient(transparent 58%, var(--hl) 58%, var(--hl) 92%, transparent 92%); }
+
+  /* Nav */
+  .nav {
+    position: fixed; top: 16px; left: 50%; transform: translateX(-50%); z-index: 10;
+    display: flex; align-items: center; gap: 4px; padding: 6px;
+    background: color-mix(in srgb, var(--surface) 82%, transparent); backdrop-filter: blur(12px);
+    border: 1px solid var(--line); border-radius: 999px; box-shadow: var(--shadow);
+    max-width: calc(100vw - 32px);
+  }
+  .nav a { text-decoration: none; font-size: 15px; font-weight: 500; padding: 6px 14px; border-radius: 999px; white-space: nowrap; }
+  .nav a:hover { background: var(--accent-soft); }
+  .nav .nav__home { display: inline-flex; align-items: center; gap: 4px; background: var(--ink); color: var(--paper); padding-left: 10px; }
+  .nav .nav__home:hover { background: var(--accent); color: var(--accent-ink); }
+  .nav__home svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .nav__theme { width: 34px; height: 34px; border-radius: 999px; border: 0; background: transparent; color: var(--ink); cursor: pointer; display: grid; place-items: center; }
+  .nav__theme:hover { background: var(--accent-soft); }
+  .nav__theme svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+  @media (max-width: 520px) { .nav .opt { display: none; } }
+
+  /* Buttons, as on the portfolio */
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; padding: 14px 22px; border-radius: 999px;
+    font: 600 15px var(--f-body); text-decoration: none; cursor: pointer;
+    border: 1px solid var(--ink); background: transparent; color: var(--ink);
+    transition: transform .2s var(--ease), background .2s, color .2s;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn--solid { background: var(--ink); color: var(--paper); }
+  .btn--accent { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .btn:focus-visible, [tabindex]:focus-visible, .nav a:focus-visible, .nav__theme:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+
+  /* 1. Hero */
+  .hero { min-height: 100svh; display: flex; align-items: center; padding: 140px 0 72px; }
+  .hero .wrap { width: 100%; }
+  .hero h1 { font-size: clamp(2.6rem, 1.4rem + 5.2vw, 5.5rem); line-height: 1.02; letter-spacing: -0.03em; max-width: 15ch; }
+  .tag-pill { display: inline-flex; align-items: center; gap: 8px; font: 400 13px var(--f-mono); color: var(--muted); border: 1px solid var(--line); background: var(--surface); padding: 6px 12px; border-radius: 999px; margin-bottom: 28px; }
+  .tag-pill::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #3ddc84; }
+  .hero .meta { margin-top: 28px; font: 400 13px var(--f-mono); color: var(--muted); }
+  .hero .meta span + span::before { content: "·"; margin: 0 10px; }
+  .fade { opacity: 0; transform: translateY(12px); animation: fade 1.2s var(--ease) forwards; }
+  .fade.d1 { animation-delay: .15s; } .fade.d2 { animation-delay: .35s; } .fade.d3 { animation-delay: .55s; }
+  @keyframes fade { to { opacity: 1; transform: none; } }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .9s ease, transform .9s var(--ease); }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* 2. Thesis */
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+  .chip { padding: 8px 16px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 600; font-size: 15px; }
+  .contrarian { margin-top: 56px; padding: 28px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); display: grid; gap: 10px; max-width: 760px; }
+  .contrarian p { color: var(--muted); }
+
+  /* Shared card */
+  .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; }
+
+  /* 3. Architecture */
+  .arch { display: grid; gap: 28px; margin-top: 48px; align-items: start; }
+  @media (min-width: 900px) { .arch { grid-template-columns: 1.15fr 1fr; gap: 48px; } }
+  .arch svg { width: 100%; height: auto; display: block; }
+  .arch .layer { cursor: pointer; }
+  .arch .layer rect { fill: var(--surface); stroke: var(--line); stroke-width: 1.25; transition: fill .3s, stroke .3s, opacity .6s; }
+  .arch .layer .name { font: 600 19px var(--f-display); fill: var(--ink); letter-spacing: -0.01em; transition: fill .3s; }
+  .arch .layer .sub { font: 400 11.5px var(--f-mono); fill: var(--muted); }
+  .arch .layer:hover rect { stroke: var(--muted); }
+  .arch .layer.active rect { stroke: var(--accent); fill: var(--accent-soft); stroke-width: 2; }
+  .arch .layer.active .name { fill: var(--accent); }
+  .arch .layer:focus { outline: none; }
+  .arch .layer:focus-visible rect { stroke: var(--accent); stroke-dasharray: 4 3; }
+  .arch .note { font: 400 11px var(--f-mono); fill: var(--muted); }
+  .arch .outcome-box { fill: var(--surface); stroke: var(--line); }
+  .arch .outcome { font: 600 13.5px var(--f-body); fill: var(--ink); }
+  .arch .wire { stroke: var(--muted); fill: none; stroke-width: 1.25; }
+  .arch .arrowhead { fill: var(--muted); }
+  .arch .sep { stroke: var(--line); stroke-dasharray: 3 4; }
+  .arch.lighting .layer rect { opacity: .25; }
+  .arch.lighting .layer.lit rect { opacity: 1; }
+  .card { position: sticky; top: 88px; box-shadow: var(--shadow); }
+  .card .tag { font: 400 12px var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+  .card h3 { margin-top: 8px; font-size: 26px; }
+  .card dl { margin: 24px 0 0; display: grid; gap: 20px; }
+  .card dt { font: 400 12px var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .card dd { margin: 0; }
+
+  /* 4. Lead case */
+  .split { display: grid; gap: 40px; margin-top: 48px; }
+  @media (min-width: 900px) { .split { grid-template-columns: 1.2fr 1fr; gap: 64px; } }
+  .steps { display: grid; gap: 28px; }
+  .steps h4 { margin: 0 0 6px; font: 400 12px var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .numbers { display: grid; gap: 12px; align-content: start; }
+  .numbers .panel { padding: 22px 26px; }
+  .big { font: 600 clamp(48px, 7vw, 76px)/1 var(--f-display); letter-spacing: -0.03em; color: var(--accent); }
+  .big + p { color: var(--muted); margin-top: 6px; }
+
+  /* 5. AI-native */
+  .cards { display: grid; gap: 16px; margin-top: 48px; }
+  @media (min-width: 900px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+  .cards article { display: grid; gap: 10px; align-content: start; }
+  .cards article p { color: var(--muted); }
+  .flow { margin-top: 16px; }
+  .flow ol { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 10px; counter-reset: f; }
+  @media (min-width: 900px) { .flow ol { grid-template-columns: repeat(4, 1fr); gap: 0; } }
+  .flow li { counter-increment: f; position: relative; padding: 14px 18px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); }
+  @media (min-width: 900px) {
+    .flow li { margin-right: 28px; }
+    .flow li:last-child { margin-right: 0; }
+    .flow li:not(:last-child)::after { content: "→"; position: absolute; right: -22px; top: 50%; transform: translateY(-50%); color: var(--muted); }
+  }
+  .flow li::before { content: counter(f, decimal-leading-zero); display: block; font: 400 11px var(--f-mono); color: var(--accent); margin-bottom: 4px; }
+  .flow .cap { color: var(--muted); font-size: 15px; margin-top: 16px; }
+
+  /* 6. Scale */
+  .scale .huge { font: 600 clamp(88px, 20vw, 220px)/.9 var(--f-display); letter-spacing: -0.04em; color: var(--accent); margin-top: 28px; }
+  .scale .from { font: 400 14px var(--f-mono); color: var(--muted); margin-top: 14px; }
+  .quiet { display: grid; gap: 10px; margin: 40px 0 0; padding-left: 20px; color: var(--muted); max-width: 62ch; }
+
+  /* 7. Roadmap */
+  .road { display: grid; gap: 16px; margin-top: 48px; }
+  @media (min-width: 900px) { .road { grid-template-columns: repeat(3, 1fr); } }
+  .phase { display: grid; gap: 2px; align-content: start; }
+  .phase.main { border-color: var(--accent); background: var(--accent-soft); }
+  .phase .days { font: 400 13px var(--f-mono); color: var(--muted); }
+  .phase ul { margin: 16px 0 0; padding-left: 18px; display: grid; gap: 6px; }
+  .gate { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); display: flex; gap: 12px; align-items: center; font-weight: 600; font-size: 15px; }
+  .gate::before { content: ""; width: 10px; height: 10px; background: var(--accent); transform: rotate(45deg); flex: none; }
+  .gate small { display: block; font: 400 11px var(--f-mono); color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+
+  /* 8. How I work */
+  .loop { list-style: none; padding: 0; margin: 48px 0 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  @media (min-width: 900px) { .loop { grid-template-columns: repeat(4, 1fr); gap: 16px; } }
+  .loop li { display: grid; gap: 12px; padding: 22px; }
+  .loop svg { width: 26px; height: 26px; stroke: var(--accent); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .loop strong { font: 600 18px var(--f-display); }
+  .loop span { color: var(--muted); font-size: 15px; }
+  .ship { margin-top: 40px; display: grid; gap: 10px; color: var(--muted); max-width: 64ch; }
+  .ship b { color: var(--ink); font-weight: 600; }
+
+  /* 9. Close */
+  .close { padding: clamp(96px, 14vw, 160px) 0; }
+  .close h2 { font-size: clamp(2.2rem, 1.2rem + 4vw, 4.25rem); line-height: 1.05; letter-spacing: -0.03em; max-width: 18ch; }
+  footer { padding: 28px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px 24px; }
+  .foot-nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+  .foot-nav a { text-decoration: none; color: var(--ink); font-weight: 500; }
+  .foot-nav a:hover { color: var(--accent); }
+  .foot-nav__home { color: var(--accent) !important; }
+  .foot-nav__home::before { content: "← "; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .fade, .reveal { animation: none; opacity: 1; transform: none; transition: none; }
+    .arch.lighting .layer rect { opacity: 1; }
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Page">
+  <a class="nav__home" href="https://nzoops.github.io/Portfolio/" data-umami-event="portfolio_click" data-umami-event-location="top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>Portfolio
+  </a>
+  <a class="opt" href="#system">The system</a>
+  <a class="opt" href="#roadmap">90 days</a>
+  <a href="#contact">Contact</a>
+  <button class="nav__theme" type="button" aria-label="Switch light or dark theme">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>
+  </button>
+</nav>
+
+<!-- 1. Hero -->
+<header class="hero">
+  <div class="wrap">
+    <p class="tag-pill fade">Enzo Garry × Paradox</p>
+    <h1 class="fade d1">Greatness is trainable. I've spent the last 10 years <span class="hl">building the training plan.</span></h1>
+    <p class="lede fade d2">Senior Product Manager. I've worked in EdTech and shipped B2C and B2B products at scale, including AI in production, for 15M+ users worldwide. Based in Lisbon.</p>
+    <div class="ctas fade d3">
+      <a class="btn btn--solid" href="#system">See the system</a>
+      <a class="btn" href="https://calendly.com/garry-enzo-m/30min" target="_blank" rel="noopener" data-umami-event="book_call_click" data-umami-event-location="hero">Book 30 minutes</a>
+    </div>
+    <p class="meta fade d3">
+      <span>Lisbon</span><span>FR / EN</span><span>Senior PM</span><span>Available from today</span>
+    </p>
+  </div>
+</header>
+
+<main>
+
+<!-- 2. Thesis -->
+<section id="thesis">
+  <div class="wrap reveal">
+    <p class="eyebrow">The fit</p>
+    <h2>I work as a Product Manager with a RevOps approach. Everything should be measured, and no decision should be left to guesswork.</h2>
+    <div class="contrarian">
+      <h3>Measure <span class="hl">change</span>, not minutes.</h3>
+      <p>Most self-help products measure engagement. I'd measure change, by comparing the before and after side by side. Every loop I ship reports a transformation metric, not time spent.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Architecture -->
+<section id="system">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Proof, not promises</p>
+      <h2>Where I plug into Paradox OS</h2>
+      <p class="lede">Each layer maps to something I've already shipped. The AI-native engine underneath is what sets me apart. Tap a layer.</p>
+    </div>
+
+    <div class="arch" id="arch">
+      <svg viewBox="0 0 440 470" role="group" aria-labelledby="arch-title arch-desc">
+        <title id="arch-title">Paradox OS, layer by layer</title>
+        <desc id="arch-desc">Four layers (Protocols, Loops, Personalization, Membership) sit on an AI-native engine. Each layer reports its metric up to the outcome Paradox sells; signals feed back to retrain the engine (I'm already working on this). Select a layer to see what I build there and where I have done it.</desc>
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path class="arrowhead" d="M0 0L10 5L0 10z"/>
+          </marker>
+        </defs>
+        <rect class="outcome-box" x="0" y="0" width="408" height="46" rx="10"/>
+        <text class="outcome" x="204" y="28" text-anchor="middle">Proven transformation → retention → increased LTV</text>
+        <path class="wire" d="M204 76V50" marker-end="url(#arrow)"/>
+        <text class="note" x="214" y="68">each layer reports its metric</text>
+        <path class="wire" id="feedback" d="M408 428H420V23H412" marker-end="url(#arrow)"/>
+        <text class="note" x="437" y="240" text-anchor="middle" transform="rotate(-90 437 240)">signals retrain the engine</text>
+        <g id="layers"></g>
+      </svg>
+
+      <div class="card panel" id="card" aria-live="polite">
+        <p class="tag" id="card-tag"></p>
+        <h3 id="card-title"></h3>
+        <dl>
+          <div><dt>What I build there</dt><dd id="card-build"></dd></div>
+          <div><dt>Where I've done it</dt><dd id="card-proof"></dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. AI-native -->
+<section id="ai">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">AI-native, hands on</p>
+      <h2>I ship AI with its evaluation built in.</h2>
+    </div>
+    <div class="cards">
+      <article class="panel reveal">
+        <h3>LLM in production</h3>
+        <p>Shipped with an evaluation mechanism and guardrails. I proposed cost monitoring before anyone asked for it.</p>
+      </article>
+      <article class="panel reveal">
+        <h3>ML and RL, gated on F1</h3>
+        <p>Features shipped with full training and F1-score evaluation. Nothing reached users before it passed the gate.</p>
+      </article>
+      <article class="panel reveal">
+        <h3>Agents I run myself</h3>
+        <p>A scheduled job-search agent and a daily crypto digest. I use agents every day, so I know where they break.</p>
+      </article>
+    </div>
+    <div class="flow panel reveal">
+      <p class="eyebrow" style="margin:0">A working PM-agent prototype: my job-search agent</p>
+      <ol>
+        <li>Sources roles on a schedule</li>
+        <li>Ranks them in Notion</li>
+        <li>Drafts tailored letters</li>
+        <li>Times the follow-ups</li>
+      </ol>
+      <p class="cap">The same pattern, pointed at member signals, is the PM agent in my first 90 days.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Scale -->
+<section id="scale" class="scale">
+  <div class="wrap reveal">
+    <p class="eyebrow">Scale and trust · Pi Network</p>
+    <h2>KYC and onboarding, scaled.</h2>
+    <p class="huge">14M+</p>
+    <p class="from">users, up from ~1M</p>
+    <ul class="quiet">
+      <li>Bot detection and silent bans kept the network real people.</li>
+      <li>Ad tech on both sides: the Vibe.co platform, Pi Network's seller side and its ad network from inception.</li>
+      <li>Worked in Hong Kong, New York and Lisbon.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 7. First 90 days -->
+<section id="roadmap">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">The first 90 days</p>
+      <h2>By day 90, one AI coaching loop is live and proving lift.</h2>
+      <p class="lede">Measured against a control. Each phase ends on a gate you can hold me to.</p>
+    </div>
+    <div class="road">
+      <article class="phase panel reveal">
+        <h3>Listen and instrument</h3>
+        <p class="days">Days 1 to 30</p>
+        <ul>
+          <li>Weekly calls with members</li>
+          <li>Map the founder's full vision</li>
+          <li>Understand the tool stack</li>
+          <li>Define short and mid-term goals</li>
+        </ul>
+        <p class="gate"><span><small>Gate 1</small>Metric agreed with David</span></p>
+      </article>
+      <article class="phase panel reveal">
+        <h3>Ship the first loop</h3>
+        <p class="days">Days 31 to 60</p>
+        <ul>
+          <li>One AI loop on one protocol</li>
+          <li>Evals, guardrails, cost cap</li>
+          <li>Weekly hypothesis cadence</li>
+          <li>PM agent 1: weekly insight</li>
+        </ul>
+        <p class="gate"><span><small>Gate 2</small>Loop beats control</span></p>
+      </article>
+      <article class="phase main panel reveal">
+        <h3>Compound and prove</h3>
+        <p class="days">Days 61 to 90</p>
+        <ul>
+          <li>Extend to more protocols</li>
+          <li>Feed product signals into loops</li>
+          <li>First transformation report</li>
+          <li>Roadmap v1 tied to LTV</li>
+        </ul>
+        <p class="gate"><span><small>Gate 3</small>Report shared with marketing</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 8. How I work -->
+<section id="how">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">How I work</p>
+      <h2>One loop, every week.</h2>
+    </div>
+    <ol class="loop">
+      <li class="panel reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v10H9l-5 4z"/></svg>
+        <strong>Talk to users</strong><span>Every week, not every quarter.</span>
+      </li>
+      <li class="panel reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.6.6 1 1.4 1 2.5h6c0-1.1.4-1.9 1-2.5A6 6 0 0 0 12 3z"/></svg>
+        <strong>Form a hypothesis</strong><span>One bet, one metric, one decision.</span>
+      </li>
+      <li class="panel reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19l14-14M9 5h10v10"/></svg>
+        <strong>Ship</strong><span>Prototypes in Figma and code.</span>
+      </li>
+      <li class="panel reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+        <strong>Measure</strong><span>Change, not minutes.</span>
+      </li>
+    </ol>
+    <div class="ship reveal">
+      <p><b>How I ship:</b> first PM on the launch of a sensitive-document platform (summer 2026). Building a product revenue harness on the side.</p>
+      <p>References ready on request.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 9. Close -->
+<section class="close" id="contact">
+  <div class="wrap reveal">
+    <h2>If greatness is trainable, the product should prove it. <span class="hl">Let's build the proof.</span></h2>
+    <div class="ctas">
+      <a class="btn btn--solid" href="https://calendly.com/garry-enzo-m/30min" target="_blank" rel="noopener" data-umami-event="book_call_click" data-umami-event-location="close">Book 30 minutes</a>
+      <a class="btn" href="../../assets/downloads/Enzo-Resume.pdf" target="_blank" download data-umami-event="cv_download">Download my CV</a>
+      <a class="btn" href="https://www.linkedin.com/in/enzo-garry/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav class="foot-nav" aria-label="Footer">
+      <a class="foot-nav__home" href="https://nzoops.github.io/Portfolio/" data-umami-event="portfolio_click" data-umami-event-location="footer">Back to portfolio</a>
+      <a href="#system">The system</a>
+      <a href="#roadmap">90 days</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <span>Designed and built by me, with Claude Code. Hosted on GitHub Pages, measured with Umami.</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  document.querySelector('.nav__theme').addEventListener('click', function () {
+    var dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+  });
+
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function track(name, data) {
+    try { if (window.umami) window.umami.track(name, data); } catch (e) {}
+  }
+
+  // Architecture: layers top to bottom, engine last.
+  var LAYERS = [
+    { id: 'protocols', name: 'Protocols', sub: 'guided frameworks',
+      build: 'Coaching science turned into daily plans, with adherence tracked at every step.',
+      proof: 'Campus Coach: tailored plans for ultra-endurance.' },
+    { id: 'loops', name: 'Loops', sub: 'adaptive AI coaching',
+      build: 'LLM coaching loops designed with evals, guardrails and a cost budget.',
+      proof: 'Built an LLM feature with evals and guardrails, plus a cost-monitoring proposal.' },
+    { id: 'personalization', name: 'Personalization', sub: 'uniquely theirs',
+      build: 'ML and RL models evaluated on F1-score before release.',
+      proof: 'Built OCR and face recognition with open-source Python libraries.' },
+    { id: 'membership', name: 'Membership', sub: 'lifetime value',
+      build: 'Activation, retention and LTV, wired to data marketing can turn into stories.',
+      proof: 'Eight months of freelance RevOps at Vibe.co.' },
+    { id: 'engine', name: 'AI-native engine', sub: 'PX agents, PM agent', main: true,
+      build: 'Agents that read every signal and test, then rank what to build next.',
+      proof: 'I run my own agents: a scheduled job-search agent and a daily crypto digest.' }
+  ];
+
+  var NS = 'http://www.w3.org/2000/svg';
+  var group = document.getElementById('layers');
+  var arch = document.getElementById('arch');
+  var nodes = [];
+  LAYERS.forEach(function (l, i) {
+    var y = 82 + i * 62 + (l.main ? 10 : 0);
+    var g = document.createElementNS(NS, 'g');
+    g.setAttribute('class', 'layer');
+    g.setAttribute('tabindex', '0');
+    g.setAttribute('role', 'button');
+    g.setAttribute('aria-label', l.name + ': ' + l.sub);
+    g.innerHTML =
+      '<rect x="0" y="' + y + '" width="408" height="52" rx="10"' + (l.main ? ' stroke-dasharray="0"' : '') + '/>' +
+      '<text class="name" x="20" y="' + (y + 33) + '">' + l.name + '</text>' +
+      '<text class="sub" x="388" y="' + (y + 31) + '" text-anchor="end">' + l.sub + '</text>';
+    if (l.main) {
+      var line = document.createElementNS(NS, 'line');
+      line.setAttribute('x1', 0); line.setAttribute('x2', 408);
+      line.setAttribute('y1', y - 10); line.setAttribute('y2', y - 10);
+      line.setAttribute('class', 'sep');
+      group.appendChild(line);
+    }
+    g.addEventListener('click', function () { select(i, true); });
+    g.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(i, true); }
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        var n = (i + (e.key === 'ArrowDown' ? 1 : -1) + LAYERS.length) % LAYERS.length;
+        nodes[n].focus(); select(n, true);
+      }
+    });
+    if (window.matchMedia('(hover: hover)').matches) {
+      g.addEventListener('mouseenter', function () { select(i, true); });
+    }
+    group.appendChild(g);
+    nodes.push(g);
+  });
+
+  // Fit the feedback arrow and the drawing to however many layers there are.
+  var engineY = 82 + (LAYERS.length - 1) * 62 + 10;
+  document.getElementById('feedback').setAttribute('d', 'M408 ' + (engineY + 26) + 'H420V23H412');
+  var svg = group.ownerSVGElement;
+  svg.setAttribute('viewBox', '0 0 440 ' + (engineY + 60));
+  svg.querySelector('text.note[transform]').setAttribute('y', (engineY + 26 + 23) / 2);
+  svg.querySelector('text.note[transform]').setAttribute('transform', 'rotate(-90 437 ' + (engineY + 26 + 23) / 2 + ')');
+
+  var current = -1;
+  function select(i, byUser) {
+    if (i === current) return;
+    current = i;
+    var l = LAYERS[i];
+    nodes.forEach(function (n, j) {
+      n.classList.toggle('active', j === i);
+      n.setAttribute('aria-pressed', j === i ? 'true' : 'false');
+    });
+    document.getElementById('card-tag').textContent = l.main ? 'The engine underneath' : 'Layer ' + (i + 1) + ' of ' + (LAYERS.length - 1);
+    document.getElementById('card-title').textContent = l.name;
+    document.getElementById('card-build').textContent = l.build;
+    document.getElementById('card-proof').textContent = l.proof;
+    if (byUser) track('layer_open', { layer: l.id });
+  }
+  select(LAYERS.length - 1, false);
+
+  // Light the diagram up one layer at a time, bottom-up, on first view.
+  function lightUp() {
+    if (reduced) return;
+    arch.classList.add('lighting');
+    var order = nodes.slice().reverse();
+    order.forEach(function (n, k) {
+      setTimeout(function () { n.classList.add('lit'); }, 250 + k * 280);
+    });
+    setTimeout(function () { arch.classList.remove('lighting'); }, 250 + order.length * 280 + 400);
+  }
+
+  // Scroll reveals and one-off view events.
+  if ('IntersectionObserver' in window && !reduced) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+  }
+  if ('IntersectionObserver' in window) {
+    var once = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        if (e.target.id === 'arch') lightUp();
+        if (e.target.id === 'roadmap') track('roadmap_view');
+        once.unobserve(e.target);
+      });
+    }, { threshold: 0.35 });
+    once.observe(arch);
+    once.observe(document.getElementById('roadmap'));
+  }
+
+  var scrolled = false;
+  window.addEventListener('scroll', function () {
+    if (scrolled) return;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (max > 0 && window.scrollY / max >= 0.75) { scrolled = true; track('scroll_75'); }
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>
