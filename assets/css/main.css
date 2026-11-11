@@ -589,3 +589,40 @@ body::after {
 }
 :root[data-theme="dark"] body::after { mix-blend-mode: soft-light; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) body::after { mix-blend-mode: soft-light; } }
+
+/* Experiences, desktop: text and media form one balanced rectangle.
+   The screenshot flexes to fill whatever height the text column sets. */
+@media (min-width: 900px) {
+  .job { grid-template-columns: 1.35fr 1fr; align-items: stretch; gap: 28px; }
+  .job__media { display: flex; flex-direction: column; gap: 12px; }
+  .job__media .job__shot { aspect-ratio: auto; flex: 1 1 0; min-height: 140px; }
+  .job > .job__shot { aspect-ratio: auto; height: 100%; min-height: 200px; }
+  .job .viz { gap: 10px; padding: 14px 16px; }
+  .job .plan { height: 72px; }
+}
+
+/* Campus metrics */
+.metrics { margin: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.metrics div { display: grid; gap: 2px; padding: 10px 12px; border-radius: 10px; background: var(--paper); border: 1px solid var(--line); min-width: 0; }
+.metrics dt { order: 2; font-size: .7rem; color: var(--muted); line-height: 1.3; }
+.metrics dd { order: 1; margin: 0; font: 600 var(--s-lg)/1.1 var(--f-display); color: var(--accent); font-variant-numeric: tabular-nums; }
+@media (max-width: 600px) { .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* How we can work together */
+.formats { display: grid; gap: 16px; }
+@media (min-width: 900px) { .formats { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.format { display: grid; align-content: start; gap: 12px; padding: clamp(20px, 2.5vw, 28px); border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); transition: transform .4s var(--ease), border-color .3s, box-shadow .4s; min-width: 0; }
+.format:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: var(--shadow); }
+.format__top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.format__len { color: var(--accent); font-weight: 600; }
+.format h3 { font-size: var(--s-lg); }
+.format p { color: var(--muted); }
+.format ul { margin: 4px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.format li { position: relative; padding-left: 20px; }
+.format li::before { content: ""; position: absolute; left: 0; top: .7em; width: 8px; height: 2px; background: var(--accent); }
+.week { display: inline-flex; gap: 3px; }
+.week i { width: 10px; height: 18px; border-radius: 3px; border: 1px solid var(--line); background: var(--paper); }
+.week i.on { background: var(--accent); border-color: var(--accent); }
+.week i.half { background: linear-gradient(to top, var(--accent) 50%, var(--paper) 50%); border-color: var(--accent); }
+.formats__cta { margin-top: 28px; display: flex; justify-content: center; }
+#work + #content { padding-top: 0; }
