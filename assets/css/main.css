@@ -457,6 +457,9 @@ a.list__item:hover { padding-left: 10px; }
 .pin[aria-pressed="true"] .pin__label { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 .pin[aria-pressed="true"] .pin__label .mono { color: color-mix(in srgb, var(--paper) 70%, transparent); }
 .pin--ny, .pin--paris { flex-direction: row-reverse; transform: translate(calc(-100% + 9px), -9px); }
+/* Montreal sits just above New York: Montreal's label opens upward, New York's downward */
+.pin--mtl { flex-direction: row-reverse; align-items: flex-end; transform: translate(calc(-100% + 9px), calc(-100% + 9px)); }
+.pin--ny { align-items: flex-start; }
 .pin--sg { transform: translate(-9px, -9px); }
 .pin--hk { align-items: flex-end; transform: translate(-9px, calc(-100% + 9px)); }
 .quote__meta { color: var(--accent) !important; margin-top: 4px; }
@@ -469,6 +472,7 @@ a.list__item:hover { padding-left: 10px; }
 @media (max-width: 720px) {
   .pin--hk, .pin--sg { flex-direction: row-reverse; align-items: center; transform: translate(calc(-100% + 7px), -7px); }
   .pin--hk { transform: translate(calc(-100% + 7px), calc(-100% + 7px)); }
+  .pin--mtl { top: calc(var(--y) - 5%); transform: translate(calc(-100% + 7px), calc(-100% + 7px)); }
 }
 #reviews { padding-top: clamp(40px, 6vw, 72px); }
 .hobby:hover { border-color: var(--accent); }
