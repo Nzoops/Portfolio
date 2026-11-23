@@ -261,6 +261,8 @@ section { padding-block: clamp(72px, 10vw, 136px); }
 .project__arrow { width: 20px; height: 20px; flex: none; transition: transform .4s var(--ease); }
 .project:hover .project__arrow { transform: translate(3px, -3px); color: var(--accent); }
 .project p { color: var(--muted); }
+.side-things { margin-top: clamp(40px, 6vw, 64px); }
+.side-things h3 { font-size: var(--s-lg); margin-bottom: 18px; }
 
 /* Reviews */
 .reviews { display: grid; gap: clamp(28px, 4vw, 44px); }
